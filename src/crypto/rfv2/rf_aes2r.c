@@ -1,7 +1,5 @@
 #include <stdint.h>
 
-#include "rfv2.h"
-
 // Two round implementation optimized for x86_64+AES-NI and ARMv8+crypto
 // extensions. Test pattern :
 //
