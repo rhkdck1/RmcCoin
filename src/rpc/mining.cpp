@@ -144,7 +144,7 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
         if (!ProcessNewBlock(Params(), shared_pblock, true, nullptr))
             throw JSONRPCError(RPC_INTERNAL_ERROR, "ProcessNewBlock, block not accepted");
         ++nHeight;
-        blockHashes.push_back(pblock->GetWorkHash(nHeight).GetHex());
+        blockHashes.push_back(pblock->GetIndexHash(nHeight).GetHex());
 
         //mark script as important because it was used at least for one coinbase output if the script came from the wallet
         if (keepScript)
@@ -405,7 +405,7 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
                 throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Block decode failed");
 
             CBlockIndex* const pindexPrev = chainActive.Tip();
-            uint256 hash = block.GetWorkHash(pindexPrev->nHeight + 1);
+            uint256 hash = block.GetIndexHash(pindexPrev->nHeight + 1);
             BlockMap::iterator mi = mapBlockIndex.find(hash);
             if (mi != mapBlockIndex.end()) {
                 CBlockIndex *pindex = mi->second;
@@ -697,7 +697,7 @@ public:
 
 protected:
     void BlockChecked(const CBlock& block, const CValidationState& stateIn) override {
-        if (block.GetWorkHash(GetBlockHeight(block)) != hash)
+        if (block.GetIndexHash(GetBlockHeight(block)) != hash)
             return;
         found = true;
         state = stateIn;
@@ -733,7 +733,7 @@ UniValue submitblock(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Block does not start with a coinbase");
     }
 
-    uint256 hash = block.GetWorkHash(GetBlockHeight(block));
+    uint256 hash = block.GetIndexHash(GetBlockHeight(block));
     bool fBlockPresent = false;
     {
         LOCK(cs_main);
@@ -760,7 +760,7 @@ UniValue submitblock(const JSONRPCRequest& request)
     }
 
     // Don't working right here
-    submitblock_StateCatcher sc(block.GetWorkHash(GetBlockHeight(block)));
+    submitblock_StateCatcher sc(block.GetIndexHash(GetBlockHeight(block)));
     RegisterValidationInterface(&sc);
     bool fAccepted = ProcessNewBlock(Params(), blockptr, true, nullptr);
     UnregisterValidationInterface(&sc);

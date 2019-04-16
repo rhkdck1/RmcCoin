@@ -1022,7 +1022,7 @@ bool GetTransaction(const uint256& hash, CTransactionRef& txOut, const Consensus
                     return error("%s: Deserialize or I/O error - %s", __func__, e.what());
                 }
 
-                hashBlock = header.GetWorkHash(GetBlockHeight(header.hashPrevBlock));
+                hashBlock = header.GetIndexHash(GetBlockHeight(header.hashPrevBlock));
                 if (txOut->GetHash() != hash)
                     return error("%s: txid mismatch", __func__);
                 return true;
@@ -1117,8 +1117,8 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
         return false;
     }
 
-    if (block.GetWorkHash(pindex->nHeight) != pindex->GetBlockHash()) {
-        return error("ReadBlockFromDisk(CBlock&, CBlockIndex*): GetWorkHash() doesn't match index for %s at %s",
+    if (block.GetIndexHash(pindex->nHeight) != pindex->GetBlockHash()) {
+        return error("ReadBlockFromDisk(CBlock&, CBlockIndex*): GetIndexHash() doesn't match index for %s at %s",
                 pindex->ToString(), pindex->GetBlockPos().ToString());
     }
     
@@ -1807,7 +1807,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     // pindex->phashBlock can be null if called by CreateNewBlock/TestBlockValidity
 
     assert((pindex->phashBlock == nullptr) ||
-           (*pindex->phashBlock == block.GetWorkHash(pindex->nHeight)));
+           (*pindex->phashBlock == block.GetIndexHash(pindex->nHeight)));
     int64_t nTimeStart = GetTimeMicros();
 
     // Check it again in case a previous version let a bad block in
@@ -1832,7 +1832,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
 
     // Special case for the genesis block, skipping connection of its transactions
     // (its coinbase is unspendable)
-    if (block.GetWorkHash(GetBlockHeight(block)) == chainparams.GetConsensus().hashGenesisBlock) {
+    if (block.GetIndexHash(GetBlockHeight(block)) == chainparams.GetConsensus().hashGenesisBlock) {
         if (!fJustCheck)
             view.SetBestBlock(pindex->GetBlockHash());
         return true;
@@ -2660,7 +2660,7 @@ bool CChainState::ActivateBestChain(CValidationState &state, const CChainParams&
 
             bool fInvalidFound = false;
             std::shared_ptr<const CBlock> nullBlockPtr;
-            if (!ActivateBestChainStep(state, chainparams, pindexMostWork, pblock && pblock->GetWorkHash(GetBlockHeight(pblock->hashPrevBlock)) == pindexMostWork->GetBlockHash() ? pblock : nullBlockPtr, fInvalidFound, connectTrace))
+            if (!ActivateBestChainStep(state, chainparams, pindexMostWork, pblock && pblock->GetIndexHash(GetBlockHeight(pblock->hashPrevBlock)) == pindexMostWork->GetBlockHash() ? pblock : nullBlockPtr, fInvalidFound, connectTrace))
                 return false;
 
             if (fInvalidFound) {
@@ -2843,7 +2843,7 @@ bool ResetBlockFailureFlags(CBlockIndex *pindex) {
 CBlockIndex* CChainState::AddToBlockIndex(const CBlockHeader& block)
 {
     // Check for duplicate
-    uint256 hash = block.GetWorkHash(GetBlockHeight(block));
+    uint256 hash = block.GetIndexHash(GetBlockHeight(block));
     BlockMap::iterator it = mapBlockIndex.find(hash);
     if (it != mapBlockIndex.end())
         return it->second;
@@ -3300,7 +3300,7 @@ bool CChainState::AcceptBlockHeader(const CBlockHeader& block, CValidationState&
 {
     AssertLockHeld(cs_main);
     int nHeight = GetBlockHeight(block);
-    uint256 hash = block.GetWorkHash(nHeight);
+    uint256 hash = block.GetIndexHash(nHeight);
 
     BlockMap::iterator miSelf = mapBlockIndex.find(hash);
     CBlockIndex *pindex = nullptr;
@@ -3501,7 +3501,7 @@ bool ProcessNewBlock(const CChainParams& chainparams, const std::shared_ptr<cons
 
         if (!ret) {
             GetMainSignals().BlockChecked(*pblock, state);
-            return error("%s: AcceptBlock FAILED (%s), Bad hash: %s", __func__, state.GetDebugMessage(), pblock->GetWorkHash(GetBlockHeight(pblock->hashPrevBlock)).ToString());
+            return error("%s: AcceptBlock FAILED (%s), Bad hash: %s", __func__, state.GetDebugMessage(), pblock->GetIndexHash(GetBlockHeight(pblock->hashPrevBlock)).ToString());
         }
     }
     NotifyHeaderTip();
@@ -4266,7 +4266,7 @@ bool CChainState::LoadGenesisBlock(const CChainParams& chainparams)
     // mapBlockIndex. Note that we can't use chainActive here, since it is
     // set based on the coins db, not the block index db, which is the only
     // thing loaded at this point.
-    if (mapBlockIndex.count(chainparams.GenesisBlock().GetWorkHash(0)))
+    if (mapBlockIndex.count(chainparams.GenesisBlock().GetIndexHash(0)))
         return true;
 
     try {
@@ -4340,7 +4340,7 @@ bool LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, CDiskB
                 nRewind = blkdat.GetPos();
 
                 // detect out of order blocks, and store them for later
-                uint256 hash = block.GetWorkHash(GetBlockHeight(block));
+                uint256 hash = block.GetIndexHash(GetBlockHeight(block));
                 if (hash != chainparams.GetConsensus().hashGenesisBlock && mapBlockIndex.find(block.hashPrevBlock) == mapBlockIndex.end()) {
                     LogPrint(BCLog::REINDEX, "%s: Out of order block %s, parent %s not known\n", __func__, hash.ToString(),
                             block.hashPrevBlock.ToString());
@@ -4385,14 +4385,14 @@ bool LoadExternalBlockFile(const CChainParams& chainparams, FILE* fileIn, CDiskB
                         std::shared_ptr<CBlock> pblockrecursive = std::make_shared<CBlock>();
                         if (ReadBlockFromDisk(*pblockrecursive, it->second, chainparams.GetConsensus()))
                         {
-                            LogPrint(BCLog::REINDEX, "%s: Processing out of order child %s of %s\n", __func__, pblockrecursive->GetWorkHash(GetBlockHeight(pblockrecursive->hashPrevBlock)).ToString(),
+                            LogPrint(BCLog::REINDEX, "%s: Processing out of order child %s of %s\n", __func__, pblockrecursive->GetIndexHash(GetBlockHeight(pblockrecursive->hashPrevBlock)).ToString(),
                                     head.ToString());
                             LOCK(cs_main);
                             CValidationState dummy;
                             if (g_chainstate.AcceptBlock(pblockrecursive, dummy, chainparams, nullptr, true, &it->second, nullptr))
                             {
                                 nLoaded++;
-                                queue.push_back(pblockrecursive->GetWorkHash(GetBlockHeight(pblockrecursive->hashPrevBlock)));
+                                queue.push_back(pblockrecursive->GetIndexHash(GetBlockHeight(pblockrecursive->hashPrevBlock)));
                             }
                         }
                         range.first++;

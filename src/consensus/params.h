@@ -78,6 +78,7 @@ struct Params {
     int lwma3Height;
     int rainforestHeight;
     int rainforestHeightV2;
+    int blakeIndexing;
     int lwmaAveragingWindow;
     int64_t lwmaMaxFutureBlockTime;
     int64_t lwmaMaxFutureBlockTimeV2;

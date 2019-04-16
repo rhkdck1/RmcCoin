@@ -303,7 +303,7 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, int nHeight, const Conse
     }
 
     const arith_uint256 bnPowLimit = bnPowLimitTmp;
-    std::cout << bnPowLimit.ToString() << std::endl;
+    // std::cout << bnPowLimit.ToString() << std::endl;
     
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnPowLimit) {
         return false;

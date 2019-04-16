@@ -126,6 +126,7 @@ public:
 
         consensus.rainforestHeightV2 = 999999999;
         consensus.rainforestWarmUpWindowV2 = 100;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -271,6 +272,7 @@ public:
 
         consensus.rainforestHeightV2 = 30;
         consensus.rainforestWarmUpWindowV2 = 10;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
         pchBitcoinMessageStart[0] = 0xd2;
         pchBitcoinMessageStart[1] = 0x23;
@@ -375,6 +377,7 @@ public:
 
         consensus.rainforestHeightV2 = 999999999;
         consensus.rainforestWarmUpWindowV2 = 100;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
         pchBitcoinMessageStart[0] = 0xfa;
         pchBitcoinMessageStart[1] = 0xbf;

@@ -65,6 +65,7 @@ public:
         return (nBits == 0);
     }
 
+    uint256 GetIndexHash(int nHeight) const;
     uint256 GetWorkHash(int nHeight, int nIndex = 0) const;
     uint256 GetWorkHash(const Consensus::Params& params, int nHeight) const;
 
