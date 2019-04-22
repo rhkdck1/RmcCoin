@@ -255,7 +255,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
         
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000002e9e7b00e1f6dc5123a04aad68dd0f0968d8c7aa45f6640795c37b1"); //1135275
+        consensus.defaultAssumeValid = uint256S("0xd522fbcfc3b5204018b74ed83bacc183c26071a15edc25e89a4e6d52573c9bc9"); //1135275
 
         consensus.mbcHeight = 5;
         consensus.premineValue = 100000 * COIN * COIN_RATIO;
