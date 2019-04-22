@@ -119,7 +119,7 @@ public:
         consensus.lwma3Height = 654000;
         consensus.lwmaAveragingWindow = 90;
         consensus.lwmaMaxFutureBlockTime = 12 * 60; // 12 minutes
-        consensus.lwmaMaxFutureBlockTimeV2 = 4 * 60; // 4 minutes
+        consensus.lwmaMaxFutureBlockTimeV2 = 3 * 60; // 3 minutes
 
         consensus.rainforestHeight = 830000;
         consensus.rainforestWarmUpWindow = 100;
