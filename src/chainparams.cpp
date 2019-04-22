@@ -124,7 +124,7 @@ public:
         consensus.rainforestHeight = 830000;
         consensus.rainforestWarmUpWindow = 100;
 
-        consensus.rainforestHeightV2 = 999999999;
+        consensus.rainforestHeightV2 = 910000;
         consensus.rainforestWarmUpWindowV2 = 100;
         consensus.blakeIndexing = consensus.rainforestHeightV2;
 
