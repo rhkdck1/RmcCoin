@@ -58,11 +58,13 @@ struct Params {
     BIP9Deployment vDeployments[MAX_VERSION_BITS_DEPLOYMENTS];
     /** Proof of work parameters */
     uint256 powLimit;
-    uint256 powLimitStart;
+    uint256 powLimitMBC;
+    uint256 powLimitRFv2;
     bool fPowAllowMinDifficultyBlocks;
     bool fPowNoRetargeting;
     int64_t nWarmUpWindow;
     int64_t rainforestWarmUpWindow;
+    int64_t rainforestWarmUpWindowV2;
     int64_t nPowTargetSpacing;
     int64_t nBtcPowTargetSpacing;
     int64_t nPowTargetTimespan;
@@ -75,10 +77,11 @@ struct Params {
     int lwma2Height;
     int lwma3Height;
     int rainforestHeight;
-    int maxFutureBlockTimeHeight;
+    int rainforestHeightV2;
+    int blakeIndexing;
     int lwmaAveragingWindow;
     int64_t lwmaMaxFutureBlockTime;
-    int64_t maxFutureBlockTimeFix;
+    int64_t lwmaMaxFutureBlockTimeV2;
     std::string premineAddress;
     CAmount premineValue;
 };

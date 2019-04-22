@@ -283,7 +283,11 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sphlib/sph_groestl.cpp \
   crypto/sphlib/sph_groestl.h \
   crypto/rainforest.c \
-  crypto/rainforest.h
+  crypto/rainforest.h \
+  crypto/rfv2/rfv2_core.c \
+  crypto/rfv2/rfv2.h \
+  crypto/blake2b.c \
+  crypto/blake2b.h
 
 if EXPERIMENTAL_ASM
 crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp

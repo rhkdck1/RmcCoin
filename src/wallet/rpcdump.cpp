@@ -368,7 +368,7 @@ UniValue importprunedfunds(const JSONRPCRequest& request)
         LOCK(cs_main);
 
         // GetBlockHeight(merkleBlock.header.hashPrevBlock)
-        if (!mapBlockIndex.count(merkleBlock.header.GetWorkHash(nHeight)) || !chainActive.Contains(mapBlockIndex[merkleBlock.header.GetWorkHash(nHeight)]))
+        if (!mapBlockIndex.count(merkleBlock.header.GetIndexHash(nHeight)) || !chainActive.Contains(mapBlockIndex[merkleBlock.header.GetIndexHash(nHeight)]))
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found in chain");
 
         std::vector<uint256>::const_iterator it;
@@ -383,7 +383,7 @@ UniValue importprunedfunds(const JSONRPCRequest& request)
     }
 
     wtx.nIndex = txnIndex;
-    wtx.hashBlock = merkleBlock.header.GetWorkHash(nHeight);
+    wtx.hashBlock = merkleBlock.header.GetIndexHash(nHeight);
 
     LOCK2(cs_main, pwallet->cs_wallet);
 

@@ -81,7 +81,8 @@ public:
         consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.powLimitStart = uint256S("0000000fffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitMBC = uint256S("0000000fffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitRFv2 = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nWarmUpWindow = 4096;
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 1 * 60;
@@ -118,12 +119,14 @@ public:
         consensus.lwma3Height = 654000;
         consensus.lwmaAveragingWindow = 90;
         consensus.lwmaMaxFutureBlockTime = 12 * 60; // 12 minutes
+        consensus.lwmaMaxFutureBlockTimeV2 = 3 * 60; // 3 minutes
 
         consensus.rainforestHeight = 830000;
         consensus.rainforestWarmUpWindow = 100;
 
-        consensus.maxFutureBlockTimeHeight = 999999999;
-        consensus.maxFutureBlockTimeFix = 4 * 60; // 4 minutes
+        consensus.rainforestHeightV2 = 910000;
+        consensus.rainforestWarmUpWindowV2 = 100;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -223,7 +226,8 @@ public:
         consensus.BIP65Height = 2; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
         consensus.BIP66Height = 2; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.powLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.powLimitStart = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitMBC = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitRFv2 = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nWarmUpWindow = 10;
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 1 * 60;
@@ -261,22 +265,24 @@ public:
         consensus.lwma3Height = 15;
         consensus.lwmaAveragingWindow = 90;
         consensus.lwmaMaxFutureBlockTime = 12 * 60; // 12 minutes
+        consensus.lwmaMaxFutureBlockTimeV2 = 4 * 60; // 4 minutes
 
         consensus.rainforestHeight = 20;
-        consensus.rainforestWarmUpWindow = 100;
+        consensus.rainforestWarmUpWindow = 10;
 
-        consensus.maxFutureBlockTimeHeight = 999999999;
-        consensus.maxFutureBlockTimeFix = 4 * 60; // 4 minutes
+        consensus.rainforestHeightV2 = 30;
+        consensus.rainforestWarmUpWindowV2 = 10;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
-        pchBitcoinMessageStart[0] = 0xd1;
+        pchBitcoinMessageStart[0] = 0xd2;
         pchBitcoinMessageStart[1] = 0x23;
         pchBitcoinMessageStart[2] = 0x51;
-        pchBitcoinMessageStart[3] = 0x76;
+        pchBitcoinMessageStart[3] = 0x7b;
 
-        pchMessageStart[0] = 0xa4;
+        pchMessageStart[0] = 0xa2;
         pchMessageStart[1] = 0x09;
         pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[3] = 0xdb;
 
         nDefaultPort = 16403;
         nPruneAfterHeight = 1000;
@@ -330,7 +336,8 @@ public:
         consensus.BIP65Height = 1351; // BIP65 activated on regtest (Used in rpc activation tests)
         consensus.BIP66Height = 1251; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.powLimitStart = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitMBC = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimitRFv2 = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nWarmUpWindow = 1024;
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 2.5 * 60;
@@ -363,12 +370,14 @@ public:
         consensus.lwma3Height = 999999999;
         consensus.lwmaAveragingWindow = 90;
         consensus.lwmaMaxFutureBlockTime = 12 * 60; // 12 minutes
+        consensus.lwmaMaxFutureBlockTimeV2 = 4 * 60; // 4 minutes
 
         consensus.rainforestHeight = 999999999;
         consensus.rainforestWarmUpWindow = 100;
 
-        consensus.maxFutureBlockTimeHeight = 999999999;
-        consensus.maxFutureBlockTimeFix = 4 * 60; // 4 minutes
+        consensus.rainforestHeightV2 = 999999999;
+        consensus.rainforestWarmUpWindowV2 = 100;
+        consensus.blakeIndexing = consensus.rainforestHeightV2;
 
         pchBitcoinMessageStart[0] = 0xfa;
         pchBitcoinMessageStart[1] = 0xbf;

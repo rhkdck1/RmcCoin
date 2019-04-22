@@ -104,7 +104,7 @@ BOOST_AUTO_TEST_CASE(SimpleRoundTripTest)
 
         CBlock block3;
         BOOST_CHECK(partialBlock.FillBlock(block3, {block.vtx[1]}) == READ_STATUS_OK);
-        BOOST_CHECK_EQUAL(block.GetWorkHash(1).ToString(), block3.GetWorkHash(1).ToString());
+        BOOST_CHECK_EQUAL(block.GetIndexHash(1).ToString(), block3.GetIndexHash(1).ToString());
         BOOST_CHECK_EQUAL(block.hashMerkleRoot.ToString(), BlockMerkleRoot(block3, &mutated).ToString());
         BOOST_CHECK(!mutated);
     }
@@ -207,7 +207,7 @@ BOOST_AUTO_TEST_CASE(NonCoinbasePreforwardRTTest)
         CBlock block3;
         PartiallyDownloadedBlock partialBlockCopy = partialBlock;
         BOOST_CHECK(partialBlock.FillBlock(block3, {block.vtx[0]}) == READ_STATUS_OK);
-        BOOST_CHECK_EQUAL(block.GetWorkHash(1).ToString(), block3.GetWorkHash(1).ToString());
+        BOOST_CHECK_EQUAL(block.GetIndexHash(1).ToString(), block3.GetIndexHash(1).ToString());
         BOOST_CHECK_EQUAL(block.hashMerkleRoot.ToString(), BlockMerkleRoot(block3, &mutated).ToString());
         BOOST_CHECK(!mutated);
 
@@ -257,7 +257,7 @@ BOOST_AUTO_TEST_CASE(SufficientPreforwardRTTest)
         CBlock block2;
         PartiallyDownloadedBlock partialBlockCopy = partialBlock;
         BOOST_CHECK(partialBlock.FillBlock(block2, {}) == READ_STATUS_OK);
-        BOOST_CHECK_EQUAL(block.GetWorkHash(1).ToString(), block2.GetWorkHash(1).ToString());
+        BOOST_CHECK_EQUAL(block.GetIndexHash(1).ToString(), block2.GetIndexHash(1).ToString());
         bool mutated;
         BOOST_CHECK_EQUAL(block.hashMerkleRoot.ToString(), BlockMerkleRoot(block2, &mutated).ToString());
         BOOST_CHECK(!mutated);
@@ -308,7 +308,7 @@ BOOST_AUTO_TEST_CASE(EmptyBlockRoundTripTest)
         CBlock block2;
         std::vector<CTransactionRef> vtx_missing;
         BOOST_CHECK(partialBlock.FillBlock(block2, vtx_missing) == READ_STATUS_OK);
-        BOOST_CHECK_EQUAL(block.GetWorkHash(1).ToString(), block2.GetWorkHash(1).ToString());
+        BOOST_CHECK_EQUAL(block.GetIndexHash(1).ToString(), block2.GetIndexHash(1).ToString());
         BOOST_CHECK_EQUAL(block.hashMerkleRoot.ToString(), BlockMerkleRoot(block2, &mutated).ToString());
         BOOST_CHECK(!mutated);
     }

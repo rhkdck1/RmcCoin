@@ -15,12 +15,22 @@
 #include <chainparams.h>
 #include <microbitcoin.h>
 
-/*
- * All magic is happening here :D
- */
+uint256 CBlockHeader::GetIndexHash(int nHeight) const
+{
+    // Activate blake2b indexing
+    const Consensus::Params& consensusParams = Params().GetConsensus();
+    if (nHeight >= consensusParams.blakeIndexing) {
+        return Blake2b(BEGIN(nVersion), END(nNonce));
+    } else {
+        return GetWorkHash(consensusParams, nHeight);
+    }
+}
+
 uint256 CBlockHeader::GetWorkHash(const Consensus::Params& consensusParams, int nHeight) const
 {
-    if (nHeight >= consensusParams.rainforestHeight) {
+    if (nHeight >= consensusParams.rainforestHeightV2) {
+        return RainforestV2(BEGIN(nVersion), END(nNonce));
+    } else if (nHeight >= consensusParams.rainforestHeight && nHeight < consensusParams.rainforestHeightV2) {
         return Rainforest(BEGIN(nVersion), END(nNonce));
     } else if (nHeight > consensusParams.mbcHeight && nHeight < consensusParams.rainforestHeight) {
         return Groestl(BEGIN(nVersion), END(nNonce));
@@ -40,7 +50,7 @@ std::string CBlock::ToString(int nHeight) const
 {
     std::stringstream s;
     s << strprintf("CBlock(hash=%s, ver=0x%08x, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
-        GetWorkHash(nHeight).ToString(),
+        GetIndexHash(nHeight).ToString(),
         nVersion,
         hashPrevBlock.ToString(),
         hashMerkleRoot.ToString(),

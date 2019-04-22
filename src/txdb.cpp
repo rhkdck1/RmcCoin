@@ -288,9 +288,12 @@ bool CBlockTreeDB::LoadBlockIndexGuts(const Consensus::Params& consensusParams, 
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                uint256 hash = pindexNew->GetBlockWorkHash(pindexNew->nHeight);
-                if (!CheckProofOfWork(hash, pindexNew->nBits, pindexNew->nHeight, consensusParams)) {
-                    return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
+                // Disable after block indexing is enabled
+                if (pindexNew->nHeight < consensusParams.blakeIndexing) {
+                    uint256 hash = pindexNew->GetBlockWorkHash(pindexNew->nHeight);
+                    if (!CheckProofOfWork(hash, pindexNew->nBits, pindexNew->nHeight, consensusParams)) {
+                        return error("%s: CheckProofOfWork failed: %s", __func__, pindexNew->ToString());
+                    }
                 }
 
                 pcursor->Next();

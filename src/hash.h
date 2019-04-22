@@ -21,6 +21,8 @@
 
 extern "C" {
 #include <crypto/sphlib/sph_groestl.h>
+#include <crypto/rfv2/rfv2.h>
+#include <crypto/blake2b.h>
 } // "C"
 
 typedef uint256 ChainCode;
@@ -251,7 +253,7 @@ public:
 uint64_t SipHashUint256(uint64_t k0, uint64_t k1, const uint256& val);
 uint64_t SipHashUint256Extra(uint64_t k0, uint64_t k1, const uint256& val, uint32_t extra);
 
-/** Groestl hash implementation */
+/** Groestl hash wrapper */
 template <typename T1>
 inline uint256 Groestl(const T1 pbegin, const T1 pend)
 {
@@ -272,6 +274,26 @@ inline uint256 Groestl(const T1 pbegin, const T1 pend)
     return hash[1];
 }
 
+/** Blake2b hash wrapper */
+template <typename T>
+inline uint256 Blake2b(const T* pbegin, const T* pend)
+{
+    static T pblank[1];
+
+    blake2b_ctx ctx;
+
+    uint256 hash;
+
+    const void* block = pbegin == pend ? pblank : pbegin;
+    size_t      length  = (pend - pbegin) * sizeof(T);
+
+    blake2b_init(&ctx, 32, NULL, 0);
+    blake2b_update(&ctx, block, length);
+    blake2b_final(&ctx, hash.begin());
+
+    return hash;
+}
+
 /** Rainforest hash wrapper */
 template <typename T>
 inline uint256 Rainforest(const T* pbegin, const T* pend)
@@ -284,6 +306,22 @@ inline uint256 Rainforest(const T* pbegin, const T* pend)
     size_t      length  = (pend - pbegin) * sizeof(T);
 
     rf256_hash(block, hash.begin(), length);
+
+    return hash;
+}
+
+/** Rainforest v2 hash wrapper */
+template <typename T>
+inline uint256 RainforestV2(const T* pbegin, const T* pend)
+{
+    static T pblank[1];
+
+    uint256 hash;
+
+    const void* block = pbegin == pend ? pblank : pbegin;
+    size_t      length  = (pend - pbegin) * sizeof(T);
+
+    rfv2_hash(hash.begin(), block, length, NULL, NULL);
 
     return hash;
 }

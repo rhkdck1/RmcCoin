@@ -424,7 +424,7 @@ public:
         block.nBits           = nBits;
         block.nNonce          = nNonce;
 
-        return block.GetWorkHash(nHeight);
+        return block.GetIndexHash(nHeight);
     }
 
 
