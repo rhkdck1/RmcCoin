@@ -427,6 +427,18 @@ public:
         return block.GetIndexHash(nHeight);
     }
 
+    uint256 GetBlockWorkHash() const
+    {
+        CBlockHeader block;
+        block.nVersion        = nVersion;
+        block.hashPrevBlock   = hashPrev;
+        block.hashMerkleRoot  = hashMerkleRoot;
+        block.nTime           = nTime;
+        block.nBits           = nBits;
+        block.nNonce          = nNonce;
+
+        return block.GetWorkHash(nHeight);
+    }
 
     std::string ToString() const
     {
