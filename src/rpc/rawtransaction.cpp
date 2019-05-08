@@ -324,7 +324,8 @@ UniValue gettxoutproof(const JSONRPCRequest& request)
     }
 
     CBlock block;
-    if(!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus()))
+    bool fCheckPoW = gArgs.GetBoolArg("-rpcdisablepowcheck", true);
+    if(!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus(), fCheckPoW))
         throw JSONRPCError(RPC_INTERNAL_ERROR, "Can't read block from disk");
 
     unsigned int ntxFound = 0;

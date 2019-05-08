@@ -765,7 +765,8 @@ UniValue getblock(const JSONRPCRequest& request)
     if (fHavePruned && !(pblockindex->nStatus & BLOCK_HAVE_DATA) && pblockindex->nTx > 0)
         throw JSONRPCError(RPC_MISC_ERROR, "Block not available (pruned data)");
 
-    if (!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus()))
+    bool fCheckPoW = gArgs.GetBoolArg("-rpcdisablepowcheck", true);
+    if (!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus(), fCheckPoW))
         // Block not found on disk. This could be because we have the block
         // header in our index but don't have the block (for example if a
         // non-whitelisted node sends us an unrequested long chain of valid

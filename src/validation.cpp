@@ -1080,7 +1080,7 @@ static bool WriteBlockToDisk(const CBlock& block, CDiskBlockPos& pos, const CMes
     return true;
 }
 
-bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus::Params& consensusParams)
+bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus::Params& consensusParams, bool fCheckPOW)
 {
     block.SetNull();
 
@@ -1099,21 +1099,21 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus:
 
     // Check the header
     int nHeight = GetBlockHeight(block);
-    if (!CheckProofOfWork(block.GetWorkHash(nHeight), block.nBits, nHeight, consensusParams)) {
+    if (fCheckPOW && !CheckProofOfWork(block.GetWorkHash(nHeight), block.nBits, nHeight, consensusParams)) {
         return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
     }
 
     return true;
 }
 
-bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus::Params& consensusParams)
+bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus::Params& consensusParams, bool fCheckPOW)
 {
     CDiskBlockPos blockPos;
     {
         LOCK(cs_main);
         blockPos = pindex->GetBlockPos();
     }
-    if (!ReadBlockFromDisk(block, blockPos, consensusParams)) {
+    if (!ReadBlockFromDisk(block, blockPos, consensusParams, fCheckPOW)) {
         return false;
     }
 
