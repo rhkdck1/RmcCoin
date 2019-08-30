@@ -145,6 +145,8 @@ typedef CBitcoinExtKeyBase<CExtPubKey, BIP32_EXTKEY_SIZE, CChainParams::EXT_PUBL
 std::string EncodeDestination(const CTxDestination& dest);
 CTxDestination DecodeDestination(const std::string& str);
 bool IsValidDestinationString(const std::string& str);
-bool IsValidDestinationString(const std::string& str, const CChainParams& params); 
+bool IsValidDestinationString(const std::string& str, const CChainParams& params);
+
+bool DecodeIndexKey(const std::string& str, uint160& hashBytes, int& type);
 
 #endif // BITCOIN_BASE58_H
