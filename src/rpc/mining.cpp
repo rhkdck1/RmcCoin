@@ -589,6 +589,11 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
 
     UniValue aRules(UniValue::VARR);
     UniValue vbavailable(UniValue::VOBJ);
+
+    if (Params().GetConsensus().nSegwitEnabled) {
+        aRules.push_back("segwit");
+    }
+
     for (int j = 0; j < (int)Consensus::MAX_VERSION_BITS_DEPLOYMENTS; ++j) {
         Consensus::DeploymentPos pos = Consensus::DeploymentPos(j);
         ThresholdState state = VersionBitsState(pindexPrev, consensusParams, pos, versionbitscache);
