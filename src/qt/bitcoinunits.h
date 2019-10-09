@@ -57,8 +57,6 @@ public:
     enum Unit
     {
         BTC,
-        mBTC,
-        uBTC,
         SAT
     };
 
