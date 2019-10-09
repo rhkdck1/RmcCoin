@@ -113,7 +113,7 @@ public:
         consensus.nBIP66Enabled = true;
         consensus.nSegwitEnabled = true;
         consensus.nCSVEnabled = true;
-        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit = uint256S("003fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetSpacing = 1 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -141,29 +141,30 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf0;
-        pchMessageStart[1] = 0xf0;
-        pchMessageStart[2] = 0xf0;
-        pchMessageStart[3] = 0xf0;
+        pchMessageStart[0] = 0x73;
+        pchMessageStart[1] = 0x6d;
+        pchMessageStart[2] = 0x62;
+        pchMessageStart[3] = 0x63;
         nDefaultPort = 6502;
         nPruneAfterHeight = 100000;
 
-        const char* pszTimestamp = "The WSJ 10/Sep/2019 There’s Too Much Negativity About Negative Rates";
+        const char* pszTimestamp = "The WSJ 09/Oct/2019 Nobel Prize in Chemistry Awarded to Developers of Lithium-Ion Batteries";
         std::vector<SnapshotProvider> providers = {
-            {"sman.pw", "/snapshot/regtest.csv", 80}
+            {"sman.pw", "/snapshot/mainnet.csv", 80}
         };
 
-        vSnapshot = InitSnapshot("regtest.csv", providers);
-        genesis = CreateGenesisBlock(1568014965, 5474780, 0x1e00ffff, 1, 900 * COIN, pszTimestamp, vSnapshot);
+        vSnapshot = InitSnapshot("mainnet.csv", providers);
+        genesis = CreateGenesisBlock(1570625829, 709, 0x1f3fffff, 1, consensus.baseReward, pszTimestamp, vSnapshot);
 
         consensus.hashGenesisBlock = genesis.GetIndexHash();
         consensus.hashGenesisBlockWork = genesis.GetWorkHash();
 
-        // assert(consensus.hashGenesisBlock == uint256S("0x04f86d68555218cfbbc3d3ce974ff7839a66979a30b3eb2d35b36f8acf47d149"));
-        // assert(genesis.hashMerkleRoot == uint256S("ae66166dd4fac1119b39702e1639b72a2fe0e6620dd19a1d4f2ff1c350550205"));
+        assert(consensus.hashGenesisBlock == uint256S("0x14c03ecf20edc9887fb98bf34b53809f063fc491e73f588961f764fac88ecbae"));
+        assert(consensus.hashGenesisBlockWork == uint256S("0x001cb6047ddf13074c4bce354ed3cf0cdd96a4287aa562b032eb81d03e183da8"));
+        assert(genesis.hashMerkleRoot == uint256S("0x3426ccad3017e14a4ab6efddaa44cb31beca67a86c82f63de18705f1b6de88df"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,26);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,51);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
@@ -241,7 +242,7 @@ public:
         };
 
         vSnapshot = InitSnapshot("testnet.csv", providers);
-        genesis = CreateGenesisBlock(1568015489, 135893, 0x1f3fffff, 1, 5500 * COIN, pszTimestamp, vSnapshot);
+        genesis = CreateGenesisBlock(1568015489, 135893, 0x1f3fffff, 1, consensus.baseReward, pszTimestamp, vSnapshot);
 
         consensus.hashGenesisBlock = genesis.GetIndexHash();
         consensus.hashGenesisBlockWork = genesis.GetWorkHash();
