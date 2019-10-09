@@ -189,8 +189,8 @@ public:
             0
         };
 
-        /* disable fallback fee on mainnet */
-        m_fallback_fee_enabled = false;
+        /* enable fallback fee on mainnet */
+        m_fallback_fee_enabled = true;
     }
 };
 
