@@ -123,44 +123,6 @@ static bool getAddressesFromParams(const UniValue& params, std::vector<std::pair
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
     }
 
-    // if (params[0].isStr()) {
-    //     // printf("\n\nHUI\n");
-    //     CTxDestination dest = DecodeDestination(params[0].get_str());
-
-    //     // CScript scriptPubKey = GetScriptForDestination(dest);
-
-    //     // if (scriptPubKey.IsPayToWitnessPubkeyHash()) { printf("\n\nHUI 1\n"); }
-    //     // if (scriptPubKey.IsPayToScriptHash()) { printf("\n\nHUI 2\n"); }
-    //     // if (scriptPubKey.IsPayToPublicKeyHash()) { printf("\n\nHUI 3\n"); }
-    //     // if (scriptPubKey.IsPayToWitnessScriptHash()) { printf("\n\nHUI 4\n"); }
-
-    //     // throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
-
-    //     uint160 hashBytes = GetHashForDestination(dest);
-    //     uint16_t hashType = dest.which();
-    //     if (hashType == 0)
-    //         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
-    //     addresses.push_back(std::make_pair(hashBytes, 1));
-    // } else if (params[0].isObject()) {
-
-    //     UniValue addressValues = find_value(params[0].get_obj(), "addresses");
-    //     if (!addressValues.isArray()) {
-    //         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Addresses is expected to be an array");
-    //     }
-
-    //     std::vector<UniValue> values = addressValues.getValues();
-    //     for (std::vector<UniValue>::iterator it = values.begin(); it != values.end(); ++it) {
-    //         CTxDestination dest = DecodeDestination(it->get_str());
-    //         uint160 hashBytes = GetHashForDestination(dest);
-    //         uint16_t hashType = dest.which();
-    //         if (hashType == 0)
-    //             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
-    //         addresses.push_back(std::make_pair(hashBytes, hashType));
-    //     }
-    // } else {
-    //     throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
-    // }
-
     return true;
 }
 
@@ -372,7 +334,7 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
 
 UniValue getaddressutxos(const JSONRPCRequest& request)
 {
-    if (request.fHelp || request.params.size() != 1)
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3)
         throw std::runtime_error(
             "getaddressutxos\n"
             "\nReturns all unspent outputs for an address (requires addressindex to be enabled).\n"
@@ -401,12 +363,14 @@ UniValue getaddressutxos(const JSONRPCRequest& request)
             + HelpExampleRpc("getaddressutxos", "{\"addresses\": [\"12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX\"]}")
             );
 
+    CAmount requiredAmount = 0;
+    if (!request.params[1].isNull()) {
+        requiredAmount = AmountFromValue(request.params[1]);
+    }
+
     bool includeChainInfo = false;
-    if (request.params[0].isObject()) {
-        UniValue chainInfo = find_value(request.params[0].get_obj(), "chainInfo");
-        if (chainInfo.isBool()) {
-            includeChainInfo = chainInfo.get_bool();
-        }
+    if (!request.params[2].isNull()) {
+        includeChainInfo = request.params[2].get_bool();
     }
 
     std::vector<std::pair<uint160, int> > addresses;
@@ -426,8 +390,12 @@ UniValue getaddressutxos(const JSONRPCRequest& request)
     std::sort(unspentOutputs.begin(), unspentOutputs.end(), heightSort);
 
     UniValue utxos(UniValue::VARR);
-
+    CAmount total = 0;
     for (std::vector<std::pair<CAddressUnspentKey, CAddressUnspentValue> >::const_iterator it=unspentOutputs.begin(); it!=unspentOutputs.end(); it++) {
+        if (requiredAmount > 0 && total >= requiredAmount) {
+            break;
+        }
+
         UniValue output(UniValue::VOBJ);
         std::string address;
         if (!getAddressFromIndex(it->first.type, it->first.hashBytes, address)) {
@@ -440,7 +408,10 @@ UniValue getaddressutxos(const JSONRPCRequest& request)
         output.pushKV("script", HexStr(it->second.script.begin(), it->second.script.end()));
         output.pushKV("satoshis", it->second.satoshis);
         output.pushKV("height", it->second.blockHeight);
+
         utxos.push_back(output);
+
+        total += it->second.satoshis;
     }
 
     if (includeChainInfo) {
@@ -681,14 +652,14 @@ UniValue getaddresstxids(const JSONRPCRequest& request)
 
     int start = 0;
     int end = 0;
-    if (request.params[0].isObject()) {
-        UniValue startValue = find_value(request.params[0].get_obj(), "start");
-        UniValue endValue = find_value(request.params[0].get_obj(), "end");
-        if (startValue.isNum() && endValue.isNum()) {
-            start = startValue.get_int();
-            end = endValue.get_int();
-        }
-    }
+    // if (request.params[0].isObject()) {
+    //     UniValue startValue = find_value(request.params[0].get_obj(), "start");
+    //     UniValue endValue = find_value(request.params[0].get_obj(), "end");
+    //     if (startValue.isNum() && endValue.isNum()) {
+    //         start = startValue.get_int();
+    //         end = endValue.get_int();
+    //     }
+    // }
 
     std::vector<std::pair<CAddressIndexKey, CAmount> > addressIndex;
 
@@ -1126,11 +1097,11 @@ static const CRPCCommand commands[] =
     { "hidden",             "echojson",               &echo,                   {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
     { "hidden",             "getinfo",                &getinfo_deprecated,     {}},
 
-    { "util",               "getaddresstxids",        &getaddresstxids,        {"addresses"} },
-    { "util",               "getaddressdeltas",       &getaddressdeltas,       {"addresses"} },
-    { "util",               "getaddressbalance",      &getaddressbalance,      {"addresses"} },
-    { "util",               "getaddressutxos",        &getaddressutxos,        {"addresses"} },
-    { "util",               "getaddressmempool",      &getaddressmempool,      {"addresses"} },
+    { "util",               "getaddresstxids",        &getaddresstxids,        {"address"} },
+    { "util",               "getaddressdeltas",       &getaddressdeltas,       {"address"} },
+    { "util",               "getaddressbalance",      &getaddressbalance,      {"address"} },
+    { "util",               "getaddressutxos",        &getaddressutxos,        {"address"} },
+    { "util",               "getaddressmempool",      &getaddressmempool,      {"address"} },
     { "util",               "getblockhashes",         &getblockhashes,         {"high","low","options"} },
     { "util",               "getspentinfo",           &getspentinfo,           {"argument"} },
 };

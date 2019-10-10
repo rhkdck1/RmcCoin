@@ -173,6 +173,8 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "createwallet", 1, "disable_private_keys"},
     { "setgenerate", 0, "generate" },
     { "setgenerate", 1, "genproclimit" },
+    { "getaddressutxos", 1, "amount" },
+    { "getaddressutxos", 2, "includechaininfo" },
 };
 
 class CRPCConvertTable
