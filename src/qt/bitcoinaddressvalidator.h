@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_BITCOINADDRESSVALIDATOR_H
-#define MICRO_QT_BITCOINADDRESSVALIDATOR_H
+#ifndef MICRO_QT_MICROADDRESSVALIDATOR_H
+#define MICRO_QT_MICROADDRESSVALIDATOR_H
 
 #include <QValidator>
 
@@ -32,4 +32,4 @@ public:
     State validate(QString &input, int &pos) const;
 };
 
-#endif // MICRO_QT_BITCOINADDRESSVALIDATOR_H
+#endif // MICRO_QT_MICROADDRESSVALIDATOR_H

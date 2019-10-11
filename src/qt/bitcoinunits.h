@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_BITCOINUNITS_H
-#define MICRO_QT_BITCOINUNITS_H
+#ifndef MICRO_QT_MICROUNITS_H
+#define MICRO_QT_MICROUNITS_H
 
 #include <amount.h>
 
@@ -56,7 +56,7 @@ public:
      */
     enum Unit
     {
-        BTC,
+        MBC,
         SAT
     };
 
@@ -126,4 +126,4 @@ private:
 };
 typedef BitcoinUnits::Unit BitcoinUnit;
 
-#endif // MICRO_QT_BITCOINUNITS_H
+#endif // MICRO_QT_MICROUNITS_H

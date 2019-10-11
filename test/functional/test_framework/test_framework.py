@@ -138,7 +138,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         config = configparser.ConfigParser()
         config.read_file(open(self.options.configfile))
         self.options.microd = os.getenv("MICROD", default=config["environment"]["BUILDDIR"] + '/src/microd' + config["environment"]["EXEEXT"])
-        self.options.bitcoincli = os.getenv("BITCOINCLI", default=config["environment"]["BUILDDIR"] + '/src/micro-cli' + config["environment"]["EXEEXT"])
+        self.options.bitcoincli = os.getenv("MICROCLI", default=config["environment"]["BUILDDIR"] + '/src/micro-cli' + config["environment"]["EXEEXT"])
 
         os.environ['PATH'] = os.pathsep.join([
             os.path.join(config['environment']['BUILDDIR'], 'src'),

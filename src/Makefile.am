@@ -30,14 +30,14 @@ LIBMICRO_CONSENSUS=libbitcoin_consensus.a
 LIBMICRO_CLI=libmicro_cli.a
 LIBMICRO_UTIL=libbitcoin_util.a
 LIBMICRO_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
-LIBBITCOINQT=qt/libbitcoinqt.a
+LIBMICROQT=qt/libbitcoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
 LIBMICRO_ZMQ=libbitcoin_zmq.a
 endif
 if BUILD_MICRO_LIBS
-LIBBITCOINCONSENSUS=libbitcoinconsensus.la
+LIBMICROCONSENSUS=libbitcoinconsensus.la
 endif
 if ENABLE_WALLET
 LIBMICRO_WALLET=libbitcoin_wallet.a
@@ -72,7 +72,7 @@ EXTRA_LIBRARIES += \
   $(LIBMICRO_WALLET) \
   $(LIBMICRO_ZMQ)
 
-lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
+lib_LTLIBRARIES = $(LIBMICROCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =

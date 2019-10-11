@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_BITCOINCONSENSUS_H
-#define MICRO_SCRIPT_BITCOINCONSENSUS_H
+#ifndef MICRO_SCRIPT_MICROCONSENSUS_H
+#define MICRO_SCRIPT_MICROCONSENSUS_H
 
 #include <stdint.h>
 
@@ -21,7 +21,7 @@
   #elif defined(HAVE_FUNC_ATTRIBUTE_VISIBILITY)
     #define EXPORT_SYMBOL __attribute__ ((visibility ("default")))
   #endif
-#elif defined(MSC_VER) && !defined(STATIC_LIBBITCOINCONSENSUS)
+#elif defined(MSC_VER) && !defined(STATIC_LIBMICROCONSENSUS)
   #define EXPORT_SYMBOL __declspec(dllimport)
 #endif
 
@@ -33,7 +33,7 @@
 extern "C" {
 #endif
 
-#define BITCOINCONSENSUS_API_VER 1
+#define MICROCONSENSUS_API_VER 1
 
 typedef enum bitcoinconsensus_error_t
 {
@@ -80,4 +80,4 @@ EXPORT_SYMBOL unsigned int bitcoinconsensus_version();
 
 #undef EXPORT_SYMBOL
 
-#endif // MICRO_SCRIPT_BITCOINCONSENSUS_H
+#endif // MICRO_SCRIPT_MICROCONSENSUS_H

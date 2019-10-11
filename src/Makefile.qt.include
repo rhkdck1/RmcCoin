@@ -444,7 +444,7 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 CLEANFILES += $(CLEAN_QT)
 
 micro_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_micro_qt_OBJECTS) qt/micro-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_micro_qt_OBJECTS) qt/micro-qt$(EXEEXT) $(LIBMICROQT)
 
 micro_qt : qt/micro-qt$(EXEEXT)
 

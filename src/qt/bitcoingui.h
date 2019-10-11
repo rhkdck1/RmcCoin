@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_BITCOINGUI_H
-#define MICRO_QT_BITCOINGUI_H
+#ifndef MICRO_QT_MICROGUI_H
+#define MICRO_QT_MICROGUI_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/micro-config.h>
@@ -301,4 +301,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // MICRO_QT_BITCOINGUI_H
+#endif // MICRO_QT_MICROGUI_H

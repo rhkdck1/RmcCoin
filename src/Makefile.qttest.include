@@ -55,7 +55,7 @@ endif
 
 nodist_qt_test_test_micro_qt_SOURCES = $(TEST_QT_MOC_CPP)
 
-qt_test_test_micro_qt_LDADD = $(LIBBITCOINQT) $(LIBMICRO_SERVER)
+qt_test_test_micro_qt_LDADD = $(LIBMICROQT) $(LIBMICRO_SERVER)
 if ENABLE_WALLET
 qt_test_test_micro_qt_LDADD += $(LIBMICRO_UTIL) $(LIBMICRO_WALLET)
 endif
