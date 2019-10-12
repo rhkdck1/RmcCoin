@@ -50,9 +50,9 @@ bool FetchSnapshot(fs::path &path, SnapshotProvider provider) {
     auto result = client.Get(provider.path.c_str());
     if (result && result->status == 200) {
         std::cout << TimestampStr() << "Shapshot: Successfully fetched snapshot file" << std::endl;
-        std::ofstream snapshot_file(path.native());
-        snapshot_file << result->body;
-        snapshot_file.close();
+        FILE *snapshot_file = fsbridge::fopen(path, "w");
+        fwrite(result->body.data(), 1, result->body.size(), snapshot_file);
+        fclose(snapshot_file);
         return true;
     } else {
         std::cout << TimestampStr() << "Shapshot: Failed to fetch snapshot file from the server" << std::endl;

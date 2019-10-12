@@ -121,8 +121,9 @@ typedef SOCKET socket_t;
 #include <unistd.h>
 
 typedef int socket_t;
-#define HTTP_INVALID_SOCKET (-1)
 #endif //_WIN32
+
+#define HTTP_INVALID_SOCKET (-1)
 
 #include <assert.h>
 #include <atomic>
