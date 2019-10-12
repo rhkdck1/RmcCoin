@@ -81,7 +81,7 @@ src/qt/micro-qt.includes
 *.qm
 Makefile
 micro-qt
-Bitcoin-Qt.app
+Micro-Qt.app
 background.tiff*
 
 # Unit-tests

@@ -242,8 +242,8 @@ RES_ICONS = \
   qt/res/icons/address-book.png \
   qt/res/icons/about.png \
   qt/res/icons/about_qt.png \
-  qt/res/icons/microbitcoin.ico \
-  qt/res/icons/microtestnet.ico \
+  qt/res/icons/mainnet.ico \
+  qt/res/icons/testnet.ico \
   qt/res/icons/splash.png \
   qt/res/icons/icon.png \
   qt/res/icons/chevron.png \
