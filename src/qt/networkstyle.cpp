@@ -28,6 +28,7 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
 {
     // load pixmap
     QPixmap pixmap(":/icons/splash");
+    QPixmap pixmapIcon(":/icons/icon");
 
     if(iconColorHueShift != 0 && iconColorSaturationReduction != 0)
     {
@@ -71,8 +72,9 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
         pixmap.convertFromImage(img);
     }
 
-    appIcon             = QIcon(pixmap);
-    trayAndWindowIcon   = QIcon(pixmap.scaled(QSize(256,256)));
+    appIcon             = QIcon(pixmapIcon);
+    appSplash           = QIcon(pixmap);
+    trayAndWindowIcon   = QIcon(pixmapIcon.scaled(QSize(256,256)));
 }
 
 const NetworkStyle *NetworkStyle::instantiate(const QString &networkId)
