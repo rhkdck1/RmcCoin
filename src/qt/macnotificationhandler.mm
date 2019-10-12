@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.bitcoinfoundation.Micro-Qt";
+        return @"org.microbitcoin.Micro-Qt";
     } else {
         return [self __bundleIdentifier];
     }
