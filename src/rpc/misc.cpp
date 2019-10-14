@@ -313,6 +313,7 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
 
     CAmount balance = 0;
     CAmount received = 0;
+    CAmount locked = 0;
 
     for (std::vector<std::pair<CAddressIndexKey, CAmount> >::const_iterator it=addressIndex.begin(); it!=addressIndex.end(); it++) {
         if (it->second > 0) {
@@ -324,6 +325,7 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
     UniValue result(UniValue::VOBJ);
     result.pushKV("balance", balance);
     result.pushKV("received", received);
+    result.pushKV("locked", locked);
 
     return result;
 }
