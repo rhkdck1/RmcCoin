@@ -313,21 +313,17 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
 
     CAmount balance = 0;
     CAmount received = 0;
-    CAmount immature = 0;
 
     for (std::vector<std::pair<CAddressIndexKey, CAmount> >::const_iterator it=addressIndex.begin(); it!=addressIndex.end(); it++) {
         if (it->second > 0) {
             received += it->second;
         }
         balance += it->second;
-        if (it->first.txindex == 1 && ((chainActive.Height() - it->first.blockHeight) < COINBASE_MATURITY))
-            immature += it->second; //immature stake outputs
     }
 
     UniValue result(UniValue::VOBJ);
     result.pushKV("balance", balance);
     result.pushKV("received", received);
-    result.pushKV("immature", immature);
 
     return result;
 }
