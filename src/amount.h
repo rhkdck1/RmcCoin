@@ -24,7 +24,7 @@ static const CAmount CENT = 1000000 / COIN_RATIO;
  * critical; in unusual circumstances like a(nother) overflow bug that allowed
  * for the creation of coins out of thin air modification could lead to a fork.
  * */
-static const CAmount MAX_MONEY = 62000000000 * COIN * COIN_RATIO;
+static const CAmount MAX_MONEY = 61000000000 * COIN * COIN_RATIO;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 #endif //  MICRO_AMOUNT_H
