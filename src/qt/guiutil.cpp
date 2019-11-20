@@ -114,7 +114,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setFont(fixedPitchFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a MicroBitcoin address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a RomanceCoin address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -122,8 +122,8 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no microbitcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("microbitcoin"))
+    // return if URI is not valid or is no romancecoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("romancecoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -159,7 +159,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!BitcoinUnits::parse(BitcoinUnits::MBC, i->second, &rv.amount))
+                if(!BitcoinUnits::parse(BitcoinUnits::RMC, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -185,12 +185,12 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("microbitcoin:%1").arg(info.address);
+    QString ret = QString("romancecoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::MBC, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::RMC, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 

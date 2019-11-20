@@ -32,7 +32,7 @@ Tests.
 
 ### bitcoingui.(h/cpp)
 
-Represents the main window of the MicroBitcoin UI.
+Represents the main window of the RomanceCoin UI.
 
 ### \*model.(h/cpp)
 
@@ -50,7 +50,7 @@ Various dialogs, e.g. to open a URL. Inherit from [QDialog](https://doc.qt.io/qt
 
 ### paymentserver.(h/cpp)
 
-Used to process BIP21 and BIP70 (see https://github.com/bitcoin/bitcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a microbitcoin:... link from a browser).
+Used to process BIP21 and BIP70 (see https://github.com/bitcoin/bitcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a romancecoin:... link from a browser).
 
 ### walletview.(h/cpp)
 
@@ -60,7 +60,7 @@ Represents the view to a single wallet.
 
 * UI elements like BitcoinAmountField, which inherit from QWidget.
 * `bitcoinstrings.cpp`: automatically generated
-* `bitcoinunits.(h/cpp)`: MBC / mMBC / etc handling
+* `bitcoinunits.(h/cpp)`: RMC / mRMC / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions

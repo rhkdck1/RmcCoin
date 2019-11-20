@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Потпиши &amp;порака...</translation>
@@ -138,7 +138,7 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
+        <source>Send coins to a RomanceCoin address</source>
         <translation>Испрати биткоини на Биткоин адреса</translation>
     </message>
     <message>
@@ -146,7 +146,7 @@
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
+        <source>RomanceCoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -299,7 +299,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>MicroBitcoin</source>
+        <source>RomanceCoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -588,9 +588,9 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
+        <source>RomanceCoin Core</source>
         <translation>Биткоин Core</translation>
     </message>
     <message>

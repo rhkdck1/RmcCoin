@@ -68,7 +68,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Asinar mensaxe...</translation>
@@ -134,8 +134,8 @@
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Enviar moedas a unha dirección MicroBitcoin</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Enviar moedas a unha dirección RomanceCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -158,8 +158,8 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -186,12 +186,12 @@
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your MicroBitcoin addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións MicroBitcoin para probar que te pertencen</translation>
+        <source>Sign messages with your RomanceCoin addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións RomanceCoin para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MicroBitcoin addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións MicroBitcoin dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified RomanceCoin addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións RomanceCoin dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -210,8 +210,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and micromicrobitcoin: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e micromicrobitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e microromancecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -222,8 +222,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a micromicrobitcoin: URI or payment request</source>
-        <translation>Abrir un micromicrobitcoin: URI ou solicitude de pago</translation>
+        <source>Open a microromancecoin: URI or payment request</source>
+        <translation>Abrir un microromancecoin: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -401,8 +401,8 @@
         <translation>Empregar un directorio de datos personalizado</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -466,8 +466,8 @@
         <translation>Moedeiro</translation>
     </message>
     <message>
-        <source>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente MicroBitcoin no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente RomanceCoin no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -549,8 +549,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MicroBitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede MicroBitcoin despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RomanceCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede RomanceCoin despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -923,8 +923,8 @@
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MicroBitcoin address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección MicroBitcoin</translation>
+        <source>Sign the message to prove you own this RomanceCoin address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección RomanceCoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -943,8 +943,8 @@
         <translation>&amp;Verificar Mensaxe</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MicroBitcoin address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección MicroBitcoin especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified RomanceCoin address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección RomanceCoin especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -998,10 +998,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>Core de MicroBitcoin</translation>
+        <source>RomanceCoin Core</source>
+        <translation>Core de RomanceCoin</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

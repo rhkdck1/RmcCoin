@@ -84,7 +84,7 @@
     </message>
 </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Pasirašyti ži&amp;nutę...</translation>
@@ -170,8 +170,8 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Siųsti monetas MicroBitcoin adresui</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Siųsti monetas RomanceCoin adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -194,8 +194,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -383,8 +383,8 @@
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -436,8 +436,8 @@
         <translation>Piniginė</translation>
     </message>
     <message>
-        <source>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti MicroBitcoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti RomanceCoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -885,7 +885,7 @@
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MicroBitcoin address</source>
+        <source>Sign the message to prove you own this RomanceCoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -901,8 +901,8 @@
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MicroBitcoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas MicroBitcoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified RomanceCoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas RomanceCoin adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -956,10 +956,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>MicroBitcoin branduolys</translation>
+        <source>RomanceCoin Core</source>
+        <translation>RomanceCoin branduolys</translation>
     </message>
     <message>
         <source>Error opening block database</source>

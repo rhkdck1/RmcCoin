@@ -478,7 +478,7 @@ void static SoloMiner(const CChainParams& chainparams, CConnman& connman)
 {
     LogPrintf("SoloMiner -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("mbc-solo-miner");
+    RenameThread("rmc-solo-miner");
 
     std::vector<std::shared_ptr<CWallet>> wallets = GetWallets();
     CWallet * const pwallet = (wallets.size() > 0) ? wallets[0].get() : nullptr;

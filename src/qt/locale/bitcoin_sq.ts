@@ -54,12 +54,12 @@
         <translation>Duke marr adresen</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Këto janë MicroBitcoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+        <source>These are your RomanceCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Këto janë RomanceCoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Këto janë MicroBitcoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+        <source>These are your RomanceCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Këto janë RomanceCoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -192,7 +192,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Duke u sinkronizuar me rrjetin...</translation>
@@ -230,8 +230,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -393,8 +393,8 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -790,10 +790,10 @@
     </message>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>Berthama MicroBitcoin</translation>
+        <source>RomanceCoin Core</source>
+        <translation>Berthama RomanceCoin</translation>
     </message>
     <message>
         <source>Information</source>

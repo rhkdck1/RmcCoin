@@ -62,12 +62,12 @@
         <translation>Ontvanger adresse</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hierdie is die adresse vanwaar u MicroBitcoin betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
+        <source>These are your RomanceCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hierdie is die adresse vanwaar u RomanceCoin betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Hierdie is die adresse waar u MicroBitcoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
+        <source>These are your RomanceCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Hierdie is die adresse waar u RomanceCoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Teken &amp;boodskap...</translation>
@@ -334,8 +334,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Stuur munte na 'n MicroBitcoin adres</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Stuur munte na 'n RomanceCoin adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -358,8 +358,8 @@
         <translation>&amp;Verifieer boodskap...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -386,12 +386,12 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your MicroBitcoin addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u MicroBitcoin adresse om u eienaarskap te bewys</translation>
+        <source>Sign messages with your RomanceCoin addresses to prove you own them</source>
+        <translation>Onderteken boodskappe met u RomanceCoin adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MicroBitcoin addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde MicroBitcoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified RomanceCoin addresses</source>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde RomanceCoin adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -410,8 +410,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and micromicrobitcoin: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en micromicrobitcoin: URI's)</translation>
+        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <translation>Versoek betalings (genereer QR-kodes en microromancecoin: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -422,8 +422,8 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a micromicrobitcoin: URI or payment request</source>
-        <translation>Skep 'n micromicrobitcoin: URI of betalingsversoek</translation>
+        <source>Open a microromancecoin: URI or payment request</source>
+        <translation>Skep 'n microromancecoin: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -516,8 +516,8 @@
         <translation>Inkomende transaksie</translation>
     </message>
     <message>
-        <source>A fatal error occurred. MicroBitcoin can no longer continue safely and will quit.</source>
-        <translation>'N fatale fout het voorgekom. MicroBitcoin kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
+        <source>A fatal error occurred. RomanceCoin can no longer continue safely and will quit.</source>
+        <translation>'N fatale fout het voorgekom. RomanceCoin kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
     </message>
 </context>
 <context>
@@ -706,8 +706,8 @@
         <translation>Wysig stuur adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MicroBitcoin address.</source>
-        <translation>Die ingevoerde adres "%1" is nie 'n geldige MicroBitcoin adres nie.</translation>
+        <source>The entered address "%1" is not a valid RomanceCoin address.</source>
+        <translation>Die ingevoerde adres "%1" is nie 'n geldige RomanceCoin adres nie.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -779,8 +779,8 @@
         <translation>Gebruik 'n persoonlike data gids:</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1144,8 +1144,8 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a MicroBitcoin address (e.g. %1)</source>
-        <translation>Voer in 'n MicroBitcoin adres (bv. %1)</translation>
+        <source>Enter a RomanceCoin address (e.g. %1)</source>
+        <translation>Voer in 'n RomanceCoin adres (bv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1876,10 +1876,10 @@
     </message>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>MicroBitcoin Kern</translation>
+        <source>RomanceCoin Core</source>
+        <translation>RomanceCoin Kern</translation>
     </message>
     <message>
         <source>Error loading %s</source>

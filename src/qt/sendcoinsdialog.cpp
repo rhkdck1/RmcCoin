@@ -811,7 +811,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!IsValidDestination(dest)) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid MicroBitcoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid RomanceCoin address"));
         }
         else // Valid address
         {

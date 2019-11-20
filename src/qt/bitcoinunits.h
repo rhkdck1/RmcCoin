@@ -56,7 +56,7 @@ public:
      */
     enum Unit
     {
-        MBC,
+        RMC,
         SAT
     };
 

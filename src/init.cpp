@@ -530,8 +530,8 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/MicroBitcoinOrg/MicroBitcoin>";
-    const std::string URL_WEBSITE = "<https://microbitcoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/RomanceCoinOrg/RomanceCoin>";
+    const std::string URL_WEBSITE = "<https://romancecoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

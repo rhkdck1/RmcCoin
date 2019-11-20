@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2019 MicroBitcoin developers
+// Copyright (c) 2019 RomanceCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,14 +24,14 @@ uint256 CBlockHeaderUncached::GetWorkHash() const
     uint256 thash;
     CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
     ss << *this;
-    yespower_params_t yespower_microbitcoin = {
+    yespower_params_t yespower_romancecoin = {
         .N = 2048,
         .r = 32,
         .pers = (const uint8_t *)"Now I am become Death, the destroyer of worlds",
         .perslen = 46
     };
 
-    if (yespower_tls((unsigned char *)&ss[0], ss.size(), &yespower_microbitcoin, (yespower_binary_t *)&thash)) {
+    if (yespower_tls((unsigned char *)&ss[0], ss.size(), &yespower_romancecoin, (yespower_binary_t *)&thash)) {
         abort();
     }
 

@@ -32,7 +32,7 @@
 #include <memory>
 
 #if defined(NDEBUG)
-# error "MicroBitcoin cannot be compiled without assertions."
+# error "RomanceCoin cannot be compiled without assertions."
 #endif
 
 /** Expiration time for orphan transactions in seconds */

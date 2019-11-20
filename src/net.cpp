@@ -1524,7 +1524,7 @@ static void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "MicroBitcoin " + FormatFullVersion();
+        std::string strDesc = "RomanceCoin " + FormatFullVersion();
 
         do {
 #ifndef UPNPDISCOVER_SUCCESS

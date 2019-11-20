@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt microbitcoins</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt romancecoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt microbitcoins</translation>
+        <translation>Izvēlies adresi ar kuru saņemt romancecoins</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,7 +136,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Parakstīt &amp;ziņojumu...</translation>
@@ -214,8 +214,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Nosūtīt bitkoinus uz MicroBitcoin adresi</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Nosūtīt bitkoinus uz RomanceCoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -238,8 +238,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -266,12 +266,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your MicroBitcoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām MicroBitcoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your RomanceCoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām RomanceCoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MicroBitcoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām MicroBitcoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified RomanceCoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām RomanceCoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -290,12 +290,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and micromicrobitcoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un micromicrobitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un microromancecoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a micromicrobitcoin: URI or payment request</source>
-        <translation>Atvērt microbitcoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a microromancecoin: URI or payment request</source>
+        <translation>Atvērt romancecoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -469,8 +469,8 @@
         <translation>Izmantot pielāgotu datu mapi:</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -563,15 +563,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt microbitcoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt romancecoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt MicroBitcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt RomanceCoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -623,7 +623,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt MicroBitcoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt RomanceCoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -661,8 +661,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MicroBitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar MicroBitcoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RomanceCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar RomanceCoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -928,7 +928,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>MicroBitcoin Kontroles Funkcijas</translation>
+        <translation>RomanceCoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1111,8 +1111,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MicroBitcoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs MicroBitcoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this RomanceCoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs RomanceCoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1202,10 +1202,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>MicroBitcoin Core</translation>
+        <source>RomanceCoin Core</source>
+        <translation>RomanceCoin Core</translation>
     </message>
     <message>
         <source>Error loading block database</source>

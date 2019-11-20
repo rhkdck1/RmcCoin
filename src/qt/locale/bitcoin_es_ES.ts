@@ -66,12 +66,12 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones MicroBitcoin para enviar pagos. Verifique siempre la cantidad y la dirección de recibimiento antes de enviar monedas.</translation>
+        <source>These are your RomanceCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones RomanceCoin para enviar pagos. Verifique siempre la cantidad y la dirección de recibimiento antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your MicroBitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones MicroBitcoin para recibir pagos. Se recomienda utilizar una nueva dirección de recibimiento para cada transacción</translation>
+        <source>These are your RomanceCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones RomanceCoin para recibir pagos. Se recomienda utilizar una nueva dirección de recibimiento para cada transacción</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -184,7 +184,7 @@
         <translation>Monedero encriptado</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your microbitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your romancecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 se cerrará ahora para terminar el proceso de encriptación. Recuerde que encriptar su monedero no puede proteger completamente su monedero de ser robado por malware que infecte su ordenador.</translation>
     </message>
     <message>
@@ -236,7 +236,7 @@
     </message>
 </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -342,8 +342,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Enviar microbitcoins a una dirección MicroBitcoin</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Enviar romancecoins a una dirección RomanceCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,8 +366,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -394,12 +394,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your MicroBitcoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones MicroBitcoin para demostrar la propiedad</translation>
+        <source>Sign messages with your RomanceCoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones RomanceCoin para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MicroBitcoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones MicroBitcoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified RomanceCoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones RomanceCoin concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -418,8 +418,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and micromicrobitcoin: URIs)</source>
-        <translation>Solicitar pagos (generando códigos QR e identificadores URI "micromicrobitcoin:")</translation>
+        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <translation>Solicitar pagos (generando códigos QR e identificadores URI "microromancecoin:")</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -430,16 +430,16 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a micromicrobitcoin: URI or payment request</source>
-        <translation>Abrir un identificador URI "micromicrobitcoin:" o una petición de pago</translation>
+        <source>Open a microromancecoin: URI or payment request</source>
+        <translation>Abrir un identificador URI "microromancecoin:" o una petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opciones de consola de comandos</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MicroBitcoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red MicroBitcoin</numerusform><numerusform>%n conexiones activas hacia la red MicroBitcoin</numerusform></translation>
+        <source>%n active connection(s) to RomanceCoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red RomanceCoin</numerusform><numerusform>%n conexiones activas hacia la red RomanceCoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -482,8 +482,8 @@
         <translation>Actualizado</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible MicroBitcoin command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de MicroBitcoin</translation>
+        <source>Show the %1 help message to get a list with possible RomanceCoin command-line options</source>
+        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de RomanceCoin</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -552,8 +552,8 @@
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. MicroBitcoin can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error fatal. MicroBitcoin no puede continuar de manera segura y se cerrará.</translation>
+        <source>A fatal error occurred. RomanceCoin can no longer continue safely and will quit.</source>
+        <translation>Ha ocurrido un error fatal. RomanceCoin no puede continuar de manera segura y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MicroBitcoin address.</source>
-        <translation>La dirección introducida "%1" no es una dirección MicroBitcoin válida.</translation>
+        <source>The entered address "%1" is not a valid RomanceCoin address.</source>
+        <translation>La dirección introducida "%1" no es una dirección RomanceCoin válida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -819,8 +819,8 @@
         <translation>Utilizar un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -846,8 +846,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the microbitcoin network, as detailed below.</source>
-        <translation>Las transacciones recientes podrían no ser visibles todavía, por lo que el balance de la cartera podría ser incorrecto. Esta información será correcta una vez su cartera se haya terminado de sincronizar con la red microbitcoin, como se detalla más abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the romancecoin network, as detailed below.</source>
+        <translation>Las transacciones recientes podrían no ser visibles todavía, por lo que el balance de la cartera podría ser incorrecto. Esta información será correcta una vez su cartera se haya terminado de sincronizar con la red romancecoin, como se detalla más abajo.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -992,16 +992,16 @@
         <translation>&amp;Gastar cambio no confirmado</translation>
     </message>
     <message>
-        <source>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente MicroBitcoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente RomanceCoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear el puerto mediante &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the MicroBitcoin network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red MicroBitcoin a través de un proxy SOCKS5.</translation>
+        <source>Connect to the RomanceCoin network through a SOCKS5 proxy.</source>
+        <translation>Conectarse a la red RomanceCoin a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1036,8 +1036,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the MicroBitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red MicroBitcoin mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
+        <source>Connect to the RomanceCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conectar a la red RomanceCoin mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1073,7 +1073,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían microbitcoins.</translation>
+        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían romancecoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1131,8 +1131,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MicroBitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red MicroBitcoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RomanceCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red RomanceCoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1206,8 +1206,8 @@
         <translation>Fallo en la solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start micromicrobitcoin: click-to-pay handler</source>
-        <translation>No se puede iniciar micromicrobitcoin: encargado click-para-pagar</translation>
+        <source>Cannot start microromancecoin: click-to-pay handler</source>
+        <translation>No se puede iniciar microromancecoin: encargado click-para-pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1222,8 +1222,8 @@
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MicroBitcoin address or malformed URI parameters.</source>
-        <translation>URI no puede ser analizado! Esto puede ser causado por una dirección MicroBitcoin inválida o parametros URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid RomanceCoin address or malformed URI parameters.</source>
+        <translation>URI no puede ser analizado! Esto puede ser causado por una dirección RomanceCoin inválida o parametros URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1324,8 +1324,8 @@
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a MicroBitcoin address (e.g. %1)</source>
-        <translation>Introducir una dirección MicroBitcoin (p. ej. %1)</translation>
+        <source>Enter a RomanceCoin address (e.g. %1)</source>
+        <translation>Introducir una dirección RomanceCoin (p. ej. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1700,8 +1700,8 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MicroBitcoin network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red MicroBitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the RomanceCoin network.</source>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red RomanceCoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1858,7 +1858,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar microbitcoins</translation>
+        <translation>Enviar romancecoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1929,8 +1929,8 @@
         <translation>Ocultar</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for microbitcoin transactions than the network can process.</source>
-        <translation>Pagando solamente la cuota mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones MicroBitcoin que la red pueda procesar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for romancecoin transactions than the network can process.</source>
+        <translation>Pagando solamente la cuota mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones RomanceCoin que la red pueda procesar.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2073,8 +2073,8 @@
         <translation>Pagar únicamente la cuota solicitada de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid MicroBitcoin address</source>
-        <translation>Alerta: dirección MicroBitcoin inválida</translation>
+        <source>Warning: Invalid RomanceCoin address</source>
+        <translation>Alerta: dirección RomanceCoin inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2116,8 +2116,8 @@
         <translation>Esto es un pago ordinario.</translation>
     </message>
     <message>
-        <source>The MicroBitcoin address to send the payment to</source>
-        <translation>Dirección MicroBitcoin a la que enviar el pago</translation>
+        <source>The RomanceCoin address to send the payment to</source>
+        <translation>Dirección RomanceCoin a la que enviar el pago</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2136,8 +2136,8 @@
         <translation>Eliminar esta transacción</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less microbitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La cuota será deducida de la cantidad que sea mandada. El destinatario recibirá menos microbitcoins de los que entres en el  </translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less romancecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La cuota será deducida de la cantidad que sea mandada. El destinatario recibirá menos romancecoins de los que entres en el  </translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2160,8 +2160,8 @@
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
-        <source>A message that was attached to the micromicrobitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MicroBitcoin network.</source>
-        <translation>Un mensaje que se adjuntó a la micromicrobitcoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red MicroBitcoin.</translation>
+        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>Un mensaje que se adjuntó a la microromancecoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red RomanceCoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2205,12 +2205,12 @@
         <translation>&amp;Firmar mensaje</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive microbitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive romancecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Puede firmar los mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa de manera vaga o aleatoria, pues los ataques de phishing pueden tratar de engañarle firmando su identidad a través de ellos. Sólo firme declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The MicroBitcoin address to sign the message with</source>
-        <translation>Dirección MicroBitcoin con la que firmar el mensaje</translation>
+        <source>The RomanceCoin address to sign the message with</source>
+        <translation>Dirección RomanceCoin con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2241,8 +2241,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MicroBitcoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección MicroBitcoin</translation>
+        <source>Sign the message to prove you own this RomanceCoin address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección RomanceCoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,12 +2265,12 @@
         <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle. </translation>
     </message>
     <message>
-        <source>The MicroBitcoin address the message was signed with</source>
-        <translation>La dirección MicroBitcoin con la que se firmó el mensaje</translation>
+        <source>The RomanceCoin address the message was signed with</source>
+        <translation>La dirección RomanceCoin con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MicroBitcoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección MicroBitcoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified RomanceCoin address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección RomanceCoin indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2475,7 +2475,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Los microbitcoins generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
+        <translation>Los romancecoins generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2824,7 +2824,7 @@
     </message>
     </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
         <translation>La Poda se ha configurado por debajo del minimo de %d MiB. Por favor utiliza un valor mas alto.</translation>
@@ -2850,8 +2850,8 @@
         <translation>No se ha podido comenzar el servidor HTTP. Ver debug log para detalles.</translation>
     </message>
     <message>
-        <source>MicroBitcoin Core</source>
-        <translation>MicroBitcoin Core</translation>
+        <source>RomanceCoin Core</source>
+        <translation>RomanceCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

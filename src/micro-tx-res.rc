@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "MicroBitcoin"
-            VALUE "FileDescription",    "micro-tx (CLI MicroBitcoin transaction editor utility)"
+            VALUE "CompanyName",        "RomanceCoin"
+            VALUE "FileDescription",    "micro-tx (CLI RomanceCoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "micro-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

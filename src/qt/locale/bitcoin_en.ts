@@ -85,12 +85,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your MicroBitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your RomanceCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>These are your MicroBitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your RomanceCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -237,7 +237,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your microbitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your romancecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,9 +307,9 @@
     </message>
 </context>
 <context>
-    <name>MicroBitcoinGUI</name>
+    <name>RomanceCoinGUI</name>
     <message>
-        <location filename="../microbitcoingui.cpp" line="+307"/>
+        <location filename="../romancecoingui.cpp" line="+307"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -455,8 +455,8 @@
     </message>
     <message>
         <location line="-880"/>
-        <source>Send coins to a MicroBitcoin address</source>
-        <translation>Send coins to a MicroBitcoin address</translation>
+        <source>Send coins to a RomanceCoin address</source>
+        <translation>Send coins to a RomanceCoin address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -485,8 +485,8 @@
     </message>
     <message>
         <location line="+570"/>
-        <source>MicroBitcoin</source>
-        <translation>MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation>RomanceCoin</translation>
     </message>
     <message>
         <location line="-792"/>
@@ -520,13 +520,13 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your MicroBitcoin addresses to prove you own them</source>
-        <translation>Sign messages with your MicroBitcoin addresses to prove you own them</translation>
+        <source>Sign messages with your RomanceCoin addresses to prove you own them</source>
+        <translation>Sign messages with your RomanceCoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified MicroBitcoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified MicroBitcoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified RomanceCoin addresses</source>
+        <translation>Verify messages to ensure they were signed with specified RomanceCoin addresses</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -550,7 +550,7 @@
     </message>
     <message>
         <location line="-158"/>
-        <source>Request payments (generates QR codes and micromicrobitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -565,7 +565,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a micromicrobitcoin: URI or payment request</source>
+        <source>Open a microromancecoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -575,10 +575,10 @@
     </message>
     <message numerus="yes">
         <location line="+410"/>
-        <source>%n active connection(s) to MicroBitcoin network</source>
+        <source>%n active connection(s) to RomanceCoin network</source>
         <translation>
-            <numerusform>%n active connection to MicroBitcoin network</numerusform>
-            <numerusform>%n active connections to MicroBitcoin network</numerusform>
+            <numerusform>%n active connection to RomanceCoin network</numerusform>
+            <numerusform>%n active connections to RomanceCoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -636,7 +636,7 @@
     </message>
     <message>
         <location line="-494"/>
-        <source>Show the %1 help message to get a list with possible MicroBitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible RomanceCoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -721,8 +721,8 @@
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../microbitcoin.cpp" line="+529"/>
-        <source>A fatal error occurred. MicroBitcoin can no longer continue safely and will quit.</source>
+        <location filename="../romancecoin.cpp" line="+529"/>
+        <source>A fatal error occurred. RomanceCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -960,7 +960,7 @@
     </message>
     <message>
         <location line="+75"/>
-        <source>The entered address &quot;%1&quot; is not a valid MicroBitcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid RomanceCoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1080,8 +1080,8 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+20"/>
-        <source>MicroBitcoin</source>
-        <translation type="unfinished">MicroBitcoin</translation>
+        <source>RomanceCoin</source>
+        <translation type="unfinished">RomanceCoin</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1095,7 +1095,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>%1 will download and store a copy of the MicroBitcoin block chain.</source>
+        <source>%1 will download and store a copy of the RomanceCoin block chain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1139,12 +1139,12 @@
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the microbitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the romancecoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend microbitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend romancecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1382,8 +1382,8 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the MicroBitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the RomanceCoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1402,7 +1402,7 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the MicroBitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the RomanceCoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1450,7 +1450,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the MicroBitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the RomanceCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1585,8 +1585,8 @@
     <message>
         <location line="+62"/>
         <location line="+386"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MicroBitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the MicroBitcoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the RomanceCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the RomanceCoin network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-139"/>
@@ -1683,7 +1683,7 @@
     </message>
     <message>
         <location line="-398"/>
-        <source>Cannot start micromicrobitcoin: click-to-pay handler</source>
+        <source>Cannot start microromancecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1696,7 +1696,7 @@
     </message>
     <message>
         <location line="-41"/>
-        <source>&apos;micromicrobitcoin://&apos; is not a valid URI. Use &apos;micromicrobitcoin:&apos; instead.</source>
+        <source>&apos;microromancecoin://&apos; is not a valid URI. Use &apos;microromancecoin:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1711,7 +1711,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid MicroBitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid RomanceCoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1837,13 +1837,13 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../microbitcoinunits.cpp" line="+197"/>
+        <location filename="../romancecoinunits.cpp" line="+197"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+115"/>
-        <source>Enter a MicroBitcoin address (e.g. %1)</source>
+        <source>Enter a RomanceCoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1957,7 +1957,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../microbitcoin.cpp" line="+192"/>
+        <location filename="../romancecoin.cpp" line="+192"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1970,7 +1970,7 @@
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../microbitcoin.cpp" line="-117"/>
+        <location filename="../romancecoin.cpp" line="-117"/>
         <source>Error parsing command line arguments: %1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2459,7 +2459,7 @@
     <message>
         <location line="-3"/>
         <location line="+46"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MicroBitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the RomanceCoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     <message>
         <location line="+80"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for microbitcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for romancecoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3005,7 +3005,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+101"/>
-        <source>Warning: Invalid MicroBitcoin address</source>
+        <source>Warning: Invalid RomanceCoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3060,7 +3060,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+39"/>
-        <source>The MicroBitcoin address to send the payment to</source>
+        <source>The RomanceCoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3087,7 +3087,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="-1028"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less microbitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less romancecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3122,7 +3122,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+54"/>
-        <source>A message that was attached to the micromicrobitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MicroBitcoin network.</source>
+        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3179,12 +3179,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive microbitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive romancecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The MicroBitcoin address to sign the message with</source>
+        <source>The RomanceCoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3226,8 +3226,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this MicroBitcoin address</source>
-        <translation>Sign the message to prove you own this MicroBitcoin address</translation>
+        <source>Sign the message to prove you own this RomanceCoin address</source>
+        <translation>Sign the message to prove you own this RomanceCoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3257,13 +3257,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+21"/>
-        <source>The MicroBitcoin address the message was signed with</source>
+        <source>The RomanceCoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified MicroBitcoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified MicroBitcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified RomanceCoin address</source>
+        <translation>Verify the message to ensure it was signed with the specified RomanceCoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3942,7 +3942,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
-        <location filename="../microbitcoingui.cpp" line="+159"/>
+        <location filename="../romancecoingui.cpp" line="+159"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4059,9 +4059,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
 </context>
 <context>
-    <name>microbitcoin-core</name>
+    <name>romancecoin-core</name>
     <message>
-        <location filename="../microbitcoinstrings.cpp" line="+29"/>
+        <location filename="../romancecoinstrings.cpp" line="+29"/>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4097,8 +4097,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="-184"/>
-        <source>MicroBitcoin Core</source>
-        <translation type="unfinished">MicroBitcoin Core</translation>
+        <source>RomanceCoin Core</source>
+        <translation type="unfinished">RomanceCoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

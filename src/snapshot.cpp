@@ -1,4 +1,4 @@
-// Copyright (c) 2019 MicroBitcoin developers
+// Copyright (c) 2019 RomanceCoin developers
 #include <util.h>
 #include <amount.h>
 #include <snapshot.h>

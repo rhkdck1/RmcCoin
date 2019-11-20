@@ -19,8 +19,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "MicroBitcoin"
-            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for MicroBitcoin)"
+            VALUE "CompanyName",        "RomanceCoin"
+            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for RomanceCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "micro-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR

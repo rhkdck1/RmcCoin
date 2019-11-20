@@ -17,7 +17,7 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MBC);
+    unitlist.append(RMC);
     unitlist.append(SAT);
     return unitlist;
 }
@@ -26,7 +26,7 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MBC:
+    case RMC:
     case SAT:
         return true;
     default:
@@ -38,7 +38,7 @@ QString BitcoinUnits::longName(int unit)
 {
     switch(unit)
     {
-    case MBC: return QString("MBC");
+    case RMC: return QString("RMC");
     case SAT: return QString("Satoshi");
     default: return QString("???");
     }
@@ -48,7 +48,7 @@ QString BitcoinUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case MBC: return QString::fromUtf8("MBC");
+    case RMC: return QString::fromUtf8("RMC");
     case SAT: return QString("SAT");
     default: return longName(unit);
     }
@@ -58,7 +58,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MBC: return QString("Bitcoins");
+    case RMC: return QString("Bitcoins");
     case SAT: return QString("Satoshi");
     default: return QString("???");
     }
@@ -68,7 +68,7 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MBC: return 10000;
+    case RMC: return 10000;
     case SAT: return 1;
     default: return 10000;
     }
@@ -78,7 +78,7 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MBC: return 4;
+    case RMC: return 4;
     case SAT: return 0;
     default: return 0;
     }

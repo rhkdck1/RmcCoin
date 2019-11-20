@@ -44,7 +44,7 @@
 #include <QUrlQuery>
 
 const int MICRO_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString MICRO_IPC_PREFIX("microbitcoin:");
+const QString MICRO_IPC_PREFIX("romancecoin:");
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
@@ -198,11 +198,11 @@ void PaymentServer::ipcParseCommandLine(interfaces::Node& node, int argc, char* 
         if (arg.startsWith("-"))
             continue;
 
-        // If the microbitcoin: URI contains a payment request, we are not able to detect the
+        // If the romancecoin: URI contains a payment request, we are not able to detect the
         // network as that would require fetching and parsing the payment request.
         // That means clicking such an URI which contains a testnet payment request
         // will start a mainnet instance and throw a "wrong network" error.
-        if (arg.startsWith(MICRO_IPC_PREFIX, Qt::CaseInsensitive)) // microbitcoin: URI
+        if (arg.startsWith(MICRO_IPC_PREFIX, Qt::CaseInsensitive)) // romancecoin: URI
         {
             savedPaymentRequests.append(arg);
 
@@ -298,7 +298,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
     GOOGLE_PROTOBUF_VERIFY_VERSION;
 
     // Install global event filter to catch QFileOpenEvents
-    // on Mac: sent when you click microbitcoin: links
+    // on Mac: sent when you click romancecoin: links
     // other OSes: helpful when dealing with payment request files
     if (parent)
         parent->installEventFilter(this);
@@ -315,7 +315,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start microbitcoin: click-to-pay handler"));
+                tr("Cannot start romancecoin: click-to-pay handler"));
         }
         else {
             connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
@@ -330,7 +330,7 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling microbitcoin: URIs and PaymentRequest mime types.
+// OSX-specific way of handling romancecoin: URIs and PaymentRequest mime types.
 // Also used by paymentservertests.cpp and when opening a payment request file
 // via "Open URI..." menu entry.
 //
@@ -355,7 +355,7 @@ void PaymentServer::initNetManager()
         return;
     delete netManager;
 
-    // netManager is used to fetch paymentrequests given in microbitcoin: URIs
+    // netManager is used to fetch paymentrequests given in romancecoin: URIs
     netManager = new QNetworkAccessManager(this);
 
     QNetworkProxy proxy;
@@ -395,12 +395,12 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("microbitcoin://", Qt::CaseInsensitive))
+    if (s.startsWith("romancecoin://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'microbitcoin://' is not a valid URI. Use 'microbitcoin:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'romancecoin://' is not a valid URI. Use 'romancecoin:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
-    else if (s.startsWith(MICRO_IPC_PREFIX, Qt::CaseInsensitive)) // microbitcoin: URI
+    else if (s.startsWith(MICRO_IPC_PREFIX, Qt::CaseInsensitive)) // romancecoin: URI
     {
         QUrlQuery uri((QUrl(s)));
         if (uri.hasQueryItem("r")) // payment request URI
@@ -439,7 +439,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
             }
             else
                 Q_EMIT message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid MicroBitcoin address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid RomanceCoin address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;

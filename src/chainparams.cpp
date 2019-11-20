@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2019 MicroBitcoin developers
+// Copyright (c) 2019 RomanceCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -145,7 +145,7 @@ public:
         pchMessageStart[1] = 0x6d;
         pchMessageStart[2] = 0x62;
         pchMessageStart[3] = 0x63;
-        nDefaultPort = 6502;
+        nDefaultPort = 2502;
         nPruneAfterHeight = 100000;
 
         const char* pszTimestamp = "The WSJ 09/Oct/2019 Nobel Prize in Chemistry Awarded to Developers of Lithium-Ion Batteries";
@@ -169,7 +169,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        bech32_hrp = "mbc";
+        bech32_hrp = "rmc";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -233,7 +233,7 @@ public:
         pchMessageStart[1] = 0x6d;
         pchMessageStart[2] = 0x62;
         pchMessageStart[3] = 0x63;
-        nDefaultPort = 16502;
+        nDefaultPort = 12502;
         nPruneAfterHeight = 1000;
 
         const char* pszTimestamp = "The WSJ 05/Oct/2019 Hong Kong Shuts Down After Night of Violence";
@@ -260,7 +260,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        bech32_hrp = "tmbc";
+        bech32_hrp = "trmc";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -325,7 +325,7 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nDefaultPort = 26502;
+        nDefaultPort = 22502;
         nPruneAfterHeight = 1000;
 
         const char* pszTimestamp = "The WSJ 10/Sep/2019 There’s Too Much Negativity About Negative Rates";
@@ -368,7 +368,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "rmbc";
+        bech32_hrp = "rrmc";
 
         /* enable fallback fee on regtest */
         m_fallback_fee_enabled = true;

@@ -205,7 +205,7 @@ static const unsigned int MIN_BLOCKS_TO_KEEP = 288;
 static const unsigned int NODE_NETWORK_LIMITED_MIN_BLOCKS = 288;
 
 // LTC is 4x faster than BTC (6 * 4)
-// MBC is 10x faster than BTC (6 * 10)
+// RMC is 10x faster than BTC (6 * 10)
 static const signed int DEFAULT_CHECKBLOCKS = 6 * 10;
 static const unsigned int DEFAULT_CHECKLEVEL = 3;
 

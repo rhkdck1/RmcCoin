@@ -502,7 +502,7 @@ void BitcoinApplication::initializeResult(bool success)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // microbitcoin: URIs or payment requests:
+        // romancecoin: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
                          window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -676,7 +676,7 @@ int main(int argc, char *argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // microbitcoin: links repeatedly have their payment requests routed to this process:
+    // romancecoin: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
