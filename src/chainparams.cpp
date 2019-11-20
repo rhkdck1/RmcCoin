@@ -141,10 +141,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x73;
-        pchMessageStart[1] = 0x6d;
-        pchMessageStart[2] = 0x62;
-        pchMessageStart[3] = 0x63;
+        pchMessageStart[0] = 0xf1;
+        pchMessageStart[1] = 0xc2;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xd2;
         nDefaultPort = 2502;
         nPruneAfterHeight = 100000;
 
@@ -163,7 +163,7 @@ public:
         assert(consensus.hashGenesisBlockWork == uint256S("0x001cb6047ddf13074c4bce354ed3cf0cdd96a4287aa562b032eb81d03e183da8"));
         assert(genesis.hashMerkleRoot == uint256S("0x3426ccad3017e14a4ab6efddaa44cb31beca67a86c82f63de18705f1b6de88df"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,26);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,51);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
