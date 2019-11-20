@@ -1,1 +1,1 @@
-RomanceCoin is gonna take over Bitcoin
+RomanceCoin is gonna take over MicroBitcoin
