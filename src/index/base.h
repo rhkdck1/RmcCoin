@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_INDEX_BASE_H
-#define MICRO_INDEX_BASE_H
+#ifndef ROMANCE_INDEX_BASE_H
+#define ROMANCE_INDEX_BASE_H
 
 #include <dbwrapper.h>
 #include <primitives/block.h>
@@ -95,4 +95,4 @@ public:
     void Stop();
 };
 
-#endif // MICRO_INDEX_BASE_H
+#endif // ROMANCE_INDEX_BASE_H

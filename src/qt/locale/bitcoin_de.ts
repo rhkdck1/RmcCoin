@@ -176,7 +176,7 @@
         <translation>Brieftaschen-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre RomanceCoins verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -434,8 +434,8 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>Zahlungen anfordern (erzeugt QR-Codes und "microromancecoin:"-URIs)</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und "romanceromancecoin:"-URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -446,8 +446,8 @@
         <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
-        <translation>Eine "microromancecoin:"-URI oder Zahlungsanforderung öffnen</translation>
+        <source>Open a romanceromancecoin: URI or payment request</source>
+        <translation>Eine "romanceromancecoin:"-URI oder Zahlungsanforderung öffnen</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1324,7 +1324,7 @@
         <translation>fehlerhafte Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
         <translation>Kann RomanceCoin nicht starten: Klicken-zum-Bezahlen-Handler</translation>
     </message>
     <message>
@@ -1332,8 +1332,8 @@
         <translation>URI-Verarbeitung</translation>
     </message>
     <message>
-        <source>'microromancecoin://' is not a valid URI. Use 'microromancecoin:' instead.</source>
-        <translation>'microromancecoin://' ist kein gültiger URL. Bitte 'microromancecoin:' nutzen.</translation>
+        <source>'romanceromancecoin://' is not a valid URI. Use 'romanceromancecoin:' instead.</source>
+        <translation>'romanceromancecoin://' ist kein gültiger URL. Bitte 'romanceromancecoin:' nutzen.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2418,8 +2418,8 @@ Hinweis: Eine Gebühr von "100 Satoshis pro kB" bei einer Größe der Transaktio
         <translation>Adressbezeichnung eingeben, die dann zusammen mit der Adresse der Liste bereits verwendeter Adressen hinzugefügt wird.</translation>
     </message>
     <message>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
-        <translation>Eine an die "microromancecoin:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das RomanceCoin-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>Eine an die "romanceromancecoin:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das RomanceCoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Pay To:</source>

@@ -95,8 +95,8 @@ benchmark::BenchRunner::BenchRunner(std::string name, benchmark::BenchFunction f
 
 void benchmark::BenchRunner::RunAll(Printer& printer, uint64_t num_evals, double scaling, const std::string& filter, bool is_list_only)
 {
-    if (!std::ratio_less_equal<benchmark::clock::period, std::micro>::value) {
-        std::cerr << "WARNING: Clock precision is worse than microsecond - benchmarks may be less accurate!\n";
+    if (!std::ratio_less_equal<benchmark::clock::period, std::romance>::value) {
+        std::cerr << "WARNING: Clock precision is worse than romancesecond - benchmarks may be less accurate!\n";
     }
 #ifdef DEBUG
     std::cerr << "WARNING: This is a debug build - may result in slower benchmarks.\n";

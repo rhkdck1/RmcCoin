@@ -7,8 +7,8 @@
 #error This header can only be compiled as C++.
 #endif
 
-#ifndef MICRO_PROTOCOL_H
-#define MICRO_PROTOCOL_H
+#ifndef ROMANCE_PROTOCOL_H
+#define ROMANCE_PROTOCOL_H
 
 #include <netaddress.h>
 #include <serialize.h>
@@ -408,4 +408,4 @@ public:
     uint256 hash;
 };
 
-#endif // MICRO_PROTOCOL_H
+#endif // ROMANCE_PROTOCOL_H

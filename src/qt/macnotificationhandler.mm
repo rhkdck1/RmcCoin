@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.romancecoin.Micro-Qt";
+        return @"org.romancecoin.Romance-Qt";
     } else {
         return [self __bundleIdentifier];
     }

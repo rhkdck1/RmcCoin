@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_BENCH_BENCH_H
-#define MICRO_BENCH_BENCH_H
+#ifndef ROMANCE_BENCH_BENCH_H
+#define ROMANCE_BENCH_BENCH_H
 
 #include <functional>
 #include <limits>
@@ -15,7 +15,7 @@
 #include <boost/preprocessor/cat.hpp>
 #include <boost/preprocessor/stringize.hpp>
 
-// Simple micro-benchmarking framework; API mostly matches a subset of the Google Benchmark
+// Simple romance-benchmarking framework; API mostly matches a subset of the Google Benchmark
 // framework (see https://github.com/google/benchmark)
 // Why not use the Google Benchmark framework? Because adding Yet Another Dependency
 // (that uses cmake as its build system and has lots of features we don't need) isn't
@@ -139,4 +139,4 @@ private:
 #define BENCHMARK(n, num_iters_for_one_second) \
     benchmark::BenchRunner BOOST_PP_CAT(bench_, BOOST_PP_CAT(__LINE__, n))(BOOST_PP_STRINGIZE(n), n, (num_iters_for_one_second));
 
-#endif // MICRO_BENCH_BENCH_H
+#endif // ROMANCE_BENCH_BENCH_H

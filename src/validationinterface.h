@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_VALIDATIONINTERFACE_H
-#define MICRO_VALIDATIONINTERFACE_H
+#ifndef ROMANCE_VALIDATIONINTERFACE_H
+#define ROMANCE_VALIDATIONINTERFACE_H
 
 #include <primitives/transaction.h> // CTransaction(Ref)
 
@@ -189,4 +189,4 @@ public:
 
 CMainSignals& GetMainSignals();
 
-#endif // MICRO_VALIDATIONINTERFACE_H
+#endif // ROMANCE_VALIDATIONINTERFACE_H

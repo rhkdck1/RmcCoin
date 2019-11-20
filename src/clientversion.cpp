@@ -9,10 +9,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both microd and micro-qt, to make it harder for attackers to
+ * for both romanced and romance-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Micro");
+const std::string CLIENT_NAME("Romance");
 
 /**
  * Client version number

@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -550,7 +550,7 @@
     </message>
     <message>
         <location line="-158"/>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -565,7 +565,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a microromancecoin: URI or payment request</source>
+        <source>Open a romanceromancecoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1683,7 +1683,7 @@
     </message>
     <message>
         <location line="-398"/>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1696,7 +1696,7 @@
     </message>
     <message>
         <location line="-41"/>
-        <source>&apos;microromancecoin://&apos; is not a valid URI. Use &apos;microromancecoin:&apos; instead.</source>
+        <source>&apos;romanceromancecoin://&apos; is not a valid URI. Use &apos;romanceromancecoin:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3122,7 +3122,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of &quot;100 satos
     </message>
     <message>
         <location line="+54"/>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

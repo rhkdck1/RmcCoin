@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_AMOUNT_H
-#define MICRO_AMOUNT_H
+#ifndef ROMANCE_AMOUNT_H
+#define ROMANCE_AMOUNT_H
 
 #include <stdint.h>
 
@@ -27,4 +27,4 @@ static const CAmount CENT = 1000000 / COIN_RATIO;
 static const CAmount MAX_MONEY = 61000000000 * COIN * COIN_RATIO;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-#endif //  MICRO_AMOUNT_H
+#endif //  ROMANCE_AMOUNT_H

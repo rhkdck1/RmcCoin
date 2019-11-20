@@ -10,7 +10,7 @@
 
 namespace leveldb {
 
-static const int kDelayMicros = 100000;
+static const int kDelayRomances = 100000;
 static const int kReadOnlyFileLimit = 4;
 static const int kMMapLimit = 4;
 

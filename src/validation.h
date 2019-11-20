@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_VALIDATION_H
-#define MICRO_VALIDATION_H
+#ifndef ROMANCE_VALIDATION_H
+#define ROMANCE_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <amount.h>
@@ -518,4 +518,4 @@ inline bool IsBlockPruned(const CBlockIndex* pblockindex)
     return (fHavePruned && !(pblockindex->nStatus & BLOCK_HAVE_DATA) && pblockindex->nTx > 0);
 }
 
-#endif // MICRO_VALIDATION_H
+#endif // ROMANCE_VALIDATION_H

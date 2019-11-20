@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_RECEIVEREQUESTDIALOG_H
-#define MICRO_QT_RECEIVEREQUESTDIALOG_H
+#ifndef ROMANCE_QT_RECEIVEREQUESTDIALOG_H
+#define ROMANCE_QT_RECEIVEREQUESTDIALOG_H
 
 #include <qt/walletmodel.h>
 
@@ -66,4 +66,4 @@ private:
     SendCoinsRecipient info;
 };
 
-#endif // MICRO_QT_RECEIVEREQUESTDIALOG_H
+#endif // ROMANCE_QT_RECEIVEREQUESTDIALOG_H

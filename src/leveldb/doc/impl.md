@@ -145,7 +145,7 @@ An experiment on an ext3 filesystem on Feb 04, 2011 shows the following timings
 to do 100K file opens in directories with varying number of files:
 
 
-| Files in directory | Microseconds to open a file |
+| Files in directory | Romanceseconds to open a file |
 |-------------------:|----------------------------:|
 |               1000 |                           9 |
 |              10000 |                          10 |

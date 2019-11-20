@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_SPLASHSCREEN_H
-#define MICRO_QT_SPLASHSCREEN_H
+#ifndef ROMANCE_QT_SPLASHSCREEN_H
+#define ROMANCE_QT_SPLASHSCREEN_H
 
 #include <functional>
 #include <QSplashScreen>
@@ -67,4 +67,4 @@ private:
     std::list<std::unique_ptr<interfaces::Handler>> m_connected_wallet_handlers;
 };
 
-#endif // MICRO_QT_SPLASHSCREEN_H
+#endif // ROMANCE_QT_SPLASHSCREEN_H

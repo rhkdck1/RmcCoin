@@ -176,7 +176,7 @@
         <translation>ウォレットの暗号化を確認する</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
         <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの RomanceCoin はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -434,8 +434,8 @@
         <translation>タブツールバー</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>支払いを要求する (QRコードとmicroromancecoin:ではじまるURIを生成する)</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>支払いを要求する (QRコードとromanceromancecoin:ではじまるURIを生成する)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -446,8 +446,8 @@
         <translation>支払いを受け取るアドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
-        <translation>microromancecoin: URIまたは支払いリクエストを開く</translation>
+        <source>Open a romanceromancecoin: URI or payment request</source>
+        <translation>romanceromancecoin: URIまたは支払いリクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1328,7 +1328,7 @@
         <translation>支払いのリクエストのエラーです</translation>
     </message>
     <message>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
         <translation>RomanceCoin を起動できません: click-to-pay handler</translation>
     </message>
     <message>
@@ -1336,8 +1336,8 @@
         <translation>URI の操作</translation>
     </message>
     <message>
-        <source>'microromancecoin://' is not a valid URI. Use 'microromancecoin:' instead.</source>
-        <translation>'microromancecoin://' は正しいURIではありません｡ 'microromancecoin:'を利用してください｡</translation>
+        <source>'romanceromancecoin://' is not a valid URI. Use 'romanceromancecoin:' instead.</source>
+        <translation>'romanceromancecoin://' は正しいURIではありません｡ 'romanceromancecoin:'を利用してください｡</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2422,8 +2422,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
-        <translation>microromancecoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはRomanceCoinネットワークを通して送信されるわけではありません。</translation>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>romanceromancecoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはRomanceCoinネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>Pay To:</source>

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_DB_H
-#define MICRO_WALLET_DB_H
+#ifndef ROMANCE_WALLET_DB_H
+#define ROMANCE_WALLET_DB_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -390,4 +390,4 @@ public:
     bool static Rewrite(BerkeleyDatabase& database, const char* pszSkip = nullptr);
 };
 
-#endif // MICRO_WALLET_DB_H
+#endif // ROMANCE_WALLET_DB_H

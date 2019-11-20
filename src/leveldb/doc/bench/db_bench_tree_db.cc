@@ -214,7 +214,7 @@ class Benchmark {
   }
 
   void Start() {
-    start_ = Env::Default()->NowMicros() * 1e-6;
+    start_ = Env::Default()->NowRomances() * 1e-6;
     bytes_ = 0;
     message_.clear();
     last_op_finish_ = start_;
@@ -225,11 +225,11 @@ class Benchmark {
 
   void FinishedSingleOp() {
     if (FLAGS_histogram) {
-      double now = Env::Default()->NowMicros() * 1e-6;
-      double micros = (now - last_op_finish_) * 1e6;
-      hist_.Add(micros);
-      if (micros > 20000) {
-        fprintf(stderr, "long op: %.1f micros%30s\r", micros, "");
+      double now = Env::Default()->NowRomances() * 1e-6;
+      double romances = (now - last_op_finish_) * 1e6;
+      hist_.Add(romances);
+      if (romances > 20000) {
+        fprintf(stderr, "long op: %.1f romances%30s\r", romances, "");
         fflush(stderr);
       }
       last_op_finish_ = now;
@@ -250,7 +250,7 @@ class Benchmark {
   }
 
   void Stop(const Slice& name) {
-    double finish = Env::Default()->NowMicros() * 1e-6;
+    double finish = Env::Default()->NowRomances() * 1e-6;
 
     // Pretend at least one op was done in case we are running a benchmark
     // that does not call FinishedSingleOp().
@@ -267,13 +267,13 @@ class Benchmark {
       }
     }
 
-    fprintf(stdout, "%-12s : %11.3f micros/op;%s%s\n",
+    fprintf(stdout, "%-12s : %11.3f romances/op;%s%s\n",
             name.ToString().c_str(),
             (finish - start_) * 1e6 / done_,
             (message_.empty() ? "" : " "),
             message_.c_str());
     if (FLAGS_histogram) {
-      fprintf(stdout, "Microseconds per op:\n%s\n", hist_.ToString().c_str());
+      fprintf(stdout, "Romanceseconds per op:\n%s\n", hist_.ToString().c_str());
     }
     fflush(stdout);
   }

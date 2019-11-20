@@ -1,6 +1,6 @@
 // Copyright (c) 2019 RomanceCoin developers
-#ifndef MICRO_SNAPSHOT_H
-#define MICRO_SNAPSHOT_H
+#ifndef ROMANCE_SNAPSHOT_H
+#define ROMANCE_SNAPSHOT_H
 
 #include <util.h>
 // #include <amount.h>
@@ -27,4 +27,4 @@ bool FetchSnapshot(fs::path &path, SnapshotProvider provider);
 std::vector<SnapshotEntry> LoadSnapshot(fs::path &path);
 std::vector<SnapshotEntry> InitSnapshot(const std::string fileName, std::vector<SnapshotProvider> providers);
 
-#endif // MICRO_SNAPSHOT_H
+#endif // ROMANCE_SNAPSHOT_H

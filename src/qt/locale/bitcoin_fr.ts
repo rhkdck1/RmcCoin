@@ -176,8 +176,8 @@
         <translation>Confirmer le chiffrement du porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
-        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS MICROS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
+        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS ROMANCES&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -434,8 +434,8 @@
         <translation>Barre d’outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>Demander des paiements (génère des codes QR et des URI microromancecoin:)</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>Demander des paiements (génère des codes QR et des URI romanceromancecoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -446,8 +446,8 @@
         <translation>Afficher la liste d’adresses de réception et d’étiquettes utilisées</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
-        <translation>Ouvrir une URI microromancecoin: ou une demande de paiement</translation>
+        <source>Open a romanceromancecoin: URI or payment request</source>
+        <translation>Ouvrir une URI romanceromancecoin: ou une demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1328,16 +1328,16 @@
         <translation>Erreur de demande de paiement</translation>
     </message>
     <message>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
-        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer microromancecoin:</translation>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
+        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer romanceromancecoin:</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Gestion des URI</translation>
     </message>
     <message>
-        <source>'microromancecoin://' is not a valid URI. Use 'microromancecoin:' instead.</source>
-        <translation>'microromancecoin://' n’est pas une URI valide. Utilisez plutôt 'microromancecoin:'.</translation>
+        <source>'romanceromancecoin://' is not a valid URI. Use 'romanceromancecoin:' instead.</source>
+        <translation>'romanceromancecoin://' n’est pas une URI valide. Utilisez plutôt 'romanceromancecoin:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2422,8 +2422,8 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
         <translation>Saisir une étiquette pour cette adresse afin de l’ajouter à la liste d’adresses utilisées</translation>
     </message>
     <message>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
-        <translation>Un message qui était joint à l’URI microromancecoin: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau RomanceCoin.</translation>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>Un message qui était joint à l’URI romanceromancecoin: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau RomanceCoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>

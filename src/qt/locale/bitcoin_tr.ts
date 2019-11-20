@@ -176,7 +176,7 @@
         <translation>Cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifreler ve parolanızı kaybederseniz &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDECEKSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -422,7 +422,7 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
         <translation>Ödeme talep et (QR kodu ve romancecoin URI'si oluşturur)</translation>
     </message>
     <message>
@@ -434,8 +434,8 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
-        <translation>Bir microromancecoin: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a romanceromancecoin: URI or payment request</source>
+        <translation>Bir romanceromancecoin: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1270,7 +1270,7 @@
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
         <translation>RomanceCoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
@@ -2280,8 +2280,8 @@
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
-        <translation>Referans için microromancecoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj RomanceCoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>Referans için romanceromancecoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj RomanceCoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Pay To:</source>

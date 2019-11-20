@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_RPC_MINING_H
-#define MICRO_RPC_MINING_H
+#ifndef ROMANCE_RPC_MINING_H
+#define ROMANCE_RPC_MINING_H
 
 #include <script/script.h>
 

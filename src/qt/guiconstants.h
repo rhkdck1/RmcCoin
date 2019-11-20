@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_GUICONSTANTS_H
-#define MICRO_QT_GUICONSTANTS_H
+#ifndef ROMANCE_QT_GUICONSTANTS_H
+#define ROMANCE_QT_GUICONSTANTS_H
 
 /* Milliseconds between model updates */
 static const int MODEL_UPDATE_DELAY = 250;
@@ -48,7 +48,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "Bitcoin"
 #define QAPP_ORG_DOMAIN "bitcoin.org"
-#define QAPP_APP_NAME_DEFAULT "Micro-Qt"
-#define QAPP_APP_NAME_TESTNET "Micro-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Romance-Qt"
+#define QAPP_APP_NAME_TESTNET "Romance-Qt-testnet"
 
-#endif // MICRO_QT_GUICONSTANTS_H
+#endif // ROMANCE_QT_GUICONSTANTS_H

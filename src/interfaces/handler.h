@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_INTERFACES_HANDLER_H
-#define MICRO_INTERFACES_HANDLER_H
+#ifndef ROMANCE_INTERFACES_HANDLER_H
+#define ROMANCE_INTERFACES_HANDLER_H
 
 #include <memory>
 
@@ -32,4 +32,4 @@ std::unique_ptr<Handler> MakeHandler(boost::signals2::connection connection);
 
 } // namespace interfaces
 
-#endif // MICRO_INTERFACES_HANDLER_H
+#endif // ROMANCE_INTERFACES_HANDLER_H

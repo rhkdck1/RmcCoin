@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_STREAMS_H
-#define MICRO_STREAMS_H
+#ifndef ROMANCE_STREAMS_H
+#define ROMANCE_STREAMS_H
 
 #include <support/allocators/zeroafterfree.h>
 #include <serialize.h>
@@ -705,4 +705,4 @@ public:
     }
 };
 
-#endif // MICRO_STREAMS_H
+#endif // ROMANCE_STREAMS_H

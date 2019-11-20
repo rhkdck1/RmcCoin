@@ -68,7 +68,7 @@ static inline int64_t GetPerformanceCounter()
     __asm__ volatile ("rdtsc" : "=a"(r1), "=d"(r2)); // Constrain r1 to rax and r2 to rdx.
     return (r2 << 32) | r1;
 #else
-    // Fall back to using C++11 clock (usually microsecond or nanosecond precision)
+    // Fall back to using C++11 clock (usually romancesecond or nanosecond precision)
     return std::chrono::high_resolution_clock::now().time_since_epoch().count();
 #endif
 }

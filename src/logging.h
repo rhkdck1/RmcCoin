@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_LOGGING_H
-#define MICRO_LOGGING_H
+#ifndef ROMANCE_LOGGING_H
+#define ROMANCE_LOGGING_H
 
 #include <fs.h>
 #include <tinyformat.h>
@@ -16,7 +16,7 @@
 #include <string>
 #include <vector>
 
-static const bool DEFAULT_LOGTIMEMICROS = false;
+static const bool DEFAULT_LOGTIMEROMANCES = false;
 static const bool DEFAULT_LOGIPS        = false;
 static const bool DEFAULT_LOGTIMESTAMPS = true;
 extern const char * const DEFAULT_DEBUGLOGFILE;
@@ -80,7 +80,7 @@ namespace BCLog {
         bool m_print_to_file = false;
 
         bool m_log_timestamps = DEFAULT_LOGTIMESTAMPS;
-        bool m_log_time_micros = DEFAULT_LOGTIMEMICROS;
+        bool m_log_time_romances = DEFAULT_LOGTIMEROMANCES;
 
         fs::path m_file_path;
         std::atomic<bool> m_reopen_file{false};
@@ -163,4 +163,4 @@ template<typename T, typename... Args> static inline void MarkUsed(const T& t, c
 } while(0)
 #endif
 
-#endif // MICRO_LOGGING_H
+#endif // ROMANCE_LOGGING_H

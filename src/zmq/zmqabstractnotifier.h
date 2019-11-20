@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ZMQ_ZMQABSTRACTNOTIFIER_H
-#define MICRO_ZMQ_ZMQABSTRACTNOTIFIER_H
+#ifndef ROMANCE_ZMQ_ZMQABSTRACTNOTIFIER_H
+#define ROMANCE_ZMQ_ZMQABSTRACTNOTIFIER_H
 
 #include <zmq/zmqconfig.h>
 
@@ -41,4 +41,4 @@ protected:
     std::string address;
 };
 
-#endif // MICRO_ZMQ_ZMQABSTRACTNOTIFIER_H
+#endif // ROMANCE_ZMQ_ZMQABSTRACTNOTIFIER_H

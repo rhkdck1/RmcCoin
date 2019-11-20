@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CORE_IO_H
-#define MICRO_CORE_IO_H
+#ifndef ROMANCE_CORE_IO_H
+#define ROMANCE_CORE_IO_H
 
 #include <amount.h>
 
@@ -37,4 +37,4 @@ void ScriptPubKeyToUniv(const CScript& scriptPubKey, UniValue& out, bool fInclud
 void ScriptToUniv(const CScript& script, UniValue& out, bool include_address);
 void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry, bool include_hex = true, int serialize_flags = 0);
 
-#endif // MICRO_CORE_IO_H
+#endif // ROMANCE_CORE_IO_H

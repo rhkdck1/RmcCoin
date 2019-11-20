@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <qt/bitcoingui.h>
@@ -551,7 +551,7 @@ static void SetupUIArgs()
     gArgs.AddArg("-uiplatform", strprintf("Select platform to customize UI for (one of windows, macosx, other; default: %s)", BitcoinGUI::DEFAULT_UIPLATFORM), true, OptionsCategory::GUI);
 }
 
-#ifndef MICRO_QT_TEST
+#ifndef ROMANCE_QT_TEST
 int main(int argc, char *argv[])
 {
     SetupEnvironment();
@@ -626,7 +626,7 @@ int main(int argc, char *argv[])
     if (!Intro::pickDataDirectory(*node))
         return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data and blocks directory and parse micro.conf
+    /// 6. Determine availability of data and blocks directory and parse romance.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false)))
     {
@@ -729,4 +729,4 @@ int main(int argc, char *argv[])
     }
     return rv;
 }
-#endif // MICRO_QT_TEST
+#endif // ROMANCE_QT_TEST

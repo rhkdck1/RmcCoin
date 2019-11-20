@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_TXMEMPOOL_H
-#define MICRO_TXMEMPOOL_H
+#ifndef ROMANCE_TXMEMPOOL_H
+#define ROMANCE_TXMEMPOOL_H
 
 #include <memory>
 #include <set>
@@ -828,4 +828,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // MICRO_TXMEMPOOL_H
+#endif // ROMANCE_TXMEMPOOL_H

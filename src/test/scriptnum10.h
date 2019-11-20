@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_TEST_SCRIPTNUM10_H
-#define MICRO_TEST_SCRIPTNUM10_H
+#ifndef ROMANCE_TEST_SCRIPTNUM10_H
+#define ROMANCE_TEST_SCRIPTNUM10_H
 
 #include <algorithm>
 #include <limits>
@@ -180,4 +180,4 @@ private:
 };
 
 
-#endif // MICRO_TEST_BIGNUM_H
+#endif // ROMANCE_TEST_BIGNUM_H

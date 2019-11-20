@@ -6,8 +6,8 @@
 /**
  * Money parsing/formatting utilities.
  */
-#ifndef MICRO_UTILMONEYSTR_H
-#define MICRO_UTILMONEYSTR_H
+#ifndef ROMANCE_UTILMONEYSTR_H
+#define ROMANCE_UTILMONEYSTR_H
 
 #include <stdint.h>
 #include <string>
@@ -21,4 +21,4 @@ std::string FormatMoney(const CAmount& n);
 bool ParseMoney(const std::string& str, CAmount& nRet);
 bool ParseMoney(const char* pszIn, CAmount& nRet);
 
-#endif // MICRO_UTILMONEYSTR_H
+#endif // ROMANCE_UTILMONEYSTR_H

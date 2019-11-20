@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_WALLETFRAME_H
-#define MICRO_QT_WALLETFRAME_H
+#ifndef ROMANCE_QT_WALLETFRAME_H
+#define ROMANCE_QT_WALLETFRAME_H
 
 #include <QFrame>
 #include <QMap>
@@ -94,4 +94,4 @@ public Q_SLOTS:
     void outOfSyncWarningClicked();
 };
 
-#endif // MICRO_QT_WALLETFRAME_H
+#endif // ROMANCE_QT_WALLETFRAME_H

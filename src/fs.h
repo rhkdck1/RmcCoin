@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_FS_H
-#define MICRO_FS_H
+#ifndef ROMANCE_FS_H
+#define ROMANCE_FS_H
 
 #include <stdio.h>
 #include <string>
@@ -24,4 +24,4 @@ namespace fsbridge {
     FILE *freopen(const fs::path& p, const char *mode, FILE *stream);
 };
 
-#endif // MICRO_FS_H
+#endif // ROMANCE_FS_H

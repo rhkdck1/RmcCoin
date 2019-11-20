@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_SIGCACHE_H
-#define MICRO_SCRIPT_SIGCACHE_H
+#ifndef ROMANCE_SCRIPT_SIGCACHE_H
+#define ROMANCE_SCRIPT_SIGCACHE_H
 
 #include <script/interpreter.h>
 
@@ -53,4 +53,4 @@ public:
 
 void InitSignatureCache();
 
-#endif // MICRO_SCRIPT_SIGCACHE_H
+#endif // ROMANCE_SCRIPT_SIGCACHE_H

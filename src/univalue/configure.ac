@@ -1,17 +1,17 @@
 m4_define([libunivalue_major_version], [1])
 m4_define([libunivalue_minor_version], [1])
-m4_define([libunivalue_micro_version], [3])
+m4_define([libunivalue_romance_version], [3])
 m4_define([libunivalue_interface_age], [3])
 # If you need a modifier for the version number. 
 # Normally empty, but can be used to make "fixup" releases.
 m4_define([libunivalue_extraversion], [])
 
 dnl libtool versioning from libunivalue
-m4_define([libunivalue_current], [m4_eval(100 * libunivalue_minor_version + libunivalue_micro_version - libunivalue_interface_age)])
-m4_define([libunivalue_binary_age], [m4_eval(100 * libunivalue_minor_version + libunivalue_micro_version)])
+m4_define([libunivalue_current], [m4_eval(100 * libunivalue_minor_version + libunivalue_romance_version - libunivalue_interface_age)])
+m4_define([libunivalue_binary_age], [m4_eval(100 * libunivalue_minor_version + libunivalue_romance_version)])
 m4_define([libunivalue_revision], [libunivalue_interface_age])
 m4_define([libunivalue_age], [m4_eval(libunivalue_binary_age - libunivalue_interface_age)])
-m4_define([libunivalue_version], [libunivalue_major_version().libunivalue_minor_version().libunivalue_micro_version()libunivalue_extraversion()])
+m4_define([libunivalue_version], [libunivalue_major_version().libunivalue_minor_version().libunivalue_romance_version()libunivalue_extraversion()])
 
 
 AC_INIT([univalue], [1.0.3],
@@ -29,7 +29,7 @@ AM_INIT_AUTOMAKE([subdir-objects foreign])
 
 LIBUNIVALUE_MAJOR_VERSION=libunivalue_major_version
 LIBUNIVALUE_MINOR_VERSION=libunivalue_minor_version
-LIBUNIVALUE_MICRO_VERSION=libunivalue_micro_version
+LIBUNIVALUE_ROMANCE_VERSION=libunivalue_romance_version
 LIBUNIVALUE_INTERFACE_AGE=libunivalue_interface_age
 
 # ABI version

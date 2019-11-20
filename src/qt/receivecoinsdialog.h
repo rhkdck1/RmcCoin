@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_RECEIVECOINSDIALOG_H
-#define MICRO_QT_RECEIVECOINSDIALOG_H
+#ifndef ROMANCE_QT_RECEIVECOINSDIALOG_H
+#define ROMANCE_QT_RECEIVECOINSDIALOG_H
 
 #include <qt/guiutil.h>
 
@@ -77,4 +77,4 @@ private Q_SLOTS:
     void copyAmount();
 };
 
-#endif // MICRO_QT_RECEIVECOINSDIALOG_H
+#endif // ROMANCE_QT_RECEIVECOINSDIALOG_H

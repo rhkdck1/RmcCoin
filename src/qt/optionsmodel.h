@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_OPTIONSMODEL_H
-#define MICRO_QT_OPTIONSMODEL_H
+#ifndef ROMANCE_QT_OPTIONSMODEL_H
+#define ROMANCE_QT_OPTIONSMODEL_H
 
 #include <amount.h>
 
@@ -107,4 +107,4 @@ Q_SIGNALS:
     void hideTrayIconChanged(bool);
 };
 
-#endif // MICRO_QT_OPTIONSMODEL_H
+#endif // ROMANCE_QT_OPTIONSMODEL_H

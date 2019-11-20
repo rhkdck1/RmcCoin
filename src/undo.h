@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_UNDO_H
-#define MICRO_UNDO_H
+#ifndef ROMANCE_UNDO_H
+#define ROMANCE_UNDO_H
 
 #include <compressor.h>
 #include <consensus/consensus.h>
@@ -109,4 +109,4 @@ public:
     }
 };
 
-#endif // MICRO_UNDO_H
+#endif // ROMANCE_UNDO_H

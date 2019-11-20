@@ -32,15 +32,15 @@ bench_bench_bitcoin_SOURCES = \
 
 nodist_bench_bench_bitcoin_SOURCES = $(GENERATED_BENCH_FILES)
 
-bench_bench_bitcoin_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
+bench_bench_bitcoin_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
 bench_bench_bitcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 bench_bench_bitcoin_LDADD = \
-  $(LIBMICRO_WALLET) \
-  $(LIBMICRO_SERVER) \
-  $(LIBMICRO_COMMON) \
-  $(LIBMICRO_UTIL) \
-  $(LIBMICRO_CONSENSUS) \
-  $(LIBMICRO_CRYPTO) \
+  $(LIBROMANCE_WALLET) \
+  $(LIBROMANCE_SERVER) \
+  $(LIBROMANCE_COMMON) \
+  $(LIBROMANCE_UTIL) \
+  $(LIBROMANCE_CONSENSUS) \
+  $(LIBROMANCE_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
@@ -48,7 +48,7 @@ bench_bench_bitcoin_LDADD = \
   $(LIBUNIVALUE)
 
 if ENABLE_ZMQ
-bench_bench_bitcoin_LDADD += $(LIBMICRO_ZMQ) $(ZMQ_LIBS)
+bench_bench_bitcoin_LDADD += $(LIBROMANCE_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
@@ -58,9 +58,9 @@ endif
 bench_bench_bitcoin_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 bench_bench_bitcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-CLEAN_MICRO_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
+CLEAN_ROMANCE_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
 
-CLEANFILES += $(CLEAN_MICRO_BENCH)
+CLEANFILES += $(CLEAN_ROMANCE_BENCH)
 
 bench/checkblock.cpp: bench/data/block413567.raw.h
 
@@ -70,7 +70,7 @@ bench: $(BENCH_BINARY) FORCE
 	$(BENCH_BINARY)
 
 bitcoin_bench_clean : FORCE
-	rm -f $(CLEAN_MICRO_BENCH) $(bench_bench_bitcoin_OBJECTS) $(BENCH_BINARY)
+	rm -f $(CLEAN_ROMANCE_BENCH) $(bench_bench_bitcoin_OBJECTS) $(BENCH_BINARY)
 
 %.raw.h: %.raw
 	@$(MKDIR_P) $(@D)

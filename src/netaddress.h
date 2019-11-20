@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_NETADDRESS_H
-#define MICRO_NETADDRESS_H
+#ifndef ROMANCE_NETADDRESS_H
+#define ROMANCE_NETADDRESS_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <compat.h>
@@ -172,4 +172,4 @@ class CService : public CNetAddr
         }
 };
 
-#endif // MICRO_NETADDRESS_H
+#endif // ROMANCE_NETADDRESS_H

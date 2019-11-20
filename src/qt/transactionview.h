@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_TRANSACTIONVIEW_H
-#define MICRO_QT_TRANSACTIONVIEW_H
+#ifndef ROMANCE_QT_TRANSACTIONVIEW_H
+#define ROMANCE_QT_TRANSACTIONVIEW_H
 
 #include <qt/guiutil.h>
 
@@ -121,4 +121,4 @@ public Q_SLOTS:
     void focusTransaction(const uint256& txid);
 };
 
-#endif // MICRO_QT_TRANSACTIONVIEW_H
+#endif // ROMANCE_QT_TRANSACTIONVIEW_H

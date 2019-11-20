@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ADDRMAN_H
-#define MICRO_ADDRMAN_H
+#ifndef ROMANCE_ADDRMAN_H
+#define ROMANCE_ADDRMAN_H
 
 #include <netaddress.h>
 #include <protocol.h>
@@ -638,4 +638,4 @@ public:
 
 };
 
-#endif // MICRO_ADDRMAN_H
+#endif // ROMANCE_ADDRMAN_H

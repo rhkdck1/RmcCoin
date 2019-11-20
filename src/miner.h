@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_MINER_H
-#define MICRO_MINER_H
+#ifndef ROMANCE_MINER_H
+#define ROMANCE_MINER_H
 
 #include <primitives/block.h>
 #include <txmempool.h>
@@ -201,4 +201,4 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
 /** Run the miner threads */
 void GenerateSolo(bool fGenerate, int nThreads, const CChainParams& chainparams, CConnman &connman);
 
-#endif // MICRO_MINER_H
+#endif // ROMANCE_MINER_H

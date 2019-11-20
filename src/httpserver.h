@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_HTTPSERVER_H
-#define MICRO_HTTPSERVER_H
+#ifndef ROMANCE_HTTPSERVER_H
+#define ROMANCE_HTTPSERVER_H
 
 #include <string>
 #include <stdint.h>
@@ -150,4 +150,4 @@ private:
 
 std::string urlDecode(const std::string &urlEncoded);
 
-#endif // MICRO_HTTPSERVER_H
+#endif // ROMANCE_HTTPSERVER_H

@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_COMPAT_BYTESWAP_H
-#define MICRO_COMPAT_BYTESWAP_H
+#ifndef ROMANCE_COMPAT_BYTESWAP_H
+#define ROMANCE_COMPAT_BYTESWAP_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <stdint.h>
@@ -63,4 +63,4 @@ inline uint64_t bswap_64(uint64_t x)
 
 #endif // defined(MAC_OSX)
 
-#endif // MICRO_COMPAT_BYTESWAP_H
+#endif // ROMANCE_COMPAT_BYTESWAP_H

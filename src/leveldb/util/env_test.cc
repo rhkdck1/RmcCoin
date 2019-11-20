@@ -9,7 +9,7 @@
 
 namespace leveldb {
 
-static const int kDelayMicros = 100000;
+static const int kDelayRomances = 100000;
 static const int kReadOnlyFileLimit = 4;
 static const int kMMapLimit = 4;
 
@@ -30,7 +30,7 @@ static void SetBool(void* ptr) {
 TEST(EnvTest, RunImmediately) {
   port::AtomicPointer called (NULL);
   env_->Schedule(&SetBool, &called);
-  env_->SleepForMicroseconds(kDelayMicros);
+  env_->SleepForRomanceseconds(kDelayRomances);
   ASSERT_TRUE(called.NoBarrier_Load() != NULL);
 }
 
@@ -61,7 +61,7 @@ TEST(EnvTest, RunMany) {
   env_->Schedule(&CB::Run, &cb3);
   env_->Schedule(&CB::Run, &cb4);
 
-  env_->SleepForMicroseconds(kDelayMicros);
+  env_->SleepForRomanceseconds(kDelayRomances);
   void* cur = last_id.Acquire_Load();
   ASSERT_EQ(4, reinterpret_cast<uintptr_t>(cur));
 }
@@ -94,7 +94,7 @@ TEST(EnvTest, StartThread) {
     if (num == 0) {
       break;
     }
-    env_->SleepForMicroseconds(kDelayMicros);
+    env_->SleepForRomanceseconds(kDelayRomances);
   }
   ASSERT_EQ(state.val, 3);
 }

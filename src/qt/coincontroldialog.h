@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_COINCONTROLDIALOG_H
-#define MICRO_QT_COINCONTROLDIALOG_H
+#ifndef ROMANCE_QT_COINCONTROLDIALOG_H
+#define ROMANCE_QT_COINCONTROLDIALOG_H
 
 #include <amount.h>
 
@@ -109,4 +109,4 @@ private Q_SLOTS:
     void updateLabelLocked();
 };
 
-#endif // MICRO_QT_COINCONTROLDIALOG_H
+#endif // ROMANCE_QT_COINCONTROLDIALOG_H

@@ -81,8 +81,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const MICRO_CONF_FILENAME = "micro.conf";
-const char * const MICRO_PID_FILENAME = "microd.pid";
+const char * const ROMANCE_CONF_FILENAME = "romance.conf";
+const char * const ROMANCE_PID_FILENAME = "romanced.pid";
 
 ArgsManager gArgs;
 
@@ -273,7 +273,7 @@ public:
         std::pair<bool,std::string> found_result(false, std::string());
 
         // We pass "true" to GetArgHelper in order to return the last
-        // argument value seen from the command line (so "microd -foo=bar
+        // argument value seen from the command line (so "romanced -foo=bar
         // -foo=baz" gives GetArg(am,"foo")=={true,"baz"}
         found_result = GetArgHelper(am.m_override_args, arg, true);
         if (found_result.first) {
@@ -704,13 +704,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Micro
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Micro
-    // Mac: ~/.micro
-    // Unix: ~/.micro
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Romance
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Romance
+    // Mac: ~/.romance
+    // Unix: ~/.romance
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Micro";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Romance";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -720,10 +720,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / ".micro";
+    return pathRet / ".romance";
 #else
     // Unix
-    return pathRet / ".micro";
+    return pathRet / ".romance";
 #endif
 #endif
 }
@@ -911,7 +911,7 @@ bool ArgsManager::ReadConfigFiles(std::string& error, bool ignore_invalid_keys)
         m_config_args.clear();
     }
 
-    const std::string confPath = GetArg("-conf", MICRO_CONF_FILENAME);
+    const std::string confPath = GetArg("-conf", ROMANCE_CONF_FILENAME);
     fs::ifstream stream(GetConfigFile(confPath));
 
     // ok to not have a config file
@@ -996,7 +996,7 @@ std::string ArgsManager::GetChainName() const
 #ifndef WIN32
 fs::path GetPidFile()
 {
-    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", MICRO_PID_FILENAME)));
+    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", ROMANCE_PID_FILENAME)));
 }
 
 void CreatePidFile(const fs::path &path, pid_t pid)

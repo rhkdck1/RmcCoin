@@ -982,7 +982,7 @@ bool CBlockPolicyEstimator::Read(CAutoFile& filein)
 }
 
 void CBlockPolicyEstimator::FlushUnconfirmed() {
-    int64_t startclear = GetTimeMicros();
+    int64_t startclear = GetTimeRomances();
     LOCK(cs_feeEstimator);
     size_t num_entries = mapMemPoolTxs.size();
     // Remove every entry in mapMemPoolTxs
@@ -990,7 +990,7 @@ void CBlockPolicyEstimator::FlushUnconfirmed() {
         auto mi = mapMemPoolTxs.begin();
         removeTx(mi->first, false); // this calls erase() on mapMemPoolTxs
     }
-    int64_t endclear = GetTimeMicros();
+    int64_t endclear = GetTimeRomances();
     LogPrint(BCLog::ESTIMATEFEE, "Recorded %u unconfirmed txs from mempool in %gs\n", num_entries, (endclear - startclear)*0.000001);
 }
 

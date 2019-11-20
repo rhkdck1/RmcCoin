@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_COINCONTROLTREEWIDGET_H
-#define MICRO_QT_COINCONTROLTREEWIDGET_H
+#ifndef ROMANCE_QT_COINCONTROLTREEWIDGET_H
+#define ROMANCE_QT_COINCONTROLTREEWIDGET_H
 
 #include <QKeyEvent>
 #include <QTreeWidget>
@@ -19,4 +19,4 @@ protected:
     virtual void keyPressEvent(QKeyEvent *event);
 };
 
-#endif // MICRO_QT_COINCONTROLTREEWIDGET_H
+#endif // ROMANCE_QT_COINCONTROLTREEWIDGET_H

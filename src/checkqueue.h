@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CHECKQUEUE_H
-#define MICRO_CHECKQUEUE_H
+#ifndef ROMANCE_CHECKQUEUE_H
+#define ROMANCE_CHECKQUEUE_H
 
 #include <sync.h>
 
@@ -211,4 +211,4 @@ public:
     }
 };
 
-#endif // MICRO_CHECKQUEUE_H
+#endif // ROMANCE_CHECKQUEUE_H

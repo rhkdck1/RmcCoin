@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_TRAFFICGRAPHWIDGET_H
-#define MICRO_QT_TRAFFICGRAPHWIDGET_H
+#ifndef ROMANCE_QT_TRAFFICGRAPHWIDGET_H
+#define ROMANCE_QT_TRAFFICGRAPHWIDGET_H
 
 #include <QWidget>
 #include <QQueue>
@@ -45,4 +45,4 @@ private:
     ClientModel *clientModel;
 };
 
-#endif // MICRO_QT_TRAFFICGRAPHWIDGET_H
+#endif // ROMANCE_QT_TRAFFICGRAPHWIDGET_H

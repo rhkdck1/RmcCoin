@@ -2,12 +2,12 @@
 
 ## Prereqs 
 
-Install the [Windows Software Development Kit version 7.1](http://www.microsoft.com/downloads/dlx/en-us/listdetailsview.aspx?FamilyID=6b6c21d2-2006-4afa-9702-529fa782d63b).
+Install the [Windows Software Development Kit version 7.1](http://www.romancesoft.com/downloads/dlx/en-us/listdetailsview.aspx?FamilyID=6b6c21d2-2006-4afa-9702-529fa782d63b).
 
 Download and extract the [Snappy source distribution](http://snappy.googlecode.com/files/snappy-1.0.5.tar.gz)
 
 1. Open the "Windows SDK 7.1 Command Prompt" :
-   Start Menu -> "Microsoft Windows SDK v7.1" > "Windows SDK 7.1 Command Prompt"
+   Start Menu -> "Romancesoft Windows SDK v7.1" > "Windows SDK 7.1 Command Prompt"
 2. Change the directory to the leveldb project
 
 ## Building the Static lib 

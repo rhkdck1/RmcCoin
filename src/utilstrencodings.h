@@ -6,8 +6,8 @@
 /**
  * Utilities for converting data from/to strings.
  */
-#ifndef MICRO_UTILSTRENCODINGS_H
-#define MICRO_UTILSTRENCODINGS_H
+#ifndef ROMANCE_UTILSTRENCODINGS_H
+#define ROMANCE_UTILSTRENCODINGS_H
 
 #include <stdint.h>
 #include <string>
@@ -184,4 +184,4 @@ bool ConvertBits(const O& outfn, I it, I end) {
     return true;
 }
 
-#endif // MICRO_UTILSTRENCODINGS_H
+#endif // ROMANCE_UTILSTRENCODINGS_H

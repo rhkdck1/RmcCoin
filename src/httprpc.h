@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_HTTPRPC_H
-#define MICRO_HTTPRPC_H
+#ifndef ROMANCE_HTTPRPC_H
+#define ROMANCE_HTTPRPC_H
 
 #include <string>
 #include <map>

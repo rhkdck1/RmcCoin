@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_INTERFACES_NODE_H
-#define MICRO_INTERFACES_NODE_H
+#ifndef ROMANCE_INTERFACES_NODE_H
+#define ROMANCE_INTERFACES_NODE_H
 
 #include <addrdb.h>     // For banmap_t
 #include <amount.h>     // For CAmount
@@ -31,7 +31,7 @@ namespace interfaces {
 class Handler;
 class Wallet;
 
-//! Top-level interface for a bitcoin node (microd process).
+//! Top-level interface for a bitcoin node (romanced process).
 class Node
 {
 public:
@@ -232,4 +232,4 @@ std::unique_ptr<Node> MakeNode();
 
 } // namespace interfaces
 
-#endif // MICRO_INTERFACES_NODE_H
+#endif // ROMANCE_INTERFACES_NODE_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_PAYMENTSERVER_H
-#define MICRO_QT_PAYMENTSERVER_H
+#ifndef ROMANCE_QT_PAYMENTSERVER_H
+#define ROMANCE_QT_PAYMENTSERVER_H
 
 // This class handles payment requests from clicking on
 // romancecoin: URIs
@@ -143,4 +143,4 @@ private:
     OptionsModel *optionsModel;
 };
 
-#endif // MICRO_QT_PAYMENTSERVER_H
+#endif // ROMANCE_QT_PAYMENTSERVER_H

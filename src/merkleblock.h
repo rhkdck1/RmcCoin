@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_MERKLEBLOCK_H
-#define MICRO_MERKLEBLOCK_H
+#ifndef ROMANCE_MERKLEBLOCK_H
+#define ROMANCE_MERKLEBLOCK_H
 
 #include <serialize.h>
 #include <uint256.h>
@@ -170,4 +170,4 @@ private:
     CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std::set<uint256>* txids);
 };
 
-#endif // MICRO_MERKLEBLOCK_H
+#endif // ROMANCE_MERKLEBLOCK_H

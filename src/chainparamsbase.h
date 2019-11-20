@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CHAINPARAMSBASE_H
-#define MICRO_CHAINPARAMSBASE_H
+#ifndef ROMANCE_CHAINPARAMSBASE_H
+#define ROMANCE_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between micro-cli and microd)
+ * CBaseChainParams defines the base parameters (shared between romance-cli and romanced)
  * of a given instance of the Bitcoin system.
  */
 class CBaseChainParams
@@ -53,4 +53,4 @@ const CBaseChainParams& BaseParams();
 /** Sets the params returned by Params() to those for the given network. */
 void SelectBaseParams(const std::string& chain);
 
-#endif // MICRO_CHAINPARAMSBASE_H
+#endif // ROMANCE_CHAINPARAMSBASE_H

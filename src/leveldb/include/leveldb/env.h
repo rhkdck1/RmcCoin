@@ -153,12 +153,12 @@ class Env {
   // Create and return a log file for storing informational messages.
   virtual Status NewLogger(const std::string& fname, Logger** result) = 0;
 
-  // Returns the number of micro-seconds since some fixed point in time. Only
+  // Returns the number of romance-seconds since some fixed point in time. Only
   // useful for computing deltas of time.
-  virtual uint64_t NowMicros() = 0;
+  virtual uint64_t NowRomances() = 0;
 
-  // Sleep/delay the thread for the prescribed number of micro-seconds.
-  virtual void SleepForMicroseconds(int micros) = 0;
+  // Sleep/delay the thread for the prescribed number of romance-seconds.
+  virtual void SleepForRomanceseconds(int romances) = 0;
 
  private:
   // No copying allowed
@@ -345,11 +345,11 @@ class EnvWrapper : public Env {
   virtual Status NewLogger(const std::string& fname, Logger** result) {
     return target_->NewLogger(fname, result);
   }
-  uint64_t NowMicros() {
-    return target_->NowMicros();
+  uint64_t NowRomances() {
+    return target_->NowRomances();
   }
-  void SleepForMicroseconds(int micros) {
-    target_->SleepForMicroseconds(micros);
+  void SleepForRomanceseconds(int romances) {
+    target_->SleepForRomanceseconds(romances);
   }
  private:
   Env* target_;

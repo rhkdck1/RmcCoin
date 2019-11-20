@@ -11,8 +11,8 @@
  * - E-mail usually won't line-break if there's no punctuation to break at.
  * - Double-clicking selects the whole string as one word if it's all alphanumeric.
  */
-#ifndef MICRO_BASE58_H
-#define MICRO_BASE58_H
+#ifndef ROMANCE_BASE58_H
+#define ROMANCE_BASE58_H
 
 #include <string>
 #include <vector>
@@ -61,4 +61,4 @@ bool DecodeBase58Check(const std::string& str, std::vector<unsigned char>& vchRe
 
 bool DecodeIndexKey(const std::string& str, uint160& hashBytes, int& type);
 
-#endif // MICRO_BASE58_H
+#endif // ROMANCE_BASE58_H

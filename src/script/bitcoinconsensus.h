@@ -3,13 +3,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_MICROCONSENSUS_H
-#define MICRO_SCRIPT_MICROCONSENSUS_H
+#ifndef ROMANCE_SCRIPT_ROMANCECONSENSUS_H
+#define ROMANCE_SCRIPT_ROMANCECONSENSUS_H
 
 #include <stdint.h>
 
-#if defined(BUILD_MICRO_INTERNAL) && defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#if defined(BUILD_ROMANCE_INTERNAL) && defined(HAVE_CONFIG_H)
+#include <config/romance-config.h>
   #if defined(_WIN32)
     #if defined(DLL_EXPORT)
       #if defined(HAVE_FUNC_ATTRIBUTE_DLLEXPORT)
@@ -21,7 +21,7 @@
   #elif defined(HAVE_FUNC_ATTRIBUTE_VISIBILITY)
     #define EXPORT_SYMBOL __attribute__ ((visibility ("default")))
   #endif
-#elif defined(MSC_VER) && !defined(STATIC_LIBMICROCONSENSUS)
+#elif defined(MSC_VER) && !defined(STATIC_LIBROMANCECONSENSUS)
   #define EXPORT_SYMBOL __declspec(dllimport)
 #endif
 
@@ -33,7 +33,7 @@
 extern "C" {
 #endif
 
-#define MICROCONSENSUS_API_VER 1
+#define ROMANCECONSENSUS_API_VER 1
 
 typedef enum bitcoinconsensus_error_t
 {
@@ -80,4 +80,4 @@ EXPORT_SYMBOL unsigned int bitcoinconsensus_version();
 
 #undef EXPORT_SYMBOL
 
-#endif // MICRO_SCRIPT_MICROCONSENSUS_H
+#endif // ROMANCE_SCRIPT_ROMANCECONSENSUS_H

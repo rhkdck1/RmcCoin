@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_INIT_H
-#define MICRO_INIT_H
+#ifndef ROMANCE_INIT_H
+#define ROMANCE_INIT_H
 
 #include <memory>
 #include <string>
@@ -67,4 +67,4 @@ void SetupServerArgs();
 /** Returns licensing information (for -version) */
 std::string LicenseInfo();
 
-#endif // MICRO_INIT_H
+#endif // ROMANCE_INIT_H

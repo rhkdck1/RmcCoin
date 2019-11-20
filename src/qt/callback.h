@@ -1,5 +1,5 @@
-#ifndef MICRO_QT_CALLBACK_H
-#define MICRO_QT_CALLBACK_H
+#ifndef ROMANCE_QT_CALLBACK_H
+#define ROMANCE_QT_CALLBACK_H
 
 #include <QObject>
 
@@ -27,4 +27,4 @@ FunctionCallback<F>* makeCallback(F f)
     return new FunctionCallback<F>(std::move(f));
 }
 
-#endif // MICRO_QT_CALLBACK_H
+#endif // ROMANCE_QT_CALLBACK_H

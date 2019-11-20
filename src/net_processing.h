@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_NET_PROCESSING_H
-#define MICRO_NET_PROCESSING_H
+#ifndef ROMANCE_NET_PROCESSING_H
+#define ROMANCE_NET_PROCESSING_H
 
 #include <net.h>
 #include <validationinterface.h>
@@ -84,4 +84,4 @@ struct CNodeStateStats {
 /** Get statistics from node state */
 bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats);
 
-#endif // MICRO_NET_PROCESSING_H
+#endif // ROMANCE_NET_PROCESSING_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_STANDARD_H
-#define MICRO_SCRIPT_STANDARD_H
+#ifndef ROMANCE_SCRIPT_STANDARD_H
+#define ROMANCE_SCRIPT_STANDARD_H
 
 #include <script/interpreter.h>
 #include <uint256.h>
@@ -186,4 +186,4 @@ CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
  */
 CScript GetScriptForWitness(const CScript& redeemscript);
 
-#endif // MICRO_SCRIPT_STANDARD_H
+#endif // ROMANCE_SCRIPT_STANDARD_H

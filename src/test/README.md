@@ -5,18 +5,18 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the microd tests manually, launch `src/test/test_bitcoin`. To recompile
+To run the romanced tests manually, launch `src/test/test_bitcoin`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the microd tests.
+to run the romanced tests.
 
-To add more microd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more romanced tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the micro-qt tests manually, launch `src/qt/test/test_micro-qt`
+To run the romance-qt tests manually, launch `src/qt/test/test_romance-qt`
 
-To add more micro-qt tests, add them to the `src/qt/test/` directory and
+To add more romance-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests

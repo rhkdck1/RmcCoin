@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SPENTINDEX_H
-#define MICRO_SPENTINDEX_H
+#ifndef ROMANCE_SPENTINDEX_H
+#define ROMANCE_SPENTINDEX_H
 
 #include "uint256.h"
 #include "amount.h"
@@ -95,4 +95,4 @@ struct CSpentIndexKeyCompare
     }
 };
 
-#endif // MICRO_SPENTINDEX_H
+#endif // ROMANCE_SPENTINDEX_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_TEST_URITESTS_H
-#define MICRO_QT_TEST_URITESTS_H
+#ifndef ROMANCE_QT_TEST_URITESTS_H
+#define ROMANCE_QT_TEST_URITESTS_H
 
 #include <QObject>
 #include <QTest>
@@ -16,4 +16,4 @@ private Q_SLOTS:
     void uriTests();
 };
 
-#endif // MICRO_QT_TEST_URITESTS_H
+#endif // ROMANCE_QT_TEST_URITESTS_H

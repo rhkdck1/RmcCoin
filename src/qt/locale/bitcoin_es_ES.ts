@@ -172,8 +172,8 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si encripta su monedero y pierde su frase clave &lt;b&gt;PERDERÁ TODOS SUS MICROS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
+        <translation>Advertencia: Si encripta su monedero y pierde su frase clave &lt;b&gt;PERDERÁ TODOS SUS ROMANCES&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -418,8 +418,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>Solicitar pagos (generando códigos QR e identificadores URI "microromancecoin:")</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>Solicitar pagos (generando códigos QR e identificadores URI "romanceromancecoin:")</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -430,8 +430,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
-        <translation>Abrir un identificador URI "microromancecoin:" o una petición de pago</translation>
+        <source>Open a romanceromancecoin: URI or payment request</source>
+        <translation>Abrir un identificador URI "romanceromancecoin:" o una petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1206,8 +1206,8 @@
         <translation>Fallo en la solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start microromancecoin: click-to-pay handler</source>
-        <translation>No se puede iniciar microromancecoin: encargado click-para-pagar</translation>
+        <source>Cannot start romanceromancecoin: click-to-pay handler</source>
+        <translation>No se puede iniciar romanceromancecoin: encargado click-para-pagar</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2160,8 +2160,8 @@
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
-        <source>A message that was attached to the microromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
-        <translation>Un mensaje que se adjuntó a la microromancecoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red RomanceCoin.</translation>
+        <source>A message that was attached to the romanceromancecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the RomanceCoin network.</source>
+        <translation>Un mensaje que se adjuntó a la romanceromancecoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red RomanceCoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>

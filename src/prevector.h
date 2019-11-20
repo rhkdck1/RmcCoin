@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_PREVECTOR_H
-#define MICRO_PREVECTOR_H
+#ifndef ROMANCE_PREVECTOR_H
+#define ROMANCE_PREVECTOR_H
 
 #include <assert.h>
 #include <stdlib.h>
@@ -526,4 +526,4 @@ public:
 };
 #pragma pack(pop)
 
-#endif // MICRO_PREVECTOR_H
+#endif // ROMANCE_PREVECTOR_H

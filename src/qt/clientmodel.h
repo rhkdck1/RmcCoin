@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_CLIENTMODEL_H
-#define MICRO_QT_CLIENTMODEL_H
+#ifndef ROMANCE_QT_CLIENTMODEL_H
+#define ROMANCE_QT_CLIENTMODEL_H
 
 #include <QObject>
 #include <QDateTime>
@@ -116,4 +116,4 @@ public Q_SLOTS:
     void updateBanlist();
 };
 
-#endif // MICRO_QT_CLIENTMODEL_H
+#endif // ROMANCE_QT_CLIENTMODEL_H

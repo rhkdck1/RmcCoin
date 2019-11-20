@@ -168,7 +168,7 @@
         <translation>確認錢包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MICROS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ROMANCES&lt;/b&gt;!</source>
         <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 RomanceCoin 了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -382,8 +382,8 @@
         <translation>說明 &amp;H</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>要求付款 (產生QR碼 microromancecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>要求付款 (產生QR碼 romanceromancecoin: URIs)</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>

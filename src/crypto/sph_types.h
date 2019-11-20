@@ -981,9 +981,9 @@ typedef long long sph_s64;
  * SPH_SPARCV9_GCC_64   UltraSPARC-compatible with gcc, 64-bit mode
  * SPH_SPARCV9_GCC      UltraSPARC-compatible with gcc
  * SPH_I386_GCC         x86-compatible (32-bit) with gcc
- * SPH_I386_MSVC        x86-compatible (32-bit) with Microsoft Visual C
+ * SPH_I386_MSVC        x86-compatible (32-bit) with Romancesoft Visual C
  * SPH_AMD64_GCC        x86-compatible (64-bit) with gcc
- * SPH_AMD64_MSVC       x86-compatible (64-bit) with Microsoft Visual C
+ * SPH_AMD64_MSVC       x86-compatible (64-bit) with Romancesoft Visual C
  * SPH_PPC32_GCC        PowerPC, 32-bit, with gcc
  * SPH_PPC64_GCC        PowerPC, 64-bit, with gcc
  *
@@ -1228,7 +1228,7 @@ sph_bswap64(sph_u64 x)
 #endif
 
 /*
- * Disabled code. Apparently, Microsoft Visual C 2005 is smart enough
+ * Disabled code. Apparently, Romancesoft Visual C 2005 is smart enough
  * to generate proper opcodes for endianness swapping with the pure C
  * implementation below.
  *

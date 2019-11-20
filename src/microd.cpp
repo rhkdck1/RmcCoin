@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <chainparams.h>
@@ -61,7 +61,7 @@ static bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/micro.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/romance.conf are parsed in qt/bitcoin.cpp's main()
     SetupServerArgs();
     std::string error;
     if (!gArgs.ParseParameters(argc, argv, error)) {
@@ -79,7 +79,7 @@ static bool AppInit(int argc, char* argv[])
         }
         else
         {
-            strUsage += "\nUsage:  microd [options]                     Start " PACKAGE_NAME " Daemon\n";
+            strUsage += "\nUsage:  romanced [options]                     Start " PACKAGE_NAME " Daemon\n";
             strUsage += "\n" + gArgs.GetHelpMessage();
         }
 
@@ -109,12 +109,12 @@ static bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                fprintf(stderr, "Error: Command line contains unexpected token '%s', see microd -h for a list of options.\n", argv[i]);
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see romanced -h for a list of options.\n", argv[i]);
                 return false;
             }
         }
 
-        // -server defaults to true for microd but not for the GUI so do this here
+        // -server defaults to true for romanced but not for the GUI so do this here
         gArgs.SoftSetBoolArg("-server", true);
         // Set this early so that parameter interactions go to console
         InitLogging();
@@ -185,7 +185,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect microd signal handlers
+    // Connect romanced signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

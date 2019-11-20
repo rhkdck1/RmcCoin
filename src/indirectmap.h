@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_INDIRECTMAP_H
-#define MICRO_INDIRECTMAP_H
+#ifndef ROMANCE_INDIRECTMAP_H
+#define ROMANCE_INDIRECTMAP_H
 
 template <class T>
 struct DereferencingComparator { bool operator()(const T a, const T b) const { return *a < *b; } };
@@ -53,4 +53,4 @@ public:
     const_iterator cend() const     { return m.cend(); }
 };
 
-#endif // MICRO_INDIRECTMAP_H
+#endif // ROMANCE_INDIRECTMAP_H

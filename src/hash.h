@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_HASH_H
-#define MICRO_HASH_H
+#ifndef ROMANCE_HASH_H
+#define ROMANCE_HASH_H
 
 #include <crypto/ripemd160.h>
 #include <crypto/sha256.h>
@@ -251,4 +251,4 @@ inline uint256 Blake2b(const T* pbegin, const T* pend)
     return hash;
 }
 
-#endif // MICRO_HASH_H
+#endif // ROMANCE_HASH_H

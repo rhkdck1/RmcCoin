@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CHECKPOINTS_H
-#define MICRO_CHECKPOINTS_H
+#ifndef ROMANCE_CHECKPOINTS_H
+#define ROMANCE_CHECKPOINTS_H
 
 #include <uint256.h>
 
@@ -24,4 +24,4 @@ CBlockIndex* GetLastCheckpoint(const CCheckpointData& data);
 
 } //namespace Checkpoints
 
-#endif // MICRO_CHECKPOINTS_H
+#endif // ROMANCE_CHECKPOINTS_H

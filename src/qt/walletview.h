@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_WALLETVIEW_H
-#define MICRO_QT_WALLETVIEW_H
+#ifndef ROMANCE_QT_WALLETVIEW_H
+#define ROMANCE_QT_WALLETVIEW_H
 
 #include <amount.h>
 
@@ -129,4 +129,4 @@ Q_SIGNALS:
     void outOfSyncWarningClicked();
 };
 
-#endif // MICRO_QT_WALLETVIEW_H
+#endif // ROMANCE_QT_WALLETVIEW_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_UTILMEMORY_H
-#define MICRO_UTILMEMORY_H
+#ifndef ROMANCE_UTILMEMORY_H
+#define ROMANCE_UTILMEMORY_H
 
 #include <memory>
 #include <utility>

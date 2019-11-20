@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_COINCONTROL_H
-#define MICRO_WALLET_COINCONTROL_H
+#ifndef ROMANCE_WALLET_COINCONTROL_H
+#define ROMANCE_WALLET_COINCONTROL_H
 
 #include <policy/feerate.h>
 #include <policy/fees.h>
@@ -78,4 +78,4 @@ private:
     std::set<COutPoint> setSelected;
 };
 
-#endif // MICRO_WALLET_COINCONTROL_H
+#endif // ROMANCE_WALLET_COINCONTROL_H

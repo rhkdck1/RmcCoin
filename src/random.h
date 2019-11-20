@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_RANDOM_H
-#define MICRO_RANDOM_H
+#ifndef ROMANCE_RANDOM_H
+#define ROMANCE_RANDOM_H
 
 #include <crypto/chacha20.h>
 #include <crypto/common.h>
@@ -150,4 +150,4 @@ bool Random_SanityCheck();
 /** Initialize the RNG. */
 void RandomInit();
 
-#endif // MICRO_RANDOM_H
+#endif // ROMANCE_RANDOM_H

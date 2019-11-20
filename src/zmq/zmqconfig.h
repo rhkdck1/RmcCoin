@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ZMQ_ZMQCONFIG_H
-#define MICRO_ZMQ_ZMQCONFIG_H
+#ifndef ROMANCE_ZMQ_ZMQCONFIG_H
+#define ROMANCE_ZMQ_ZMQCONFIG_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <stdarg.h>
@@ -21,4 +21,4 @@
 
 void zmqError(const char *str);
 
-#endif // MICRO_ZMQ_ZMQCONFIG_H
+#endif // ROMANCE_ZMQ_ZMQCONFIG_H

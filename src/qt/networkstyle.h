@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_NETWORKSTYLE_H
-#define MICRO_QT_NETWORKSTYLE_H
+#ifndef ROMANCE_QT_NETWORKSTYLE_H
+#define ROMANCE_QT_NETWORKSTYLE_H
 
 #include <QIcon>
 #include <QPixmap>
@@ -32,4 +32,4 @@ private:
     QString titleAddText;
 };
 
-#endif // MICRO_QT_NETWORKSTYLE_H
+#endif // ROMANCE_QT_NETWORKSTYLE_H

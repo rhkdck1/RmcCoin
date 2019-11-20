@@ -176,11 +176,11 @@ std::string BCLog::Logger::LogTimestampStr(const std::string &str)
         return str;
 
     if (m_started_new_line) {
-        int64_t nTimeMicros = GetTimeMicros();
-        strStamped = FormatISO8601DateTime(nTimeMicros/1000000);
-        if (m_log_time_micros) {
+        int64_t nTimeRomances = GetTimeRomances();
+        strStamped = FormatISO8601DateTime(nTimeRomances/1000000);
+        if (m_log_time_romances) {
             strStamped.pop_back();
-            strStamped += strprintf(".%06dZ", nTimeMicros%1000000);
+            strStamped += strprintf(".%06dZ", nTimeRomances%1000000);
         }
         int64_t mocktime = GetMockTime();
         if (mocktime) {

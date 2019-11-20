@@ -9,8 +9,8 @@
 //
 // For more information, see BIP 173.
 
-#ifndef MICRO_BECH32_H
-#define MICRO_BECH32_H
+#ifndef ROMANCE_BECH32_H
+#define ROMANCE_BECH32_H
 
 #include <stdint.h>
 #include <string>
@@ -27,4 +27,4 @@ std::pair<std::string, std::vector<uint8_t>> Decode(const std::string& str);
 
 } // namespace bech32
 
-#endif // MICRO_BECH32_H
+#endif // ROMANCE_BECH32_H

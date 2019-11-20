@@ -50,7 +50,7 @@ class AtomicCounter {
 };
 
 void DelayMilliseconds(int millis) {
-  Env::Default()->SleepForMicroseconds(millis * 1000);
+  Env::Default()->SleepForRomanceseconds(millis * 1000);
 }
 }
 
@@ -2124,7 +2124,7 @@ void BM_LogAndApply(int iters, int num_base_files) {
   }
   ASSERT_OK(vset.LogAndApply(&vbase, &mu));
 
-  uint64_t start_micros = env->NowMicros();
+  uint64_t start_romances = env->NowRomances();
 
   for (int i = 0; i < iters; i++) {
     VersionEdit vedit;
@@ -2134,8 +2134,8 @@ void BM_LogAndApply(int iters, int num_base_files) {
     vedit.AddFile(2, fnum++, 1 /* file size */, start, limit);
     vset.LogAndApply(&vedit, &mu);
   }
-  uint64_t stop_micros = env->NowMicros();
-  unsigned int us = stop_micros - start_micros;
+  uint64_t stop_romances = env->NowRomances();
+  unsigned int us = stop_romances - start_romances;
   char buf[16];
   snprintf(buf, sizeof(buf), "%d", num_base_files);
   fprintf(stderr,

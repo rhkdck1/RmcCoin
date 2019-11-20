@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CRYPTO_COMMON_H
-#define MICRO_CRYPTO_COMMON_H
+#ifndef ROMANCE_CRYPTO_COMMON_H
+#define ROMANCE_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <stdint.h>
@@ -100,4 +100,4 @@ uint64_t static inline CountBits(uint64_t x)
     return ret;
 }
 
-#endif // MICRO_CRYPTO_COMMON_H
+#endif // ROMANCE_CRYPTO_COMMON_H

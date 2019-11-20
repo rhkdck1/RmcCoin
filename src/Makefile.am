@@ -19,42 +19,42 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-MICRO_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
+ROMANCE_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-MICRO_INCLUDES += -I$(srcdir)/secp256k1/include
-MICRO_INCLUDES += $(UNIVALUE_CFLAGS)
+ROMANCE_INCLUDES += -I$(srcdir)/secp256k1/include
+ROMANCE_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBMICRO_SERVER=libbitcoin_server.a
-LIBMICRO_COMMON=libbitcoin_common.a
-LIBMICRO_CONSENSUS=libbitcoin_consensus.a
-LIBMICRO_CLI=libmicro_cli.a
-LIBMICRO_UTIL=libbitcoin_util.a
-LIBMICRO_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
-LIBMICROQT=qt/libbitcoinqt.a
+LIBROMANCE_SERVER=libbitcoin_server.a
+LIBROMANCE_COMMON=libbitcoin_common.a
+LIBROMANCE_CONSENSUS=libbitcoin_consensus.a
+LIBROMANCE_CLI=libromance_cli.a
+LIBROMANCE_UTIL=libbitcoin_util.a
+LIBROMANCE_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
+LIBROMANCEQT=qt/libbitcoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBMICRO_ZMQ=libbitcoin_zmq.a
+LIBROMANCE_ZMQ=libbitcoin_zmq.a
 endif
-if BUILD_MICRO_LIBS
-LIBMICROCONSENSUS=libbitcoinconsensus.la
+if BUILD_ROMANCE_LIBS
+LIBROMANCECONSENSUS=libbitcoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBMICRO_WALLET=libbitcoin_wallet.a
+LIBROMANCE_WALLET=libbitcoin_wallet.a
 endif
 
-LIBMICRO_CRYPTO= $(LIBMICRO_CRYPTO_BASE)
+LIBROMANCE_CRYPTO= $(LIBROMANCE_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBMICRO_CRYPTO_SSE41 = crypto/libbitcoin_crypto_sse41.a
-LIBMICRO_CRYPTO += $(LIBMICRO_CRYPTO_SSE41)
+LIBROMANCE_CRYPTO_SSE41 = crypto/libbitcoin_crypto_sse41.a
+LIBROMANCE_CRYPTO += $(LIBROMANCE_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBMICRO_CRYPTO_AVX2 = crypto/libbitcoin_crypto_avx2.a
-LIBMICRO_CRYPTO += $(LIBMICRO_CRYPTO_AVX2)
+LIBROMANCE_CRYPTO_AVX2 = crypto/libbitcoin_crypto_avx2.a
+LIBROMANCE_CRYPTO += $(LIBROMANCE_CRYPTO_AVX2)
 endif
 if ENABLE_SHANI
-LIBMICRO_CRYPTO_SHANI = crypto/libbitcoin_crypto_shani.a
-LIBMICRO_CRYPTO += $(LIBMICRO_CRYPTO_SHANI)
+LIBROMANCE_CRYPTO_SHANI = crypto/libbitcoin_crypto_shani.a
+LIBROMANCE_CRYPTO += $(LIBROMANCE_CRYPTO_SHANI)
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(wildcard secp256k1/include/*)
@@ -63,33 +63,33 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(w
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBMICRO_CRYPTO) \
-  $(LIBMICRO_UTIL) \
-  $(LIBMICRO_COMMON) \
-  $(LIBMICRO_CONSENSUS) \
-  $(LIBMICRO_SERVER) \
-  $(LIBMICRO_CLI) \
-  $(LIBMICRO_WALLET) \
-  $(LIBMICRO_ZMQ)
+  $(LIBROMANCE_CRYPTO) \
+  $(LIBROMANCE_UTIL) \
+  $(LIBROMANCE_COMMON) \
+  $(LIBROMANCE_CONSENSUS) \
+  $(LIBROMANCE_SERVER) \
+  $(LIBROMANCE_CLI) \
+  $(LIBROMANCE_WALLET) \
+  $(LIBROMANCE_ZMQ)
 
-lib_LTLIBRARIES = $(LIBMICROCONSENSUS)
+lib_LTLIBRARIES = $(LIBROMANCECONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
 
-if BUILD_MICROD
-  bin_PROGRAMS += microd
+if BUILD_ROMANCED
+  bin_PROGRAMS += romanced
 endif
 
-if BUILD_MICRO_UTILS
-  bin_PROGRAMS += micro-cli micro-tx
+if BUILD_ROMANCE_UTILS
+  bin_PROGRAMS += romance-cli romance-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
 # bitcoin core #
-MICRO_CORE_H = \
+ROMANCE_CORE_H = \
   addrdb.h \
   addrman.h \
   base58.h \
@@ -217,8 +217,8 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between microd and micro-qt
-libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+# server: shared between romanced and romance-qt
+libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrdb.cpp \
@@ -262,10 +262,10 @@ libbitcoin_server_a_SOURCES = \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
-  $(MICRO_CORE_H)
+  $(ROMANCE_CORE_H)
 
 if ENABLE_ZMQ
-libbitcoin_zmq_a_CPPFLAGS = $(MICRO_INCLUDES) $(ZMQ_CFLAGS)
+libbitcoin_zmq_a_CPPFLAGS = $(ROMANCE_INCLUDES) $(ZMQ_CFLAGS)
 libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
@@ -275,9 +275,9 @@ libbitcoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between microd and micro-qt, but only linked
+# wallet: shared between romanced and romance-qt, but only linked
 # when wallet enabled
-libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
+libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_wallet_a_SOURCES = \
   interfaces/wallet.cpp \
@@ -293,7 +293,7 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
   wallet/coinselection.cpp \
-  $(MICRO_CORE_H)
+  $(ROMANCE_CORE_H)
 
 # crypto primitives library
 crypto_libbitcoin_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS)
@@ -345,7 +345,7 @@ crypto_libbitcoin_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
 crypto_libbitcoin_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
-libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
+libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
 libbitcoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_consensus_a_SOURCES = \
   amount.h \
@@ -380,8 +380,8 @@ libbitcoin_consensus_a_SOURCES = \
   utilstrencodings.h \
   version.h
 
-# common: shared between microd, and micro-qt and non-server tools
-libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
+# common: shared between romanced, and romance-qt and non-server tools
+libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
   base58.cpp \
@@ -405,12 +405,12 @@ libbitcoin_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   warnings.cpp \
-  $(MICRO_CORE_H)
+  $(ROMANCE_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
+libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = \
   support/lockedpool.cpp \
@@ -432,91 +432,91 @@ libbitcoin_util_a_SOURCES = \
   utilmoneystr.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
-  $(MICRO_CORE_H)
+  $(ROMANCE_CORE_H)
 
 if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between micro-cli and micro-qt
-libmicro_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
-libmicro_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmicro_cli_a_SOURCES = \
+# cli: shared between romance-cli and romance-qt
+libromance_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
+libromance_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libromance_cli_a_SOURCES = \
   rpc/client.cpp \
-  $(MICRO_CORE_H)
+  $(ROMANCE_CORE_H)
 
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# microd binary #
-microd_SOURCES = microd.cpp
-microd_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
-microd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-microd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# romanced binary #
+romanced_SOURCES = romanced.cpp
+romanced_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
+romanced_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+romanced_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-microd_SOURCES += microd-res.rc
+romanced_SOURCES += romanced-res.rc
 endif
 
-microd_LDADD = \
-  $(LIBMICRO_SERVER) \
-  $(LIBMICRO_WALLET) \
-  $(LIBMICRO_COMMON) \
+romanced_LDADD = \
+  $(LIBROMANCE_SERVER) \
+  $(LIBROMANCE_WALLET) \
+  $(LIBROMANCE_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBMICRO_UTIL) \
-  $(LIBMICRO_ZMQ) \
-  $(LIBMICRO_CONSENSUS) \
-  $(LIBMICRO_CRYPTO) \
+  $(LIBROMANCE_UTIL) \
+  $(LIBROMANCE_ZMQ) \
+  $(LIBROMANCE_CONSENSUS) \
+  $(LIBROMANCE_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-microd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+romanced_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# micro-cli binary #
-micro_cli_SOURCES = micro-cli.cpp
-micro_cli_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES) $(EVENT_CFLAGS)
-micro_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-micro_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# romance-cli binary #
+romance_cli_SOURCES = romance-cli.cpp
+romance_cli_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES) $(EVENT_CFLAGS)
+romance_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+romance_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-micro_cli_SOURCES += micro-cli-res.rc
+romance_cli_SOURCES += romance-cli-res.rc
 endif
 
-micro_cli_LDADD = \
-  $(LIBMICRO_CLI) \
+romance_cli_LDADD = \
+  $(LIBROMANCE_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBMICRO_UTIL) \
-  $(LIBMICRO_CRYPTO)
+  $(LIBROMANCE_UTIL) \
+  $(LIBROMANCE_CRYPTO)
 
-micro_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+romance_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# micro-tx binary #
-micro_tx_SOURCES = micro-tx.cpp
-micro_tx_CPPFLAGS = $(AM_CPPFLAGS) $(MICRO_INCLUDES)
-micro_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-micro_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# romance-tx binary #
+romance_tx_SOURCES = romance-tx.cpp
+romance_tx_CPPFLAGS = $(AM_CPPFLAGS) $(ROMANCE_INCLUDES)
+romance_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+romance_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-micro_tx_SOURCES += micro-tx-res.rc
+romance_tx_SOURCES += romance-tx-res.rc
 endif
 
-micro_tx_LDADD = \
+romance_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBMICRO_COMMON) \
-  $(LIBMICRO_UTIL) \
-  $(LIBMICRO_CONSENSUS) \
-  $(LIBMICRO_CRYPTO) \
+  $(LIBROMANCE_COMMON) \
+  $(LIBROMANCE_UTIL) \
+  $(LIBROMANCE_CONSENSUS) \
+  $(LIBROMANCE_CRYPTO) \
   $(LIBSECP256K1)
 
-micro_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+romance_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
-if BUILD_MICRO_LIBS
+if BUILD_ROMANCE_LIBS
 include_HEADERS = script/bitcoinconsensus.h
 libbitcoinconsensus_la_SOURCES = $(crypto_libbitcoin_crypto_base_a_SOURCES) $(libbitcoin_consensus_a_SOURCES)
 
@@ -526,7 +526,7 @@ endif
 
 libbitcoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
 libbitcoinconsensus_la_LIBADD = $(LIBSECP256K1)
-libbitcoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_MICRO_INTERNAL
+libbitcoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_ROMANCE_INTERNAL
 libbitcoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
@@ -557,12 +557,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST = $(CTAES_DIST)
 
 
-config/micro-config.h: config/stamp-h1
+config/romance-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/micro-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/romance-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/micro-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/micro-config.h.in
+$(top_srcdir)/$(subdir)/config/romance-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/romance-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

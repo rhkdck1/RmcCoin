@@ -4,8 +4,8 @@
 //
 // C++ wrapper around ctaes, a constant-time AES implementation
 
-#ifndef MICRO_CRYPTO_AES_H
-#define MICRO_CRYPTO_AES_H
+#ifndef ROMANCE_CRYPTO_AES_H
+#define ROMANCE_CRYPTO_AES_H
 
 extern "C" {
 #include <crypto/ctaes/ctaes.h>
@@ -115,4 +115,4 @@ private:
     unsigned char iv[AES_BLOCKSIZE];
 };
 
-#endif // MICRO_CRYPTO_AES_H
+#endif // ROMANCE_CRYPTO_AES_H

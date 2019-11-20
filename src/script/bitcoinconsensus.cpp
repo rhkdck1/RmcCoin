@@ -125,5 +125,5 @@ int bitcoinconsensus_verify_script(const unsigned char *scriptPubKey, unsigned i
 unsigned int bitcoinconsensus_version()
 {
     // Just use the API version for now
-    return MICROCONSENSUS_API_VER;
+    return ROMANCECONSENSUS_API_VER;
 }

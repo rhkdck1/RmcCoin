@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_COMPAT_H
-#define MICRO_COMPAT_H
+#ifndef ROMANCE_COMPAT_H
+#define ROMANCE_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <type_traits>
@@ -121,4 +121,4 @@ bool static inline IsSelectableSocket(const SOCKET& s) {
 #endif
 }
 
-#endif // MICRO_COMPAT_H
+#endif // ROMANCE_COMPAT_H

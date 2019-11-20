@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_DBWRAPPER_H
-#define MICRO_DBWRAPPER_H
+#ifndef ROMANCE_DBWRAPPER_H
+#define ROMANCE_DBWRAPPER_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -349,4 +349,4 @@ public:
 
 };
 
-#endif // MICRO_DBWRAPPER_H
+#endif // ROMANCE_DBWRAPPER_H

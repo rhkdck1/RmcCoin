@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_TIMESTAMPINDEX_H
-#define MICRO_TIMESTAMPINDEX_H
+#ifndef ROMANCE_TIMESTAMPINDEX_H
+#define ROMANCE_TIMESTAMPINDEX_H
 
 #include "uint256.h"
 
@@ -128,4 +128,4 @@ struct CTimestampBlockIndexValue {
     }
 };
 
-#endif // MICRO_TIMESTAMPINDEX_H
+#endif // ROMANCE_TIMESTAMPINDEX_H

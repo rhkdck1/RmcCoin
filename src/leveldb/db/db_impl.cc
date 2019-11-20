@@ -488,7 +488,7 @@ Status DBImpl::RecoverLogFile(uint64_t log_number, bool last_log,
 Status DBImpl::WriteLevel0Table(MemTable* mem, VersionEdit* edit,
                                 Version* base) {
   mutex_.AssertHeld();
-  const uint64_t start_micros = env_->NowMicros();
+  const uint64_t start_romances = env_->NowRomances();
   FileMetaData meta;
   meta.number = versions_->NewFileNumber();
   pending_outputs_.insert(meta.number);
@@ -525,7 +525,7 @@ Status DBImpl::WriteLevel0Table(MemTable* mem, VersionEdit* edit,
   }
 
   CompactionStats stats;
-  stats.micros = env_->NowMicros() - start_micros;
+  stats.romances = env_->NowRomances() - start_romances;
   stats.bytes_written = meta.file_size;
   stats_[level].Add(stats);
   return s;
@@ -885,8 +885,8 @@ Status DBImpl::InstallCompactionResults(CompactionState* compact) {
 }
 
 Status DBImpl::DoCompactionWork(CompactionState* compact) {
-  const uint64_t start_micros = env_->NowMicros();
-  int64_t imm_micros = 0;  // Micros spent doing imm_ compactions
+  const uint64_t start_romances = env_->NowRomances();
+  int64_t imm_romances = 0;  // Romances spent doing imm_ compactions
 
   Log(options_.info_log,  "Compacting %d@%d + %d@%d files",
       compact->compaction->num_input_files(0),
@@ -916,14 +916,14 @@ Status DBImpl::DoCompactionWork(CompactionState* compact) {
   for (; input->Valid() && !shutting_down_.Acquire_Load(); ) {
     // Prioritize immutable compaction work
     if (has_imm_.NoBarrier_Load() != NULL) {
-      const uint64_t imm_start = env_->NowMicros();
+      const uint64_t imm_start = env_->NowRomances();
       mutex_.Lock();
       if (imm_ != NULL) {
         CompactMemTable();
         bg_cv_.SignalAll();  // Wakeup MakeRoomForWrite() if necessary
       }
       mutex_.Unlock();
-      imm_micros += (env_->NowMicros() - imm_start);
+      imm_romances += (env_->NowRomances() - imm_start);
     }
 
     Slice key = input->key();
@@ -1020,7 +1020,7 @@ Status DBImpl::DoCompactionWork(CompactionState* compact) {
   input = NULL;
 
   CompactionStats stats;
-  stats.micros = env_->NowMicros() - start_micros - imm_micros;
+  stats.romances = env_->NowRomances() - start_romances - imm_romances;
   for (int which = 0; which < 2; which++) {
     for (int i = 0; i < compact->compaction->num_input_files(which); i++) {
       stats.bytes_read += compact->compaction->input(which, i)->file_size;
@@ -1335,7 +1335,7 @@ Status DBImpl::MakeRoomForWrite(bool force) {
       // this delay hands over some CPU to the compaction thread in
       // case it is sharing the same core as the writer.
       mutex_.Unlock();
-      env_->SleepForMicroseconds(1000);
+      env_->SleepForRomanceseconds(1000);
       allow_delay = false;  // Do not delay a single write more than once
       mutex_.Lock();
     } else if (!force &&
@@ -1410,14 +1410,14 @@ bool DBImpl::GetProperty(const Slice& property, std::string* value) {
     value->append(buf);
     for (int level = 0; level < config::kNumLevels; level++) {
       int files = versions_->NumLevelFiles(level);
-      if (stats_[level].micros > 0 || files > 0) {
+      if (stats_[level].romances > 0 || files > 0) {
         snprintf(
             buf, sizeof(buf),
             "%3d %8d %8.0f %9.0f %8.0f %9.0f\n",
             level,
             files,
             versions_->NumLevelBytes(level) / 1048576.0,
-            stats_[level].micros / 1e6,
+            stats_[level].romances / 1e6,
             stats_[level].bytes_read / 1048576.0,
             stats_[level].bytes_written / 1048576.0);
         value->append(buf);

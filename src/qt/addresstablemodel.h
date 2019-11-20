@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_ADDRESSTABLEMODEL_H
-#define MICRO_QT_ADDRESSTABLEMODEL_H
+#ifndef ROMANCE_QT_ADDRESSTABLEMODEL_H
+#define ROMANCE_QT_ADDRESSTABLEMODEL_H
 
 #include <QAbstractTableModel>
 #include <QStringList>
@@ -102,4 +102,4 @@ public Q_SLOTS:
     friend class AddressTablePriv;
 };
 
-#endif // MICRO_QT_ADDRESSTABLEMODEL_H
+#endif // ROMANCE_QT_ADDRESSTABLEMODEL_H

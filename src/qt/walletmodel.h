@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_WALLETMODEL_H
-#define MICRO_QT_WALLETMODEL_H
+#ifndef ROMANCE_QT_WALLETMODEL_H
+#define ROMANCE_QT_WALLETMODEL_H
 
 #include <amount.h>
 #include <key.h>
@@ -279,4 +279,4 @@ public Q_SLOTS:
     void pollBalanceChanged();
 };
 
-#endif // MICRO_QT_WALLETMODEL_H
+#endif // ROMANCE_QT_WALLETMODEL_H

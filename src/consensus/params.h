@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CONSENSUS_PARAMS_H
-#define MICRO_CONSENSUS_PARAMS_H
+#ifndef ROMANCE_CONSENSUS_PARAMS_H
+#define ROMANCE_CONSENSUS_PARAMS_H
 
 #include <uint256.h>
 #include <amount.h>
@@ -71,4 +71,4 @@ struct Params {
 };
 } // namespace Consensus
 
-#endif // MICRO_CONSENSUS_PARAMS_H
+#endif // ROMANCE_CONSENSUS_PARAMS_H

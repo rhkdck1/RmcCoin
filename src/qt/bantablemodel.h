@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_BANTABLEMODEL_H
-#define MICRO_QT_BANTABLEMODEL_H
+#ifndef ROMANCE_QT_BANTABLEMODEL_H
+#define ROMANCE_QT_BANTABLEMODEL_H
 
 #include <net.h>
 
@@ -77,4 +77,4 @@ private:
     std::unique_ptr<BanTablePriv> priv;
 };
 
-#endif // MICRO_QT_BANTABLEMODEL_H
+#endif // ROMANCE_QT_BANTABLEMODEL_H

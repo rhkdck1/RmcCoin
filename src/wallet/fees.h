@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_FEES_H
-#define MICRO_WALLET_FEES_H
+#ifndef ROMANCE_WALLET_FEES_H
+#define ROMANCE_WALLET_FEES_H
 
 #include <amount.h>
 
@@ -44,4 +44,4 @@ CFeeRate GetMinimumFeeRate(const CWallet& wallet, const CCoinControl& coin_contr
  */
 CFeeRate GetDiscardRate(const CWallet& wallet, const CBlockPolicyEstimator& estimator);
 
-#endif // MICRO_WALLET_FEES_H
+#endif // ROMANCE_WALLET_FEES_H

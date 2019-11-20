@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SUPPORT_LOCKEDPOOL_H
-#define MICRO_SUPPORT_LOCKEDPOOL_H
+#ifndef ROMANCE_SUPPORT_LOCKEDPOOL_H
+#define ROMANCE_SUPPORT_LOCKEDPOOL_H
 
 #include <stdint.h>
 #include <list>
@@ -237,4 +237,4 @@ private:
     static std::once_flag init_flag;
 };
 
-#endif // MICRO_SUPPORT_LOCKEDPOOL_H
+#endif // ROMANCE_SUPPORT_LOCKEDPOOL_H

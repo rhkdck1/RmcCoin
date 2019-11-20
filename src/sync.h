@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SYNC_H
-#define MICRO_SYNC_H
+#ifndef ROMANCE_SYNC_H
+#define ROMANCE_SYNC_H
 
 #include <threadsafety.h>
 
@@ -287,4 +287,4 @@ public:
     }
 };
 
-#endif // MICRO_SYNC_H
+#endif // ROMANCE_SYNC_H

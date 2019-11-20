@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_UI_INTERFACE_H
-#define MICRO_UI_INTERFACE_H
+#ifndef ROMANCE_UI_INTERFACE_H
+#define ROMANCE_UI_INTERFACE_H
 
 #include <memory>
 #include <stdint.h>
@@ -123,4 +123,4 @@ std::string AmountErrMsg(const char* const optname, const std::string& strValue)
 
 extern CClientUIInterface uiInterface;
 
-#endif // MICRO_UI_INTERFACE_H
+#endif // ROMANCE_UI_INTERFACE_H

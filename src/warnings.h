@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WARNINGS_H
-#define MICRO_WARNINGS_H
+#ifndef ROMANCE_WARNINGS_H
+#define ROMANCE_WARNINGS_H
 
 #include <stdlib.h>
 #include <string>
@@ -21,4 +21,4 @@ void SetfLargeWorkInvalidChainFound(bool flag);
  */
 std::string GetWarnings(const std::string& strFor);
 
-#endif //  MICRO_WARNINGS_H
+#endif //  ROMANCE_WARNINGS_H

@@ -1,8 +1,8 @@
 // Copyright (c) 2017 Aria Fallah
 // https://github.com/AriaFallah/csv-parser
 
-#ifndef MICRO_CSV_H
-#define MICRO_CSV_H
+#ifndef ROMANCE_CSV_H
+#define ROMANCE_CSV_H
 
 #include <fstream>
 #include <memory>
@@ -345,4 +345,4 @@ namespace csv {
     };
 }
 
-#endif // MICRO_CSV_H
+#endif // ROMANCE_CSV_H

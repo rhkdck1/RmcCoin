@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ADDRDB_H
-#define MICRO_ADDRDB_H
+#ifndef ROMANCE_ADDRDB_H
+#define ROMANCE_ADDRDB_H
 
 #include <fs.h>
 #include <serialize.h>
@@ -99,4 +99,4 @@ public:
     bool Read(banmap_t& banSet);
 };
 
-#endif // MICRO_ADDRDB_H
+#endif // ROMANCE_ADDRDB_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_LIMITEDMAP_H
-#define MICRO_LIMITEDMAP_H
+#ifndef ROMANCE_LIMITEDMAP_H
+#define ROMANCE_LIMITEDMAP_H
 
 #include <assert.h>
 #include <map>
@@ -97,4 +97,4 @@ public:
     }
 };
 
-#endif // MICRO_LIMITEDMAP_H
+#endif // ROMANCE_LIMITEDMAP_H

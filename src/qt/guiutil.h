@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_GUIUTIL_H
-#define MICRO_QT_GUIUTIL_H
+#ifndef ROMANCE_QT_GUIUTIL_H
+#define ROMANCE_QT_GUIUTIL_H
 
 #include <amount.h>
 #include <fs.h>
@@ -247,4 +247,4 @@ namespace GUIUtil
     };
 } // namespace GUIUtil
 
-#endif // MICRO_QT_GUIUTIL_H
+#endif // ROMANCE_QT_GUIUTIL_H

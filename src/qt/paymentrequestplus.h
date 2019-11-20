@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_PAYMENTREQUESTPLUS_H
-#define MICRO_QT_PAYMENTREQUESTPLUS_H
+#ifndef ROMANCE_QT_PAYMENTREQUESTPLUS_H
+#define ROMANCE_QT_PAYMENTREQUESTPLUS_H
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
@@ -49,4 +49,4 @@ private:
     payments::PaymentDetails details;
 };
 
-#endif // MICRO_QT_PAYMENTREQUESTPLUS_H
+#endif // ROMANCE_QT_PAYMENTREQUESTPLUS_H

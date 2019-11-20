@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_TRANSACTIONDESCDIALOG_H
-#define MICRO_QT_TRANSACTIONDESCDIALOG_H
+#ifndef ROMANCE_QT_TRANSACTIONDESCDIALOG_H
+#define ROMANCE_QT_TRANSACTIONDESCDIALOG_H
 
 #include <QDialog>
 
@@ -28,4 +28,4 @@ private:
     Ui::TransactionDescDialog *ui;
 };
 
-#endif // MICRO_QT_TRANSACTIONDESCDIALOG_H
+#endif // ROMANCE_QT_TRANSACTIONDESCDIALOG_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_POLICY_FEERATE_H
-#define MICRO_POLICY_FEERATE_H
+#ifndef ROMANCE_POLICY_FEERATE_H
+#define ROMANCE_POLICY_FEERATE_H
 
 #include <amount.h>
 #include <serialize.h>
@@ -56,4 +56,4 @@ public:
     }
 };
 
-#endif //  MICRO_POLICY_FEERATE_H
+#endif //  ROMANCE_POLICY_FEERATE_H

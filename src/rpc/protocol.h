@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_RPC_PROTOCOL_H
-#define MICRO_RPC_PROTOCOL_H
+#ifndef ROMANCE_RPC_PROTOCOL_H
+#define ROMANCE_RPC_PROTOCOL_H
 
 #include <fs.h>
 
@@ -39,7 +39,7 @@ enum RPCErrorCode
     // It should not be used for application-layer errors.
     RPC_METHOD_NOT_FOUND = -32601,
     RPC_INVALID_PARAMS   = -32602,
-    // RPC_INTERNAL_ERROR should only be used for genuine errors in microd
+    // RPC_INTERNAL_ERROR should only be used for genuine errors in romanced
     // (for example datadir corruption).
     RPC_INTERNAL_ERROR   = -32603,
     RPC_PARSE_ERROR      = -32700,
@@ -106,4 +106,4 @@ void DeleteAuthCookie();
 /** Parse JSON-RPC batch reply into a vector */
 std::vector<UniValue> JSONRPCProcessBatchReply(const UniValue &in, size_t num);
 
-#endif // MICRO_RPC_PROTOCOL_H
+#endif // ROMANCE_RPC_PROTOCOL_H

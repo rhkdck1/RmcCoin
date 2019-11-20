@@ -540,14 +540,14 @@ class PosixEnv : public Env {
     }
   }
 
-  virtual uint64_t NowMicros() {
+  virtual uint64_t NowRomances() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
     return static_cast<uint64_t>(tv.tv_sec) * 1000000 + tv.tv_usec;
   }
 
-  virtual void SleepForMicroseconds(int micros) {
-    usleep(micros);
+  virtual void SleepForRomanceseconds(int romances) {
+    usleep(romances);
   }
 
  private:

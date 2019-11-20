@@ -5,8 +5,8 @@
 /**
  * Functionality for communicating with Tor.
  */
-#ifndef MICRO_TORCONTROL_H
-#define MICRO_TORCONTROL_H
+#ifndef ROMANCE_TORCONTROL_H
+#define ROMANCE_TORCONTROL_H
 
 #include <scheduler.h>
 
@@ -17,4 +17,4 @@ void StartTorControl();
 void InterruptTorControl();
 void StopTorControl();
 
-#endif /* MICRO_TORCONTROL_H */
+#endif /* ROMANCE_TORCONTROL_H */

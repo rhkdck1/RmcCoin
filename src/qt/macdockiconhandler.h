@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_MACDOCKICONHANDLER_H
-#define MICRO_QT_MACDOCKICONHANDLER_H
+#ifndef ROMANCE_QT_MACDOCKICONHANDLER_H
+#define ROMANCE_QT_MACDOCKICONHANDLER_H
 
 #include <QMainWindow>
 #include <QObject>
@@ -41,4 +41,4 @@ private:
     QMainWindow *mainWindow;
 };
 
-#endif // MICRO_QT_MACDOCKICONHANDLER_H
+#endif // ROMANCE_QT_MACDOCKICONHANDLER_H

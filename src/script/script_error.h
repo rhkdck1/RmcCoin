@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_SCRIPT_ERROR_H
-#define MICRO_SCRIPT_SCRIPT_ERROR_H
+#ifndef ROMANCE_SCRIPT_SCRIPT_ERROR_H
+#define ROMANCE_SCRIPT_SCRIPT_ERROR_H
 
 typedef enum ScriptError_t
 {
@@ -75,4 +75,4 @@ typedef enum ScriptError_t
 
 const char* ScriptErrorString(const ScriptError error);
 
-#endif // MICRO_SCRIPT_SCRIPT_ERROR_H
+#endif // ROMANCE_SCRIPT_SCRIPT_ERROR_H

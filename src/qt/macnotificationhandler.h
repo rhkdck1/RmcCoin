@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_MACNOTIFICATIONHANDLER_H
-#define MICRO_QT_MACNOTIFICATIONHANDLER_H
+#ifndef ROMANCE_QT_MACNOTIFICATIONHANDLER_H
+#define ROMANCE_QT_MACNOTIFICATIONHANDLER_H
 
 #include <QObject>
 
@@ -24,4 +24,4 @@ public:
 };
 
 
-#endif // MICRO_QT_MACNOTIFICATIONHANDLER_H
+#endif // ROMANCE_QT_MACNOTIFICATIONHANDLER_H

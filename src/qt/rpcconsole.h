@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_RPCCONSOLE_H
-#define MICRO_QT_RPCCONSOLE_H
+#ifndef ROMANCE_QT_RPCCONSOLE_H
+#define ROMANCE_QT_RPCCONSOLE_H
 
 #include <qt/guiutil.h>
 #include <qt/peertablemodel.h>
@@ -165,4 +165,4 @@ private:
     void updateNetworkState();
 };
 
-#endif // MICRO_QT_RPCCONSOLE_H
+#endif // ROMANCE_QT_RPCCONSOLE_H

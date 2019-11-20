@@ -86,10 +86,10 @@ write operations leave the data sitting in the operating system buffer
 cache for a while.  The "overwrite" benchmark does random writes that
 update existing keys in the database.
 
-    fillseq      :       1.765 micros/op;   62.7 MB/s
-    fillsync     :     268.409 micros/op;    0.4 MB/s (10000 ops)
-    fillrandom   :       2.460 micros/op;   45.0 MB/s
-    overwrite    :       2.380 micros/op;   46.5 MB/s
+    fillseq      :       1.765 romances/op;   62.7 MB/s
+    fillsync     :     268.409 romances/op;    0.4 MB/s (10000 ops)
+    fillrandom   :       2.460 romances/op;   45.0 MB/s
+    overwrite    :       2.380 romances/op;   46.5 MB/s
 
 Each "op" above corresponds to a write of a single key/value pair.
 I.e., a random write benchmark goes at approximately 400,000 writes per second.
@@ -113,25 +113,25 @@ by the one or two disk seeks needed to fetch the data from disk.
 Write performance will be mostly unaffected by whether or not the
 working set fits in memory.
 
-    readrandom  : 16.677 micros/op;  (approximately 60,000 reads per second)
-    readseq     :  0.476 micros/op;  232.3 MB/s
-    readreverse :  0.724 micros/op;  152.9 MB/s
+    readrandom  : 16.677 romances/op;  (approximately 60,000 reads per second)
+    readseq     :  0.476 romances/op;  232.3 MB/s
+    readreverse :  0.724 romances/op;  152.9 MB/s
 
 LevelDB compacts its underlying storage data in the background to
 improve read performance.  The results listed above were done
 immediately after a lot of random writes.  The results after
 compactions (which are usually triggered automatically) are better.
 
-    readrandom  : 11.602 micros/op;  (approximately 85,000 reads per second)
-    readseq     :  0.423 micros/op;  261.8 MB/s
-    readreverse :  0.663 micros/op;  166.9 MB/s
+    readrandom  : 11.602 romances/op;  (approximately 85,000 reads per second)
+    readseq     :  0.423 romances/op;  261.8 MB/s
+    readreverse :  0.663 romances/op;  166.9 MB/s
 
 Some of the high cost of reads comes from repeated decompression of blocks
 read from disk.  If we supply enough cache to the leveldb so it can hold the
 uncompressed blocks in memory, the read performance improves again:
 
-    readrandom  : 9.775 micros/op;  (approximately 100,000 reads per second before compaction)
-    readrandom  : 5.215 micros/op;  (approximately 190,000 reads per second after compaction)
+    readrandom  : 9.775 romances/op;  (approximately 100,000 reads per second before compaction)
+    readrandom  : 5.215 romances/op;  (approximately 190,000 reads per second after compaction)
 
 ## Repository contents
 

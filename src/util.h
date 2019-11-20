@@ -7,11 +7,11 @@
  * Server/client environment: argument handling, config file parsing,
  * thread wrappers, startup time
  */
-#ifndef MICRO_UTIL_H
-#define MICRO_UTIL_H
+#ifndef ROMANCE_UTIL_H
+#define ROMANCE_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <compat.h>
@@ -47,8 +47,8 @@ public:
 
 extern CTranslationInterface translationInterface;
 
-extern const char * const MICRO_CONF_FILENAME;
-extern const char * const MICRO_PID_FILENAME;
+extern const char * const ROMANCE_CONF_FILENAME;
+extern const char * const ROMANCE_PID_FILENAME;
 
 /**
  * Translation function: Call Translate signal on UI interface, which returns a boost::optional result.
@@ -371,4 +371,4 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
 
 } // namespace util
 
-#endif // MICRO_UTIL_H
+#endif // ROMANCE_UTIL_H

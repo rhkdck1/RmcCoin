@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_MICROUNITS_H
-#define MICRO_QT_MICROUNITS_H
+#ifndef ROMANCE_QT_ROMANCEUNITS_H
+#define ROMANCE_QT_ROMANCEUNITS_H
 
 #include <amount.h>
 
@@ -126,4 +126,4 @@ private:
 };
 typedef BitcoinUnits::Unit BitcoinUnit;
 
-#endif // MICRO_QT_MICROUNITS_H
+#endif // ROMANCE_QT_ROMANCEUNITS_H

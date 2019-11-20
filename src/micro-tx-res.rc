@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "RomanceCoin"
-            VALUE "FileDescription",    "micro-tx (CLI RomanceCoin transaction editor utility)"
+            VALUE "FileDescription",    "romance-tx (CLI RomanceCoin transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "micro-tx"
+            VALUE "InternalName",       "romance-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "micro-tx.exe"
-            VALUE "ProductName",        "micro-tx"
+            VALUE "OriginalFilename",   "romance-tx.exe"
+            VALUE "ProductName",        "romance-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

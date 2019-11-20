@@ -196,9 +196,9 @@ public:
 
     virtual Status NewLogger(const std::string& fname, Logger** result);
 
-    virtual uint64_t NowMicros();
+    virtual uint64_t NowRomances();
 
-    virtual void SleepForMicroseconds(int micros);
+    virtual void SleepForRomanceseconds(int romances);
 };
 
 void ToWidePath(const std::string& value, std::wstring& target) {
@@ -647,9 +647,9 @@ Status Win32Env::GetChildren(const std::string& dir, std::vector<std::string>* r
     return sRet;
 }
 
-void Win32Env::SleepForMicroseconds( int micros )
+void Win32Env::SleepForRomanceseconds( int romances )
 {
-    ::Sleep((micros + 999) /1000);
+    ::Sleep((romances + 999) /1000);
 }
 
 
@@ -753,7 +753,7 @@ Status Win32Env::GetTestDirectory( std::string* path )
     return sRet;
 }
 
-uint64_t Win32Env::NowMicros()
+uint64_t Win32Env::NowRomances()
 {
 #ifndef USE_VISTA_API
 #define GetTickCount64 GetTickCount

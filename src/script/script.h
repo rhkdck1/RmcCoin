@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCRIPT_SCRIPT_H
-#define MICRO_SCRIPT_SCRIPT_H
+#ifndef ROMANCE_SCRIPT_SCRIPT_H
+#define ROMANCE_SCRIPT_SCRIPT_H
 
 #include <crypto/common.h>
 #include <prevector.h>
@@ -586,4 +586,4 @@ public:
     virtual ~CReserveScript() {}
 };
 
-#endif // MICRO_SCRIPT_SCRIPT_H
+#endif // ROMANCE_SCRIPT_SCRIPT_H

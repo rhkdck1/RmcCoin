@@ -1,5 +1,5 @@
-#ifndef MICRO_QT_TEST_UTIL_H
-#define MICRO_QT_TEST_UTIL_H
+#ifndef ROMANCE_QT_TEST_UTIL_H
+#define ROMANCE_QT_TEST_UTIL_H
 
 /**
  * Press "Ok" button in message box dialog.
@@ -9,4 +9,4 @@
  */
 void ConfirmMessage(QString* text = nullptr, int msec = 0);
 
-#endif // MICRO_QT_TEST_UTIL_H
+#endif // ROMANCE_QT_TEST_UTIL_H

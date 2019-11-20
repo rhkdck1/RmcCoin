@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_THREADSAFETY_H
-#define MICRO_THREADSAFETY_H
+#ifndef ROMANCE_THREADSAFETY_H
+#define ROMANCE_THREADSAFETY_H
 
 #ifdef __clang__
 // TL;DR Add GUARDED_BY(mutex) to member variables. The others are
@@ -54,4 +54,4 @@
 #define ASSERT_EXCLUSIVE_LOCK(...)
 #endif // __GNUC__
 
-#endif // MICRO_THREADSAFETY_H
+#endif // ROMANCE_THREADSAFETY_H

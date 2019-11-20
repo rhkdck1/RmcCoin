@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_QVALUECOMBOBOX_H
-#define MICRO_QT_QVALUECOMBOBOX_H
+#ifndef ROMANCE_QT_QVALUECOMBOBOX_H
+#define ROMANCE_QT_QVALUECOMBOBOX_H
 
 #include <QComboBox>
 #include <QVariant>
@@ -34,4 +34,4 @@ private Q_SLOTS:
     void handleSelectionChanged(int idx);
 };
 
-#endif // MICRO_QT_QVALUECOMBOBOX_H
+#endif // ROMANCE_QT_QVALUECOMBOBOX_H

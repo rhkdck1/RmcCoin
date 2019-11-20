@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_COINS_H
-#define MICRO_COINS_H
+#ifndef ROMANCE_COINS_H
+#define ROMANCE_COINS_H
 
 #include <primitives/transaction.h>
 #include <compressor.h>
@@ -311,4 +311,4 @@ void AddCoins(CCoinsViewCache& cache, const CTransaction& tx, int nHeight, bool 
 // lookups to database, so it should be used with care.
 const Coin& AccessByTxid(const CCoinsViewCache& cache, const uint256& txid);
 
-#endif // MICRO_COINS_H
+#endif // ROMANCE_COINS_H

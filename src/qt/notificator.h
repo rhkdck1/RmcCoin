@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_NOTIFICATOR_H
-#define MICRO_QT_NOTIFICATOR_H
+#ifndef ROMANCE_QT_NOTIFICATOR_H
+#define ROMANCE_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <QIcon>
@@ -74,4 +74,4 @@ private:
 #endif
 };
 
-#endif // MICRO_QT_NOTIFICATOR_H
+#endif // ROMANCE_QT_NOTIFICATOR_H

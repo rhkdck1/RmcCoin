@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_FEEBUMPER_H
-#define MICRO_WALLET_FEEBUMPER_H
+#ifndef ROMANCE_WALLET_FEEBUMPER_H
+#define ROMANCE_WALLET_FEEBUMPER_H
 
 #include <primitives/transaction.h>
 
@@ -55,4 +55,4 @@ Result CommitTransaction(CWallet* wallet,
 
 } // namespace feebumper
 
-#endif // MICRO_WALLET_FEEBUMPER_H
+#endif // ROMANCE_WALLET_FEEBUMPER_H

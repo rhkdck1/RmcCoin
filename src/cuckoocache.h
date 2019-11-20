@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_CUCKOOCACHE_H
-#define MICRO_CUCKOOCACHE_H
+#ifndef ROMANCE_CUCKOOCACHE_H
+#define ROMANCE_CUCKOOCACHE_H
 
 #include <array>
 #include <algorithm>
@@ -212,7 +212,7 @@ private:
      *
      * The naive approach would be to use a mod -- which isn't perfectly uniform but so
      *  long as the hash is much larger than size it is not that bad.  Unfortunately,
-     *  mod/division is fairly slow on ordinary microprocessors (e.g. 90-ish cycles on
+     *  mod/division is fairly slow on ordinary romanceprocessors (e.g. 90-ish cycles on
      *  haswell, ARM doesn't even have an instruction for it.); when the divisor is a
      *  constant the compiler will do clever tricks to turn it into a multiply+add+shift,
      *  but size is a run-time value so the compiler can't do that here.
@@ -478,4 +478,4 @@ public:
 };
 } // namespace CuckooCache
 
-#endif // MICRO_CUCKOOCACHE_H
+#endif // ROMANCE_CUCKOOCACHE_H

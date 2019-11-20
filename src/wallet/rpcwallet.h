@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_RPCWALLET_H
-#define MICRO_WALLET_RPCWALLET_H
+#ifndef ROMANCE_WALLET_RPCWALLET_H
+#define ROMANCE_WALLET_RPCWALLET_H
 
 #include <string>
 
@@ -31,4 +31,4 @@ bool EnsureWalletIsAvailable(CWallet *, bool avoidException);
 UniValue getaddressinfo(const JSONRPCRequest& request);
 UniValue signrawtransactionwithwallet(const JSONRPCRequest& request);
 bool FillPSBT(const CWallet* pwallet, PartiallySignedTransaction& psbtx, int sighash_type = 1 /* SIGHASH_ALL */, bool sign = true, bool bip32derivs = false);
-#endif //MICRO_WALLET_RPCWALLET_H
+#endif //ROMANCE_WALLET_RPCWALLET_H

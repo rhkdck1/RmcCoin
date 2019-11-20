@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_MEMUSAGE_H
-#define MICRO_MEMUSAGE_H
+#ifndef ROMANCE_MEMUSAGE_H
+#define ROMANCE_MEMUSAGE_H
 
 #include <indirectmap.h>
 
@@ -167,4 +167,4 @@ static inline size_t DynamicUsage(const std::unordered_map<X, Y, Z>& m)
 
 }
 
-#endif // MICRO_MEMUSAGE_H
+#endif // ROMANCE_MEMUSAGE_H

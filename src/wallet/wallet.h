@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_WALLET_H
-#define MICRO_WALLET_WALLET_H
+#ifndef ROMANCE_WALLET_WALLET_H
+#define ROMANCE_WALLET_WALLET_H
 
 #include <amount.h>
 #include <outputtype.h>
@@ -1319,4 +1319,4 @@ public:
 // be IsAllFromMe).
 int64_t CalculateMaximumSignedTxSize(const CTransaction &tx, const CWallet *wallet, bool use_max_sig = false);
 int64_t CalculateMaximumSignedTxSize(const CTransaction &tx, const CWallet *wallet, const std::vector<CTxOut>& txouts, bool use_max_sig = false);
-#endif // MICRO_WALLET_WALLET_H
+#endif // ROMANCE_WALLET_WALLET_H

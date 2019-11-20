@@ -226,7 +226,7 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
         <translation>Тўловлар (QR кодлари ва romancecoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
@@ -238,7 +238,7 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
+        <source>Open a romanceromancecoin: URI or payment request</source>
         <translation>RomanceCoin’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>

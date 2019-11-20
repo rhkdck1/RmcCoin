@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_MICROAMOUNTFIELD_H
-#define MICRO_QT_MICROAMOUNTFIELD_H
+#ifndef ROMANCE_QT_ROMANCEAMOUNTFIELD_H
+#define ROMANCE_QT_ROMANCEAMOUNTFIELD_H
 
 #include <amount.h>
 
@@ -72,4 +72,4 @@ private Q_SLOTS:
 
 };
 
-#endif // MICRO_QT_MICROAMOUNTFIELD_H
+#endif // ROMANCE_QT_ROMANCEAMOUNTFIELD_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SERIALIZE_H
-#define MICRO_SERIALIZE_H
+#ifndef ROMANCE_SERIALIZE_H
+#define ROMANCE_SERIALIZE_H
 
 #include <compat/endian.h>
 
@@ -1010,4 +1010,4 @@ size_t GetSerializeSizeMany(const S& s, const T&... t)
     return sc.size();
 }
 
-#endif // MICRO_SERIALIZE_H
+#endif // ROMANCE_SERIALIZE_H

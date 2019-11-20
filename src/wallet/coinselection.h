@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_WALLET_COINSELECTION_H
-#define MICRO_WALLET_COINSELECTION_H
+#ifndef ROMANCE_WALLET_COINSELECTION_H
+#define ROMANCE_WALLET_COINSELECTION_H
 
 #include <amount.h>
 #include <primitives/transaction.h>
@@ -98,4 +98,4 @@ bool SelectCoinsBnB(std::vector<OutputGroup>& utxo_pool, const CAmount& target_v
 // Original coin selection algorithm as a fallback
 bool KnapsackSolver(const CAmount& nTargetValue, std::vector<OutputGroup>& groups, std::set<CInputCoin>& setCoinsRet, CAmount& nValueRet);
 
-#endif // MICRO_WALLET_COINSELECTION_H
+#endif // ROMANCE_WALLET_COINSELECTION_H

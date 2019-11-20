@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ADDRESSINDEX_H
-#define MICRO_ADDRESSINDEX_H
+#ifndef ROMANCE_ADDRESSINDEX_H
+#define ROMANCE_ADDRESSINDEX_H
 
 #include "uint256.h"
 #include "amount.h"
@@ -292,4 +292,4 @@ struct CMempoolAddressDeltaKeyCompare
     }
 };
 
-#endif // MICRO_ADDRESSINDEX_H
+#endif // ROMANCE_ADDRESSINDEX_H

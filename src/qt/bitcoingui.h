@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_MICROGUI_H
-#define MICRO_QT_MICROGUI_H
+#ifndef ROMANCE_QT_ROMANCEGUI_H
+#define ROMANCE_QT_ROMANCEGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/micro-config.h>
+#include <config/romance-config.h>
 #endif
 
 #include <amount.h>
@@ -301,4 +301,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // MICRO_QT_MICROGUI_H
+#endif // ROMANCE_QT_ROMANCEGUI_H

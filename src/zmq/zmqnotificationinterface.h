@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_ZMQ_ZMQNOTIFICATIONINTERFACE_H
-#define MICRO_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#ifndef ROMANCE_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#define ROMANCE_ZMQ_ZMQNOTIFICATIONINTERFACE_H
 
 #include <validationinterface.h>
 #include <string>
@@ -41,4 +41,4 @@ private:
 
 extern CZMQNotificationInterface* g_zmq_notification_interface;
 
-#endif // MICRO_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#endif // ROMANCE_ZMQ_ZMQNOTIFICATIONINTERFACE_H

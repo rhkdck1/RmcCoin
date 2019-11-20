@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_COMPRESSOR_H
-#define MICRO_COMPRESSOR_H
+#ifndef ROMANCE_COMPRESSOR_H
+#define ROMANCE_COMPRESSOR_H
 
 #include <primitives/transaction.h>
 #include <script/script.h>
@@ -108,4 +108,4 @@ public:
     }
 };
 
-#endif // MICRO_COMPRESSOR_H
+#endif // ROMANCE_COMPRESSOR_H

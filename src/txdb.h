@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_TXDB_H
-#define MICRO_TXDB_H
+#ifndef ROMANCE_TXDB_H
+#define ROMANCE_TXDB_H
 
 #include <coins.h>
 #include <dbwrapper.h>
@@ -117,4 +117,4 @@ public:
     bool ReadTimestampBlockIndex(const uint256 &hash, unsigned int &logicalTS);
 };
 
-#endif // MICRO_TXDB_H
+#endif // ROMANCE_TXDB_H

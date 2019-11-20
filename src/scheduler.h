@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_SCHEDULER_H
-#define MICRO_SCHEDULER_H
+#ifndef ROMANCE_SCHEDULER_H
+#define ROMANCE_SCHEDULER_H
 
 //
 // NOTE:

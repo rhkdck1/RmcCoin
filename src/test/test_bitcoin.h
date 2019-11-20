@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_TEST_TEST_MICRO_H
-#define MICRO_TEST_TEST_MICRO_H
+#ifndef ROMANCE_TEST_TEST_ROMANCE_H
+#define ROMANCE_TEST_TEST_ROMANCE_H
 
 #include <chainparamsbase.h>
 #include <fs.h>

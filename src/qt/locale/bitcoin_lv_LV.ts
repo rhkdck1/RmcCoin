@@ -290,11 +290,11 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and microromancecoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un microromancecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and romanceromancecoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un romanceromancecoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a microromancecoin: URI or payment request</source>
+        <source>Open a romanceromancecoin: URI or payment request</source>
         <translation>Atvērt romancecoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>

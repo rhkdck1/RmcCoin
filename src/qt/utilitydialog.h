@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MICRO_QT_UTILITYDIALOG_H
-#define MICRO_QT_UTILITYDIALOG_H
+#ifndef ROMANCE_QT_UTILITYDIALOG_H
+#define ROMANCE_QT_UTILITYDIALOG_H
 
 #include <QDialog>
 #include <QObject>
@@ -52,4 +52,4 @@ protected:
     void closeEvent(QCloseEvent *event);
 };
 
-#endif // MICRO_QT_UTILITYDIALOG_H
+#endif // ROMANCE_QT_UTILITYDIALOG_H

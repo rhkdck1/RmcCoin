@@ -1,5 +1,5 @@
-#ifndef MICRO_QT_TEST_WALLETTESTS_H
-#define MICRO_QT_TEST_WALLETTESTS_H
+#ifndef ROMANCE_QT_TEST_WALLETTESTS_H
+#define ROMANCE_QT_TEST_WALLETTESTS_H
 
 #include <QObject>
 #include <QTest>
@@ -12,4 +12,4 @@ private Q_SLOTS:
     void walletTests();
 };
 
-#endif // MICRO_QT_TEST_WALLETTESTS_H
+#endif // ROMANCE_QT_TEST_WALLETTESTS_H
